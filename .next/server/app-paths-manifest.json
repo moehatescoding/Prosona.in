@@ -1,7 +1,0 @@
-{
-  "/(pages)/fnb/page": "app/(pages)/fnb/page.js",
-  "/(pages)/blog/page": "app/(pages)/blog/page.js",
-  "/(pages)/automation/page": "app/(pages)/automation/page.js",
-  "/(pages)/(home)/page": "app/(pages)/(home)/page.js",
-  "/(pages)/brand-systems/page": "app/(pages)/brand-systems/page.js"
-}
