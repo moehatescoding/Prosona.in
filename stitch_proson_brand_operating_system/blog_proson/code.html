@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#f0eded",
+                    "primary-fixed": "#fad7ff",
+                    "on-primary-fixed-variant": "#633373",
+                    "on-secondary-fixed": "#141f00",
+                    "tertiary-fixed": "#e5e1e9",
+                    "surface-container-highest": "#e5e2e1",
+                    "inverse-primary": "#ecb2fb",
+                    "tertiary-fixed-dim": "#c9c5cd",
+                    "on-primary": "#ffffff",
+                    "outline": "#7f747f",
+                    "inverse-surface": "#313030",
+                    "on-secondary": "#ffffff",
+                    "surface": "#fcf9f8",
+                    "background": "#fcf9f8",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-surface-variant": "#4d444e",
+                    "on-secondary-fixed-variant": "#374e00",
+                    "secondary": "#4a6700",
+                    "secondary-container": "#bbf14b",
+                    "surface-container-low": "#f6f3f2",
+                    "on-tertiary-container": "#aeaab2",
+                    "surface-dim": "#dcd9d9",
+                    "secondary-fixed-dim": "#a3d731",
+                    "on-secondary-container": "#4d6c00",
+                    "secondary-fixed": "#bef44d",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#ecb2fb",
+                    "on-tertiary-fixed-variant": "#48464c",
+                    "on-surface": "#1c1b1b",
+                    "on-tertiary": "#ffffff",
+                    "primary": "#431453",
+                    "tertiary-container": "#413f45",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed": "#320144",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#fcf9f8",
+                    "on-tertiary-fixed": "#1c1b20",
+                    "outline-variant": "#d0c3cf",
+                    "primary-container": "#5b2c6b",
+                    "tertiary": "#2b292f",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#eae7e7",
+                    "on-background": "#1c1b1b",
+                    "surface-tint": "#7c4b8c",
+                    "surface-variant": "#e5e2e1",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#d097df"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "md": "24px",
+                    "gutter": "24px",
+                    "unit": "4px",
+                    "sm": "16px",
+                    "xs": "8px",
+                    "lg": "32px",
+                    "xl": "64px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "h2": ["Space Grotesk"],
+                    "body-md": ["Inter"],
+                    "h1": ["Space Grotesk"],
+                    "h3": ["Space Grotesk"],
+                    "label-caps": ["Inter"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h2": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-caps": ["11px", {"lineHeight": "1", "letterSpacing": "2px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #fcf9f8; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .blog-card-hover {
+            transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.3s cubic-bezier(0.2, 0, 0, 1);
+        }
+        .blog-card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 4px 20px rgba(91, 44, 107, 0.04);
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full h-16 bg-white dark:bg-slate-950 border-b border-[rgba(91,44,107,0.08)] dark:border-white/10 z-50">
+<nav class="flex justify-between items-center px-8 w-full max-w-7xl mx-auto h-full">
+<div class="text-xl font-bold tracking-widest text-[#5B2C6B] dark:text-white font-['Space_Grotesk']">
+                PROSONΛ
+            </div>
+<div class="hidden md:flex items-center space-x-lg font-['Space_Grotesk'] font-medium text-sm tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#5B2C6B] hover:opacity-80 transition-opacity duration-200" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#5B2C6B] hover:opacity-80 transition-opacity duration-200" href="#">F&amp;B</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#5B2C6B] hover:opacity-80 transition-opacity duration-200" href="#">Automation</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#5B2C6B] hover:opacity-80 transition-opacity duration-200" href="#">Brand Systems</a>
+<a class="text-[#5B2C6B] dark:text-white border-b-2 border-[#5B2C6B] pb-1 hover:opacity-80 transition-opacity duration-200" href="#">Blog</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#5B2C6B] hover:opacity-80 transition-opacity duration-200" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-sm py-xs rounded-lg font-['Space_Grotesk'] font-medium text-sm scale-95 active:scale-90 transition-transform hover:opacity-80">
+                Get Started
+            </button>
+</nav>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="bg-[#FAF9F7] py-xl px-gutter flex flex-col items-center text-center">
+<div class="max-w-4xl mx-auto mt-xl">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.2em] mb-sm block">THE STUDIO JOURNAL</span>
+<h1 class="font-h1 text-h1 text-on-surface mb-md" style="font-size: 56px;">Thinking in Systems.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Exploring the intersection of artificial intelligence, luxury brand systems, and the future of human-centric automation.
+                </p>
+</div>
+</section>
+<!-- Filter Tabs -->
+<section class="bg-background py-md border-b border-[rgba(91,44,107,0.08)] sticky top-16 z-40">
+<div class="max-w-7xl mx-auto px-8 flex items-center justify-center space-x-md overflow-x-auto whitespace-nowrap">
+<button class="px-lg py-xs rounded-full bg-[#5B2C6B] text-white font-['Space_Grotesk'] text-sm font-medium transition-colors">All</button>
+<button class="px-lg py-xs rounded-full bg-white border border-[rgba(91,44,107,0.12)] text-slate-600 font-['Space_Grotesk'] text-sm font-medium hover:border-[#5B2C6B] hover:text-[#5B2C6B] transition-colors">F&amp;B</button>
+<button class="px-lg py-xs rounded-full bg-white border border-[rgba(91,44,107,0.12)] text-slate-600 font-['Space_Grotesk'] text-sm font-medium hover:border-[#5B2C6B] hover:text-[#5B2C6B] transition-colors">Automation</button>
+<button class="px-lg py-xs rounded-full bg-white border border-[rgba(91,44,107,0.12)] text-slate-600 font-['Space_Grotesk'] text-sm font-medium hover:border-[#5B2C6B] hover:text-[#5B2C6B] transition-colors">Brand</button>
+<button class="px-lg py-xs rounded-full bg-white border border-[rgba(91,44,107,0.12)] text-slate-600 font-['Space_Grotesk'] text-sm font-medium hover:border-[#5B2C6B] hover:text-[#5B2C6B] transition-colors">AI</button>
+<button class="px-lg py-xs rounded-full bg-white border border-[rgba(91,44,107,0.12)] text-slate-600 font-['Space_Grotesk'] text-sm font-medium hover:border-[#5B2C6B] hover:text-[#5B2C6B] transition-colors">Growth</button>
+</div>
+</section>
+<!-- Blog Grid -->
+<section class="max-w-7xl mx-auto px-8 py-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Card 1 -->
+<article class="bg-white rounded-xl overflow-hidden border border-[rgba(91,44,107,0.12)] blog-card-hover flex flex-col">
+<div class="h-48 w-full bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="A macro shot of a sleek, modern architectural building with clean white lines and soft purple accent lighting during the blue hour. The image conveys a sense of structured elegance and futuristic minimalism, perfectly aligned with a high-end luxury brand aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAILWZ0vWtK7XMirGGyfC8eW7BXllyvQUWw-rA4bk_9rXYQBhuyWEzcVvD87Dr252zuwxJ_XDdTdIgEh8e1yjVbUbDvafDCBBvf8qzd3vZPsgBF0aCuLHD47PGSf2HoMTuOLToa251NOPFd0dw-f9sl-ynzlNKBREBpEhIQaIesSaVVZd39MkSNpx9hDaUk-pfv30B1VSxqIJllQ9bJEj_RFCezqsGYg7W3qXUxWGeUC8OmvyVqsLzB9MX7MQgG7W0L9BgH5_kQ_Wg"/>
+</div>
+<div class="p-lg flex flex-col flex-grow">
+<div class="flex items-center space-x-xs mb-sm">
+<span class="px-xs py-unit rounded-full bg-[#F3EEF6] text-[#5B2C6B] font-label-caps text-[10px] uppercase tracking-widest">F&amp;B</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-sm leading-tight">Why Every Restaurant Needs a Brand System</h3>
+<p class="font-body-md text-slate-600 mb-lg line-clamp-3">In an era of hyper-personalization, transactional design is no longer enough. Restaurants must evolve into living brand ecosystems.</p>
+<div class="mt-auto flex items-center justify-between text-slate-400 font-label-caps text-[10px] tracking-wider">
+<span>OCT 12, 2024</span>
+<span class="flex items-center"><span class="material-symbols-outlined text-[14px] mr-1">schedule</span> 6 MIN READ</span>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-white rounded-xl overflow-hidden border border-[rgba(91,44,107,0.12)] blog-card-hover flex flex-col">
+<div class="h-48 w-full bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="An abstract visualization of digital nodes and neural pathways glowing in a soft violet hue against a crisp, off-white background. The lighting is ethereal and bright, emphasizing a clean and premium technological landscape where data flows seamlessly through elegant geometric structures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMQlcO0gn6ir-SKVSazmfTfRbeJvJ8W0J2nrSR437spFxC7fRKpZZNynKb6MERAfH3lQXdIKsdNsZDSB6RDk4occ4amzfo1OTxe_zyn1BwVzB1IxaIa30wpUWmBPXr8DrnwHqBQEAlRT3nr5mHko11vnMrHUpsG0mdXekSkA1ey2Fm-yf_O1yMdUd40Z47VaiunozQnrar--IhNJk8VjU3d8_giXouEEv2koIghmxNvhpEShrmbRRdmoaAZPffDNla0ycCskqU5uE"/>
+</div>
+<div class="p-lg flex flex-col flex-grow">
+<div class="flex items-center space-x-xs mb-sm">
+<span class="px-xs py-unit rounded-full bg-[#F3EEF6] text-[#5B2C6B] font-label-caps text-[10px] uppercase tracking-widest">AI</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-sm leading-tight">The Ethics of AI in Creative Direction</h3>
+<p class="font-body-md text-slate-600 mb-lg line-clamp-3">How we balance machine precision with human intuition to create work that feels soulful rather than synthetic.</p>
+<div class="mt-auto flex items-center justify-between text-slate-400 font-label-caps text-[10px] tracking-wider">
+<span>OCT 08, 2024</span>
+<span class="flex items-center"><span class="material-symbols-outlined text-[14px] mr-1">schedule</span> 8 MIN READ</span>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-white rounded-xl overflow-hidden border border-[rgba(91,44,107,0.12)] blog-card-hover flex flex-col">
+<div class="h-48 w-full bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="A minimalist workspace featuring a high-end metal tablet and a single cup of espresso on a polished white marble surface. The environment is bathed in soft, natural morning light, creating deep but gentle shadows that highlight the textures of the stone and the clean industrial design of the device." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeLX9rYajaDDvEp0ZnCBN_AcEgbHNr2R1HhCrkZVMgIDWt3e-n-_U1XaBtZH8OJ9CoyAZiINEZaKAwe7pvuO8EiN13IkVvAkNvX3i49BKnZC4LtJnPdCoTdi-iFB1N4KpNiDyk41CMzPyam1mjUMyJLKOAYQT1XgDjoNeL_vtLW0pccfOOSgvWWFkRfQPKr7K59yNyhwijy_MI6UT8dNOydcLgviWcJ4EF1GNZzxMItV5GOQmm55JAZfRkpxDYW92MSyyfUCOAMoY"/>
+</div>
+<div class="p-lg flex flex-col flex-grow">
+<div class="flex items-center space-x-xs mb-sm">
+<span class="px-xs py-unit rounded-full bg-[#F3EEF6] text-[#5B2C6B] font-label-caps text-[10px] uppercase tracking-widest">Automation</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-sm leading-tight">Automating the Ordinary to Focus on the Extraordinary</h3>
+<p class="font-body-md text-slate-600 mb-lg line-clamp-3">A deep dive into the studio's internal automation stack that saves us 30 hours of administrative work every single week.</p>
+<div class="mt-auto flex items-center justify-between text-slate-400 font-label-caps text-[10px] tracking-wider">
+<span>SEP 28, 2024</span>
+<span class="flex items-center"><span class="material-symbols-outlined text-[14px] mr-1">schedule</span> 5 MIN READ</span>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="bg-white rounded-xl overflow-hidden border border-[rgba(91,44,107,0.12)] blog-card-hover flex flex-col">
+<div class="h-48 w-full bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="A large, airy studio space with floor-to-ceiling windows showing a bright city skyline. The interior is decorated in a luxury minimalist style with curated art pieces, a single large oak table, and soft purple ambient lighting in the corners. The mood is one of focused professional creativity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzir1SR8Ove_fZ77wG9Pmp6DQyF4GPSYr2J2IicgY-7VmgCW1US6U9yUwI4UFEOakIyO7RCb7POTrFyXLPz3ArY6bgll_iukrnPDhHxRtUvmHgkQMtKxXqvjTJR4Q1_wiyEeYCJopCOfC726LEG2PEs8agZHAhlNACwtF-qr_TGKxoVt9R2fR4ZtMmNxWwvWN30jCdkuu9vPE2ElPnTg_tMX1z8yp5SKnDEpkEdluuJBxDiaQVKxSCv_JBjVzxyYZn5Roo2C8fV9c"/>
+</div>
+<div class="p-lg flex flex-col flex-grow">
+<div class="flex items-center space-x-xs mb-sm">
+<span class="px-xs py-unit rounded-full bg-[#F3EEF6] text-[#5B2C6B] font-label-caps text-[10px] uppercase tracking-widest">Growth</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-sm leading-tight">Scale Without Friction: The Platform Model</h3>
+<p class="font-body-md text-slate-600 mb-lg line-clamp-3">Why the next generation of successful brands will be built as modular platforms rather than static entities.</p>
+<div class="mt-auto flex items-center justify-between text-slate-400 font-label-caps text-[10px] tracking-wider">
+<span>SEP 15, 2024</span>
+<span class="flex items-center"><span class="material-symbols-outlined text-[14px] mr-1">schedule</span> 10 MIN READ</span>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="bg-white rounded-xl overflow-hidden border border-[rgba(91,44,107,0.12)] blog-card-hover flex flex-col">
+<div class="h-48 w-full bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Close-up of a high-tech electronic circuit board where the pathways are illuminated with a faint, pulsing purple light. The aesthetic is extremely clean and polished, suggesting advanced AI processing within a premium hardware context. The background is a deep, matte charcoal grey." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiZc8Np8GP5ouuQIjLwp1iJJySMCy5Nol6XyjlnyaD-sEYlTDHFcwSTGOwTn4H3j4rK8aKdzZg_cHnc1suW2ZGdpJwHulhZsbX_ghTal0qytcgUzXifM42ZYGrP-JZkCJIodXP4haygS7CIPtEl0q6t3JmircoBJYol6UV4srK9RnN3mUcQ94TjAhhY3yfu4OZsgH5fI99UAl2jUehntL_0e9Wcy_BmIbwCOeGF1UTjtVgD2ilnWvK5JSUwFWZeZiQovwmzMd7USg"/>
+</div>
+<div class="p-lg flex flex-col flex-grow">
+<div class="flex items-center space-x-xs mb-sm">
+<span class="px-xs py-unit rounded-full bg-[#F3EEF6] text-[#5B2C6B] font-label-caps text-[10px] uppercase tracking-widest">AI</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-sm leading-tight">Generative Art: Beyond the Prompt</h3>
+<p class="font-body-md text-slate-600 mb-lg line-clamp-3">A look at how we utilize custom-trained models to maintain visual consistency across disparate brand touchpoints.</p>
+<div class="mt-auto flex items-center justify-between text-slate-400 font-label-caps text-[10px] tracking-wider">
+<span>SEP 04, 2024</span>
+<span class="flex items-center"><span class="material-symbols-outlined text-[14px] mr-1">schedule</span> 12 MIN READ</span>
+</div>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="bg-white rounded-xl overflow-hidden border border-[rgba(91,44,107,0.12)] blog-card-hover flex flex-col">
+<div class="h-48 w-full bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="An artistic composition of high-end lifestyle objects, including a designer watch and a minimalist perfume bottle, arranged on a textured light grey stone. The lighting is soft-focus and editorial, highlighting the metallic reflections and the premium quality of the materials in a bright, airy setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGkkJywRdCzSYR4aJdIQO3e8yR1XOxAVLRNJf4WyD0jOfBvFg6kex-GrvZiMHHhngOFW10kPh2bQLsaKuDsdIve51wbljdTpVvcO-Q6-sXHxD5AZdTu1czluVTcjYkDWFKcv5C6Xgg5xULwR7L82lJfQ6i2Rxfid3LHHV7o_xAcfmlxkdsfSJKHAM38UyCuIXC-pEb608axpOChfy_Zb0gGAyK_M5Vo3c1WqKf2qhGme_I9UdjlWqDpQgVxXV7df3YKDUI2L9bBRU"/>
+</div>
+<div class="p-lg flex flex-col flex-grow">
+<div class="flex items-center space-x-xs mb-sm">
+<span class="px-xs py-unit rounded-full bg-[#F3EEF6] text-[#5B2C6B] font-label-caps text-[10px] uppercase tracking-widest">Brand</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-sm leading-tight">Visual Identity for the Invisible Tech Era</h3>
+<p class="font-body-md text-slate-600 mb-lg line-clamp-3">How to design for interfaces that don't exist: The rise of ambient, voice-first, and gesture-based brand interactions.</p>
+<div class="mt-auto flex items-center justify-between text-slate-400 font-label-caps text-[10px] tracking-wider">
+<span>AUG 22, 2024</span>
+<span class="flex items-center"><span class="material-symbols-outlined text-[14px] mr-1">schedule</span> 7 MIN READ</span>
+</div>
+</div>
+</article>
+</div>
+<!-- Pagination/Load More -->
+<div class="flex justify-center mt-xl">
+<button class="flex items-center space-x-xs px-xl py-md rounded-lg border border-[rgba(91,44,107,0.12)] bg-white text-[#5B2C6B] font-['Space_Grotesk'] font-medium hover:bg-[#F3EEF6] transition-colors group">
+<span>Load More Articles</span>
+<span class="material-symbols-outlined group-hover:translate-y-1 transition-transform">expand_more</span>
+</button>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="max-w-7xl mx-auto px-8 mb-xl">
+<div class="bg-primary p-xl rounded-xl text-center text-on-primary">
+<h2 class="font-h2 text-h2 mb-md">Stay ahead of the system.</h2>
+<p class="font-body-lg text-primary-fixed max-w-xl mx-auto mb-lg">Subscribe to our monthly briefing on AI-driven design, automation breakthroughs, and luxury brand strategy.</p>
+<form class="max-w-md mx-auto flex gap-xs">
+<input class="flex-grow bg-white text-on-surface px-md py-sm rounded-lg border-none focus:ring-2 focus:ring-[#C8FF57] placeholder:text-slate-400" placeholder="email@address.com" type="email"/>
+<button class="bg-[#C8FF57] text-black px-lg py-sm rounded-lg font-['Space_Grotesk'] font-semibold hover:opacity-90 transition-opacity" type="submit">Join</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 border-t border-[rgba(91,44,107,0.08)] bg-white dark:bg-slate-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto font-['Space_Grotesk'] text-sm leading-relaxed">
+<div class="space-y-md">
+<div class="text-lg font-bold tracking-widest text-[#5B2C6B]">PROSONΛ</div>
+<p class="text-slate-500 dark:text-slate-400">© 2024 PROSONΛ. Built by AI. Run by us.</p>
+</div>
+<div class="flex flex-col space-y-sm">
+<h4 class="font-bold text-on-surface">Solutions</h4>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#5B2C6B] hover:translate-x-1 transition-transform duration-200 cursor-pointer" href="#">F&amp;B</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#5B2C6B] hover:translate-x-1 transition-transform duration-200 cursor-pointer" href="#">Automation</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#5B2C6B] hover:translate-x-1 transition-transform duration-200 cursor-pointer" href="#">Brand Systems</a>
+</div>
+<div class="flex flex-col space-y-sm">
+<h4 class="font-bold text-on-surface">Resources</h4>
+<a class="font-bold text-[#5B2C6B] hover:translate-x-1 transition-transform duration-200 cursor-pointer" href="#">Blog</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#5B2C6B] hover:translate-x-1 transition-transform duration-200 cursor-pointer" href="#">Company</a>
+</div>
+<div class="flex flex-col space-y-sm">
+<h4 class="font-bold text-on-surface">Legal</h4>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#5B2C6B] hover:translate-x-1 transition-transform duration-200 cursor-pointer" href="#">Legal</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#5B2C6B] hover:translate-x-1 transition-transform duration-200 cursor-pointer" href="#">Privacy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#5B2C6B] hover:translate-x-1 transition-transform duration-200 cursor-pointer" href="#">Terms</a>
+</div>
+</div>
+</footer>
+</body></html>

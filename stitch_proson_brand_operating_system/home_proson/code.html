@@ -1,0 +1,390 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>PROSONΛ | Build a Brand That Runs Itself</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f0eded",
+                        "primary-fixed": "#fad7ff",
+                        "on-primary-fixed-variant": "#633373",
+                        "on-secondary-fixed": "#141f00",
+                        "tertiary-fixed": "#e5e1e9",
+                        "surface-container-highest": "#e5e2e1",
+                        "inverse-primary": "#ecb2fb",
+                        "tertiary-fixed-dim": "#c9c5cd",
+                        "on-primary": "#ffffff",
+                        "outline": "#7f747f",
+                        "inverse-surface": "#313030",
+                        "on-secondary": "#ffffff",
+                        "surface": "#fcf9f8",
+                        "background": "#fcf9f8",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-surface-variant": "#4d444e",
+                        "on-secondary-fixed-variant": "#374e00",
+                        "secondary": "#4a6700",
+                        "secondary-container": "#bbf14b",
+                        "surface-container-low": "#f6f3f2",
+                        "on-tertiary-container": "#aeaab2",
+                        "surface-dim": "#dcd9d9",
+                        "secondary-fixed-dim": "#a3d731",
+                        "on-secondary-container": "#4d6c00",
+                        "secondary-fixed": "#bef44d",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#ecb2fb",
+                        "on-tertiary-fixed-variant": "#48464c",
+                        "on-surface": "#1c1b1b",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#431453",
+                        "tertiary-container": "#413f45",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#320144",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fcf9f8",
+                        "on-tertiary-fixed": "#1c1b20",
+                        "outline-variant": "#d0c3cf",
+                        "primary-container": "#5b2c6b",
+                        "tertiary": "#2b292f",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#eae7e7",
+                        "on-background": "#1c1b1b",
+                        "surface-tint": "#7c4b8c",
+                        "surface-variant": "#e5e2e1",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#d097df"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "gutter": "24px",
+                        "unit": "4px",
+                        "sm": "16px",
+                        "xs": "8px",
+                        "lg": "32px",
+                        "xl": "64px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "h2": ["Space Grotesk"],
+                        "body-md": ["Inter"],
+                        "h1": ["Space Grotesk"],
+                        "h3": ["Space Grotesk"],
+                        "label-caps": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "h2": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "label-caps": ["11px", {"lineHeight": "1", "letterSpacing": "2px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .marquee-container {
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: 4rem;
+        }
+        .marquee-content {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-around;
+            min-width: 100%;
+            gap: 4rem;
+        }
+        @keyframes scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+        .animate-scroll {
+            animation: scroll 30s linear infinite;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full h-16 bg-white border-b border-[rgba(91,44,107,0.08)] z-50 flex items-center">
+<div class="flex justify-between items-center px-8 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="text-xl font-bold tracking-widest text-[#5B2C6B] flex items-center">
+                    PROSON<span class="text-[#5B2C6B]">Λ</span>
+</span>
+</div>
+<nav class="hidden md:flex gap-8 font-['Space_Grotesk'] font-medium text-sm tracking-tight items-center">
+<a class="text-[#5B2C6B] border-b-2 border-[#5B2C6B] pb-1" href="#">Home</a>
+<a class="text-slate-600 hover:text-[#5B2C6B] transition-opacity duration-200" href="#">F&amp;B</a>
+<a class="text-slate-600 hover:text-[#5B2C6B] transition-opacity duration-200" href="#">Automation</a>
+<a class="text-slate-600 hover:text-[#5B2C6B] transition-opacity duration-200" href="#">Brand Systems</a>
+<a class="text-slate-600 hover:text-[#5B2C6B] transition-opacity duration-200" href="#">Blog</a>
+<a class="text-slate-600 hover:text-[#5B2C6B] transition-opacity duration-200" href="#">Contact</a>
+</nav>
+<button class="bg-[#5B2C6B] text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:opacity-90 transition-transform active:scale-95">
+                Get Started
+            </button>
+</div>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="min-h-screen bg-[#FAF9F7] flex flex-col justify-center px-8 py-20 relative overflow-hidden">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div class="inline-block">
+<span class="font-label-caps text-label-caps text-[#5B2C6B] bg-[rgba(91,44,107,0.05)] px-3 py-1 rounded-full uppercase">AI-POWERED BRAND SYSTEMS</span>
+</div>
+<h1 class="font-h1 text-[68px] leading-[1.05] text-primary tracking-tight"><div>Build a Brand</div><div>Worth Remembering.</div></h1>
+<p class="font-h3 text-h3 text-slate-600 max-w-lg"><br></p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-[#5B2C6B] text-white px-8 py-4 rounded-lg font-medium hover:translate-y-[-2px] transition-transform shadow-lg shadow-[#5B2C6B]/10">
+                            Start Your System →
+                        </button>
+<button class="border border-outline px-8 py-4 rounded-lg font-medium text-primary hover:bg-[rgba(91,44,107,0.04)] transition-colors">
+                            See Our Work
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="bento-grid">
+<div class="col-span-1 row-span-2 rounded-2xl overflow-hidden bg-white p-2 border border-[rgba(91,44,107,0.12)] shadow-sm transform -rotate-2 hover:rotate-0 transition-transform duration-500">
+<img class="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="A sophisticated high-angle photograph of a premium restaurant branding set on a white marble surface. The layout features minimalist menus with elegant typography, embossed business cards, and a sleek coffee cup with a subtle purple logo. Soft, natural daylight from a side window creates delicate shadows, emphasizing a clean, editorial aesthetic in a light-mode color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZMOsmZM3il2kWaxXlw2Ffpghmm39fkM-W8ijgsABwK23TJN_v4YfHd-uytqyXxq71cPxpW4reegm6nodrcB-X_lPSLGBd2yP5wwdatLwCgYOUrzHBPPTjCvmJv3OFvgJ8b5S0B3URQLyPNCKdC-kRuckUupnTTgwN7tbDiuLmZvvUlRevx9BNp7_uZHLby2NaQcjkvNo0vUMYrI5JF7wqtzXPe9pLucOt5RhR36oYyNght2_OkYhvr1E-LJe5MzkszVx4h6RhCPs">
+<div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-3 py-1.5 rounded-lg border border-[#5B2C6B]/10 text-[10px] font-bold tracking-widest uppercase">Brand Identity</div>
+</div>
+<div class="col-span-1 rounded-2xl overflow-hidden bg-white p-2 border border-[rgba(91,44,107,0.12)] shadow-sm translate-y-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+<img class="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="A close-up shot of a modern, high-tech analytics dashboard displayed on a sleek tablet screen. The interface shows vibrant data visualizations, growth charts, and AI-driven insights in shades of deep purple and bright lime. The device is resting on a minimalist desk next to a modern architectural model, representing technical precision and intelligent design in an airy, bright office setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6JFVLIbEVEg8u9WMlMORrRT5JZ994HlNrIsE0_gGMXIoezhpZvPWGl5JZiyVZH962AJd0xZRghqzre9eMUtR4ZGh6OtE_4JMLhY4Kpdak7kwZw_rN_b96PHWrmDkexwcFnLJQfn7ho0T_j0ydKEi8Gz0W02EOQHclYDmhIJGOBR-M0dD-BzW7I--D5udkUGQ5AVXU1SYQayuP7cPMoZivYyNT7I3b0laRYnILeimpTB17odlPkqmdws9TdQpNaWfDQm6d5BKc-XU">
+<div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-3 py-1.5 rounded-lg border border-[#5B2C6B]/10 text-[10px] font-bold tracking-widest uppercase">Analytics</div>
+</div>
+<div class="col-span-1 rounded-2xl overflow-hidden bg-white p-2 border border-[rgba(91,44,107,0.12)] shadow-sm -translate-y-4 transform -rotate-1 hover:rotate-0 transition-transform duration-500">
+<img class="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="An artistic, minimalist photograph of a chef's hands carefully arranging a beautifully designed menu card next to a perfectly plated contemporary dish. The lighting is soft and cinematic, highlighting the clean lines of the typography and the vibrant colors of the fresh ingredients. The overall composition is spacious and elegant, reflecting the 'Airy Premium' brand pillar of high-end digital publications." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAio1yTRfo4rvaUlxu049Wdvz9fp7UMbyUSFiWZGCHZdrYuXagcyhb-JeYYXVlp5oQ_K8ZZzmnfEucc-B3y2KdA3JHHyB9aWNEag1qUaFup5uGxM4E7uGuR0YDFU6HSZvetRUVxTm6QBwLTSBzGNtGm6xVaMhCc8Ycy3lePCPSTBBAf8zHZnIEfrMVkxFlQhusDTRU4SbcoOOO80uXRn7xZn_XPpVkRKApxsj2Om9PEghGh-QE4uQS96yKOQd23Y9p7B7-zlyQgcDU">
+<div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-3 py-1.5 rounded-lg border border-[#5B2C6B]/10 text-[10px] font-bold tracking-widest uppercase">Restaurant Menu</div>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
+<span class="text-[10px] tracking-widest uppercase">Scroll</span>
+<span class="material-symbols-outlined animate-bounce">expand_more</span>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-xl bg-white px-8">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="font-h2 text-[44px] text-primary">Three systems. One outcome.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- F&B Card -->
+<div class="p-lg rounded-2xl border border-[rgba(91,44,107,0.12)] bg-white hover:border-[#5B2C6B]/30 transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-[rgba(91,44,107,0.05)] flex items-center justify-center mb-6 text-[#5B2C6B] group-hover:bg-[#5B2C6B] group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<h3 class="font-h3 text-h3 mb-4 text-primary">F&amp;B</h3>
+<p class="text-slate-500 mb-8 leading-relaxed">Specialized systems for Restaurants &amp; Café Brands. From menu engineering to digital presence.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-xs">check</span> Digital Menus</li>
+<li class="flex items-center gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-xs">check</span> Visual Identity</li>
+<li class="flex items-center gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-xs">check</span> Ordering Flow</li>
+</ul>
+</div>
+<!-- Automation Card -->
+<div class="p-lg rounded-2xl border border-[rgba(91,44,107,0.12)] bg-white hover:border-[#5B2C6B]/30 transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-[rgba(91,44,107,0.05)] flex items-center justify-center mb-6 text-[#5B2C6B] group-hover:bg-[#5B2C6B] group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">smart_toy</span>
+</div>
+<h3 class="font-h3 text-h3 mb-4 text-primary uppercase">Automation</h3>
+<p class="text-slate-500 mb-8 leading-relaxed">Content Autopilot for modern brands. Automated scheduling, creation, and posting.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-xs">check</span> AI Content Creation</li>
+<li class="flex items-center gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-xs">check</span> Multi-channel Sync</li>
+<li class="flex items-center gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-xs">check</span> Dynamic Analytics</li>
+</ul>
+</div>
+<!-- Brand Systems Card -->
+<div class="p-lg rounded-2xl border border-[rgba(91,44,107,0.12)] bg-white hover:border-[#5B2C6B]/30 transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-[rgba(91,44,107,0.05)] flex items-center justify-center mb-6 text-[#5B2C6B] group-hover:bg-[#5B2C6B] group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">architecture</span>
+</div>
+<h3 class="font-h3 text-h3 mb-4 text-primary uppercase">Brand</h3>
+<p class="text-slate-500 mb-8 leading-relaxed">Full Brand Kits designed for scale. Every asset your business needs, documented and ready.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-xs">check</span> Scalable Logos</li>
+<li class="flex items-center gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-xs">check</span> Design Guidelines</li>
+<li class="flex items-center gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-xs">check</span> Asset Libraries</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Results Section -->
+<section class="py-xl bg-[#F3EEF6] px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<div class="space-y-2">
+<div class="font-h1 text-[64px] text-[#5B2C6B]">3×</div>
+<div class="font-label-caps text-label-caps text-[#5B2C6B]/60 uppercase">Content output</div>
+</div>
+<div class="space-y-2">
+<div class="font-h1 text-[64px] text-[#5B2C6B]">Top 3</div>
+<div class="font-label-caps text-label-caps text-[#5B2C6B]/60 uppercase">AI search ranking</div>
+</div>
+<div class="space-y-2">
+<div class="font-h1 text-[64px] text-[#5B2C6B]">100%</div>
+<div class="font-label-caps text-label-caps text-[#5B2C6B]/60 uppercase">Brand consistency</div>
+</div>
+</div>
+</section>
+<!-- Client Marquee -->
+<section class="py-sm border-y border-[rgba(91,44,107,0.08)] bg-white overflow-hidden">
+<div class="marquee-container">
+<div class="marquee-content animate-scroll">
+<span class="text-2xl font-bold tracking-widest text-[#C4BAC8]">KOVA</span>
+<span class="text-2xl font-bold tracking-widest text-[#C4BAC8]">NORDE</span>
+<span class="text-2xl font-bold tracking-widest text-[#C4BAC8]">AXIOM</span>
+<span class="text-2xl font-bold tracking-widest text-[#C4BAC8]">VEER</span>
+<span class="text-2xl font-bold tracking-widest text-[#C4BAC8]">MODERN</span>
+<span class="text-2xl font-bold tracking-widest text-[#C4BAC8]">ELARA</span>
+</div>
+<div aria-hidden="true" class="marquee-content animate-scroll">
+<span class="text-2xl font-bold tracking-widest text-[#C4BAC8]">KOVA</span>
+<span class="text-2xl font-bold tracking-widest text-[#C4BAC8]">NORDE</span>
+<span class="text-2xl font-bold tracking-widest text-[#C4BAC8]">AXIOM</span>
+<span class="text-2xl font-bold tracking-widest text-[#C4BAC8]">VEER</span>
+<span class="text-2xl font-bold tracking-widest text-[#C4BAC8]">MODERN</span>
+<span class="text-2xl font-bold tracking-widest text-[#C4BAC8]">ELARA</span>
+</div>
+</div>
+</section>
+<!-- Blog Preview -->
+<section class="py-xl bg-[#FAF9F7] px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-12">
+<h2 class="font-h2 text-h2 text-primary">Latest Perspectives</h2>
+<a class="text-[#5B2C6B] font-medium flex items-center gap-1 group" href="#">
+                        Explore Blog <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Blog Card 1 -->
+<div class="bg-white rounded-2xl overflow-hidden border border-[rgba(91,44,107,0.12)] group cursor-pointer">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A cinematic, shallow depth-of-field shot of a dimly lit, high-end restaurant interior during golden hour. The focus is on a crisp linen tablecloth with silver cutlery and a minimalist menu, reflecting professional culinary elegance. The warm sunlight creates a serene, welcoming atmosphere, aligning with a premium brand aesthetic that focuses on both human craftsmanship and technical perfection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdQm_U2ktoez25vf2lQuShNUE5w_ZfIrldg8jOF2yjZd933cFWpy7tgWUDsP3PoplcLHSwf1LFL6K6qDYeKeOW7SSEqOQYJkAtsQpuALkiCdcjOQHZ2dxWq7pUd-sqyCKSnOvVqV9TkELj58eA6KZBAXj5K8Q2bxG6x-zdKefkdvjUxCkd-55S1o0wCmstWrX4OTxOd2MwNiQ6IPJdLSmiTp40g855hxuPNfUw9yS8l-UX4WMQ3Ns77-dZAeqCsN8k90Y-Oq-egOM">
+</div>
+<div class="p-sm">
+<span class="font-label-caps text-[10px] text-[#5B2C6B] bg-[rgba(91,44,107,0.05)] px-2 py-0.5 rounded">STRATEGY</span>
+<h3 class="font-h3 text-xl mt-3 text-primary leading-tight">Why Every Restaurant Needs a Brand System</h3>
+</div>
+</div>
+<!-- Blog Card 2 -->
+<div class="bg-white rounded-2xl overflow-hidden border border-[rgba(91,44,107,0.12)] group cursor-pointer">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A futuristic and clean digital illustration of a glowing holographic brain interconnected with data streams and search interface elements. The visual style is highly technical and modern, utilizing a color palette of soft whites and vibrant purple accents. The composition is airy and sophisticated, conveying the concept of AI-driven search and brand visibility in a high-tech, minimalist environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3bCau-AQ9ZayQ2EPszjNPQOybGm2iJCmNBmrtizpzPU12vBDgKtH9sSReknDGjCX8pi-2jtQH3ETUiDT5c0IccRZCLGSaMqgKYtXM9sriVhVN5t1k5n9B--EYZ2XP4JO2fbU4mopnu1QwDmyOyOCdZTEFm1X02yXWYlmyzPmEBCahkfglhIkyYxtebkcJdi7MJo8Cj9390ScVK2Hh0lqI34ekta825t5KRIoFQylGDsoiyo7OGne4a-qHlaFwRyUCvR9caaHiU0o">
+</div>
+<div class="p-sm">
+<span class="font-label-caps text-[10px] text-[#5B2C6B] bg-[rgba(91,44,107,0.05)] px-2 py-0.5 rounded">AI TRENDS</span>
+<h3 class="font-h3 text-xl mt-3 text-primary leading-tight">How AI Search Is Changing Brand Visibility</h3>
+</div>
+</div>
+<!-- Blog Card 3 -->
+<div class="bg-white rounded-2xl overflow-hidden border border-[rgba(91,44,107,0.12)] group cursor-pointer">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A clean, minimalist workspace featuring a high-resolution laptop screen displaying an automated marketing workflow with various content modules. The room is brightly lit with large windows showing a blurry cityscape, creating a high-key, modern light-mode aesthetic. A single green plant adds a touch of natural vitality to the technical, structured productivity setup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs_-RVT_cFdqS4XUIjUGyHFKHuoi-x6yAu5wwh1IyjvXYMSVey_kOiKroF-xANOP4YmE32275uJTi1LSyHJA8-LGZj4wMBDZhRunFgo8-vXNYvv1plKTR0-D9PO3qtI7LRDdXre4foR9I2qPJst1K5vbZcXveSV6DCo0q7UCzzO2DBjV_6WuS3nmQvw6VzgbsIhaduzY6jOz6rm5sCO0QXMk0avy0xfkm-3RvlOEAPlmQYf5cSqk_gPDx_79NgC0hnbdY90CD8_zA">
+</div>
+<div class="p-sm">
+<span class="font-label-caps text-[10px] text-[#5B2C6B] bg-[rgba(91,44,107,0.05)] px-2 py-0.5 rounded">AUTOMATION</span>
+<h3 class="font-h3 text-xl mt-3 text-primary leading-tight">Content Autopilot: The New Marketing Standard</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl bg-[#F3EEF6] px-8 text-center relative overflow-hidden">
+<div class="max-w-3xl mx-auto relative z-10">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#5B2C6B]/20 bg-white text-[#5B2C6B] mb-8 font-label-caps text-[10px] tracking-[2px] shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                    AI-FIRST BRAND STUDIO
+                </div>
+<h2 class="font-h2 text-[48px] text-primary mb-8 leading-tight">Your brand shouldn't need you to run it.</h2>
+<button class="bg-[#5B2C6B] text-white px-10 py-5 rounded-lg font-bold text-lg hover:translate-y-[-4px] transition-transform shadow-xl shadow-[#5B2C6B]/20">
+                    Build My Brand System →
+                </button>
+</div>
+<!-- Abstract shapes for depth -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-[#5B2C6B]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-[#5B2C6B]/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 border-t border-[rgba(91,44,107,0.08)] bg-white font-['Space_Grotesk']">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="text-lg font-bold tracking-widest text-[#5B2C6B]">PROSONΛ</div>
+<p class="text-slate-500 text-sm leading-relaxed max-w-xs">Developing the next generation of brand ecosystems using surgical precision and automated intelligence.</p>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center hover:border-[#5B2C6B] transition-colors" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+<a class="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center hover:border-[#5B2C6B] transition-colors" href="#"><span class="material-symbols-outlined text-sm">language</span></a>
+<a class="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center hover:border-[#5B2C6B] transition-colors" href="#"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6">Systems</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-slate-500 hover:text-[#5B2C6B] hover:translate-x-1 transition-all inline-block" href="#">F&amp;B</a></li>
+<li class=""><a class="text-slate-500 hover:text-[#5B2C6B] hover:translate-x-1 transition-all inline-block" href="#">Automation</a></li>
+<li class=""><a class="text-slate-500 hover:text-[#5B2C6B] hover:translate-x-1 transition-all inline-block" href="#">Brand Systems</a></li>
+<li class=""><a class="text-slate-500 hover:text-[#5B2C6B] hover:translate-x-1 transition-all inline-block" href="#">Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6">Company</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-slate-500 hover:text-[#5B2C6B] hover:translate-x-1 transition-all inline-block" href="#">Company</a></li>
+<li class=""><a class="text-slate-500 hover:text-[#5B2C6B] hover:translate-x-1 transition-all inline-block" href="#">Legal</a></li>
+<li class=""><a class="text-slate-500 hover:text-[#5B2C6B] hover:translate-x-1 transition-all inline-block" href="#">Privacy</a></li>
+<li class=""><a class="text-slate-500 hover:text-[#5B2C6B] hover:translate-x-1 transition-all inline-block" href="#">Terms</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6">Subscribe</h4>
+<p class="text-slate-500 text-sm mb-4">Stay ahead with AI brand insights.</p>
+<form class="flex gap-2">
+<input class="bg-white border border-slate-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-[#5B2C6B] w-full" placeholder="Email" type="email">
+<button class="bg-[#5B2C6B] text-white p-2 rounded-lg"><span class="material-symbols-outlined text-sm">send</span></button>
+</form>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-400 text-xs">
+<div class="">© 2024 PROSONΛ. Built by AI. Run by us.</div>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-primary transition-colors" href="#">X / Twitter</a>
+</div>
+</div>
+</footer>
+
+
+</body></html>

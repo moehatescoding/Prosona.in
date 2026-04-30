@@ -1,0 +1,305 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f0eded",
+                        "primary-fixed": "#fad7ff",
+                        "on-primary-fixed-variant": "#633373",
+                        "on-secondary-fixed": "#141f00",
+                        "tertiary-fixed": "#e5e1e9",
+                        "surface-container-highest": "#e5e2e1",
+                        "inverse-primary": "#ecb2fb",
+                        "tertiary-fixed-dim": "#c9c5cd",
+                        "on-primary": "#ffffff",
+                        "outline": "#7f747f",
+                        "inverse-surface": "#313030",
+                        "on-secondary": "#ffffff",
+                        "surface": "#fcf9f8",
+                        "background": "#fcf9f8",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-surface-variant": "#4d444e",
+                        "on-secondary-fixed-variant": "#374e00",
+                        "secondary": "#4a6700",
+                        "secondary-container": "#bbf14b",
+                        "surface-container-low": "#f6f3f2",
+                        "on-tertiary-container": "#aeaab2",
+                        "surface-dim": "#dcd9d9",
+                        "secondary-fixed-dim": "#a3d731",
+                        "on-secondary-container": "#4d6c00",
+                        "secondary-fixed": "#bef44d",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#ecb2fb",
+                        "on-tertiary-fixed-variant": "#48464c",
+                        "on-surface": "#1c1b1b",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#431453",
+                        "tertiary-container": "#413f45",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#320144",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fcf9f8",
+                        "on-tertiary-fixed": "#1c1b20",
+                        "outline-variant": "#d0c3cf",
+                        "primary-container": "#5b2c6b",
+                        "tertiary": "#2b292f",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#eae7e7",
+                        "on-background": "#1c1b1b",
+                        "surface-tint": "#7c4b8c",
+                        "surface-variant": "#e5e2e1",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#d097df"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "gutter": "24px",
+                        "unit": "4px",
+                        "sm": "16px",
+                        "xs": "8px",
+                        "lg": "32px",
+                        "xl": "64px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "h2": ["Space Grotesk"],
+                        "body-md": ["Inter"],
+                        "h1": ["Space Grotesk"],
+                        "h3": ["Space Grotesk"],
+                        "label-caps": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "h2": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "label-caps": ["11px", {"lineHeight": "1", "letterSpacing": "2px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { background-color: #fcf9f8; }
+        .tinted-border { border: 1px solid rgba(91, 44, 107, 0.12); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full h-16 bg-white dark:bg-slate-950 border-b border-[rgba(91,44,107,0.08)] z-50">
+<div class="flex justify-between items-center px-8 h-full w-full max-w-7xl mx-auto">
+<span class="text-xl font-bold tracking-widest text-[#5B2C6B] dark:text-white">PROSONΛ</span>
+<div class="hidden md:flex items-center space-x-lg font-['Space_Grotesk'] font-medium text-sm tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#5B2C6B] transition-opacity duration-200" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#5B2C6B] transition-opacity duration-200" href="#">F&amp;B</a>
+<a class="text-[#5B2C6B] dark:text-white border-b-2 border-[#5B2C6B] pb-1" href="#">Automation</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#5B2C6B] transition-opacity duration-200" href="#">Brand Systems</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#5B2C6B] transition-opacity duration-200" href="#">Blog</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#5B2C6B] transition-opacity duration-200" href="#">Contact</a>
+</div>
+<button class="bg-[#431453] text-white px-6 py-2 rounded-lg font-medium hover:opacity-80 transition-opacity duration-200 active:scale-95 transition-transform">Get Started</button>
+</div>
+</nav>
+<main class="pt-16">
+<!-- HERO SECTION -->
+<section class="bg-[#FAF9F7] py-xl lg:py-48 px-gutter">
+<div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+<span class="inline-block bg-[#F3EEF6] px-4 py-1.5 rounded-full text-label-caps font-label-caps text-primary uppercase mb-lg">CONTENT AUTOMATION</span>
+<h1 class="font-h1 text-[60px] leading-[1] text-primary mb-lg max-w-3xl">Post Consistently. Without the Effort.</h1>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mb-xl">We build AI-powered content systems that learn your brand voice and generate high-performing posts, so you can focus on building your business while we handle the distribution.</p>
+<div class="flex gap-md">
+<button class="bg-[#C8FF57] text-on-surface font-semibold px-8 py-4 rounded-lg shadow-sm hover:opacity-90 transition-all flex items-center gap-2">
+                        See How It Works <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="mt-xl w-full max-w-5xl rounded-xl overflow-hidden tinted-border shadow-sm">
+<img class="w-full h-auto grayscale-[20%]" data-alt="A clean, minimalist high-end digital dashboard interface displayed on a premium monitor. The screen shows content automation workflows with sleek geometric cards, progress bars, and subtle purple accents. The surrounding environment is a bright, airy designer studio with natural sunlight and soft shadows, reflecting a professional and sophisticated AI-first productivity workspace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCtsrGrxwS_oXGiMrDeQXWI2VS-63Q1Z_Za5mZbECo-y6S8H9ZIta5gzcGByrMTNklF1oCNGhu9EKTqwuu9rtcAAYGYfXFmdK6HXUv5CZiAQDwOMLgi9gDr-pS8Lid87_VLN1KbtS-KBLxriDwqiXuvPdL249xF8jH5jJj4H93tgk7xl6occZ_jaz6yS6zVjgxrPz35Ia3j_FqH5bILs7bbfcEWQGhiDF69ffLUz0eDUWesOInpTc4Qif01As_Jko6HeArftfUBqw">
+</div>
+</div>
+</section>
+<!-- HOW IT WORKS -->
+<section class="bg-white py-xl lg:py-32 px-gutter">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-xl">
+<span class="font-label-caps text-label-caps text-primary tracking-[3px] mb-sm block">THE PROCESS</span>
+<h2 class="font-h2 text-[40px] text-primary">Simple. Consistent. On brand.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<!-- Step 01 -->
+<div class="bg-white p-lg rounded-xl tinted-border hover:bg-[#F3EEF6] transition-colors duration-300">
+<span class="text-primary font-h1 opacity-20 block mb-sm">01</span>
+<h3 class="font-h3 text-primary mb-sm">We learn.</h3>
+<p class="font-body-md text-on-surface-variant">Our system ingests your previous successful posts, brand guidelines, and tone of voice to create a unique AI model just for you.</p>
+</div>
+<!-- Step 02 -->
+<div class="bg-white p-lg rounded-xl tinted-border hover:bg-[#F3EEF6] transition-colors duration-300">
+<span class="text-primary font-h1 opacity-20 block mb-sm">02</span>
+<h3 class="font-h3 text-primary mb-sm">AI generates.</h3>
+<p class="font-body-md text-on-surface-variant">Using your custom model, we produce a full month of captions, graphics, and video scripts in a single batch processing cycle.</p>
+</div>
+<!-- Step 03 -->
+<div class="bg-white p-lg rounded-xl tinted-border hover:bg-[#F3EEF6] transition-colors duration-300">
+<span class="text-primary font-h1 opacity-20 block mb-sm">03</span>
+<h3 class="font-h3 text-primary mb-sm">You approve.</h3>
+<p class="font-body-md text-on-surface-variant">Review the entire calendar through our sleek approval portal. One click to schedule, and the system handles the rest.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- WHAT'S INCLUDED -->
+<section class="bg-[#F3EEF6] py-xl lg:py-32 px-gutter">
+<div class="max-w-5xl mx-auto bg-white p-xl rounded-xl tinted-border grid grid-cols-1 md:grid-cols-2 gap-xl">
+<div>
+<span class="font-label-caps text-label-caps text-primary mb-sm block">CAPABILITIES</span>
+<h2 class="font-h2 text-primary mb-md">Everything you need to scale.</h2>
+<p class="font-body-md text-on-surface-variant mb-lg">A full-service automation suite designed for founders and creators who want to stay relevant without spending hours on social media.</p>
+<img class="rounded-lg w-full aspect-video object-cover tinted-border" data-alt="A macro photograph of a sleek, brushed aluminum device interface with minimalist typography and soft purple indicator lights. The style is ultra-modern and clinical, emphasizing technical precision and high-end digital craftsmanship. The lighting is cold and professional, with a shallow depth of field that highlights the clean lines and premium materials of the automation technology." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaE3BQJxhcQd8voIH6vhvYqrO9ukd-0uIINMNIXSAf_dQcUrdt7Aj3thPOCA8KRzn7jg7m3b7eTBY1VtRiFvcoix6kl0cEiP4tNcnfC1bCg_21favpHehRXVeSC7iYhj-K89KDbmbky5RAtJ60FbkQbi_3PBvLczbM8FoI7MletdCSC3lbNaGqXXXYGH1ftcj-cElzMdnaA4LdBc76bKXDT5klXMZH9OzLkhhgBK0CCb8gpI9S_5FiIzjjjNtDiR4OWxJr956FT_A">
+</div>
+<div class="flex flex-col justify-center">
+<ul class="space-y-md">
+<li class="flex items-center gap-md border-b border-[rgba(91,44,107,0.08)] pb-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-body-lg text-primary">Monthly content calendar</span>
+</li>
+<li class="flex items-center gap-md border-b border-[rgba(91,44,107,0.08)] pb-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-body-lg text-primary">AI-curated captions &amp; hashtags</span>
+</li>
+<li class="flex items-center gap-md border-b border-[rgba(91,44,107,0.08)] pb-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-body-lg text-primary">Video scripts &amp; storyboards</span>
+</li>
+<li class="flex items-center gap-md border-b border-[rgba(91,44,107,0.08)] pb-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-body-lg text-primary">Custom visual templates</span>
+</li>
+<li class="flex items-center gap-md border-b border-[rgba(91,44,107,0.08)] pb-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-body-lg text-primary">Cross-platform scheduling</span>
+</li>
+<li class="flex items-center gap-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-body-lg text-primary">Weekly performance audits</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- PRICING -->
+<section class="bg-white py-xl lg:py-32 px-gutter">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-xl">
+<span class="font-label-caps text-label-caps text-primary tracking-[3px] mb-sm block">PLANS</span>
+<h2 class="font-h2 text-[40px] text-primary">Simple pricing for serious scale.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg max-w-4xl mx-auto">
+<!-- Starter Plan -->
+<div class="bg-white p-xl rounded-xl tinted-border flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-300">
+<div class="mb-lg">
+<h3 class="font-h3 text-primary mb-xs">Starter</h3>
+<p class="font-body-md text-on-surface-variant">Perfect for solo founders.</p>
+</div>
+<div class="mb-xl">
+<span class="text-[48px] font-h1 text-primary">₹9,999</span>
+<span class="text-on-surface-variant">/month</span>
+</div>
+<ul class="space-y-sm mb-xl flex-grow text-on-surface-variant">
+<li class="flex items-center gap-sm"><span class="material-symbols-outlined text-[18px]">done</span> 12 Posts per month</li>
+<li class="flex items-center gap-sm"><span class="material-symbols-outlined text-[18px]">done</span> Caption generation</li>
+<li class="flex items-center gap-sm"><span class="material-symbols-outlined text-[18px]">done</span> Basic visual assets</li>
+<li class="flex items-center gap-sm"><span class="material-symbols-outlined text-[18px]">done</span> Email support</li>
+</ul>
+<button class="w-full border-2 border-primary text-primary font-semibold py-3 rounded-lg hover:bg-primary hover:text-white transition-colors">Choose Starter</button>
+</div>
+<!-- Growth Plan -->
+<div class="relative bg-white p-xl rounded-xl border-2 border-primary flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-300">
+<div class="absolute top-0 right-8 -translate-y-1/2">
+<span class="bg-[#C8FF57] text-on-surface px-4 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">MOST POPULAR</span>
+</div>
+<div class="mb-lg">
+<h3 class="font-h3 text-primary mb-xs">Growth</h3>
+<p class="font-body-md text-on-surface-variant">For growing teams &amp; studios.</p>
+</div>
+<div class="mb-xl">
+<span class="text-[48px] font-h1 text-primary">₹14,999</span>
+<span class="text-on-surface-variant">/month</span>
+</div>
+<ul class="space-y-sm mb-xl flex-grow text-on-surface-variant">
+<li class="flex items-center gap-sm font-medium text-primary"><span class="material-symbols-outlined text-[18px]">done</span> Daily content posting</li>
+<li class="flex items-center gap-sm"><span class="material-symbols-outlined text-[18px]">done</span> Video script writing</li>
+<li class="flex items-center gap-sm"><span class="material-symbols-outlined text-[18px]">done</span> Advanced analytics</li>
+<li class="flex items-center gap-sm"><span class="material-symbols-outlined text-[18px]">done</span> Priority Slack support</li>
+<li class="flex items-center gap-sm"><span class="material-symbols-outlined text-[18px]">done</span> Brand voice refinement</li>
+</ul>
+<button class="w-full bg-[#431453] text-white font-semibold py-3 rounded-lg hover:opacity-90 transition-opacity">Choose Growth</button>
+</div>
+</div>
+</div>
+</section>
+<!-- FINAL CTA -->
+<section class="bg-primary text-white py-xl px-gutter overflow-hidden relative">
+<div class="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between gap-xl">
+<div class="max-w-2xl">
+<h2 class="font-h2 text-white mb-md">Ready to put your content on autopilot?</h2>
+<p class="font-body-lg text-primary-fixed opacity-90">Join 50+ businesses scaling their presence without the overhead of a full creative agency.</p>
+</div>
+<button class="bg-[#C8FF57] text-on-surface font-semibold px-12 py-5 rounded-lg whitespace-nowrap active:scale-95 transition-transform">Get Started Today</button>
+</div>
+<!-- Abstract background shape -->
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-[#5B2C6B] rounded-full opacity-20 blur-3xl"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 bg-white border-t border-[rgba(91,44,107,0.08)]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto font-['Space_Grotesk'] text-sm leading-relaxed">
+<div class="col-span-1 md:col-span-1">
+<span class="text-lg font-bold tracking-widest text-[#5B2C6B] mb-md block">PROSONΛ</span>
+<p class="text-slate-500 mb-md max-w-xs">© 2024 PROSONΛ. Built by AI. Run by us.</p>
+</div>
+<div>
+<h4 class="font-bold text-[#5B2C6B] mb-lg">Studio</h4>
+<ul class="space-y-sm text-slate-500">
+<li class="hover:translate-x-1 transition-transform duration-200 cursor-pointer hover:text-[#5B2C6B]">F&amp;B</li>
+<li class="hover:translate-x-1 transition-transform duration-200 cursor-pointer hover:text-[#5B2C6B]">Automation</li>
+<li class="hover:translate-x-1 transition-transform duration-200 cursor-pointer hover:text-[#5B2C6B]">Brand Systems</li>
+<li class="hover:translate-x-1 transition-transform duration-200 cursor-pointer hover:text-[#5B2C6B]">Blog</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-[#5B2C6B] mb-lg">Company</h4>
+<ul class="space-y-sm text-slate-500">
+<li class="hover:translate-x-1 transition-transform duration-200 cursor-pointer hover:text-[#5B2C6B]">About</li>
+<li class="hover:translate-x-1 transition-transform duration-200 cursor-pointer hover:text-[#5B2C6B]">Careers</li>
+<li class="hover:translate-x-1 transition-transform duration-200 cursor-pointer hover:text-[#5B2C6B]">Legal</li>
+<li class="hover:translate-x-1 transition-transform duration-200 cursor-pointer hover:text-[#5B2C6B]">Privacy</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-[#5B2C6B] mb-lg">Legal</h4>
+<ul class="space-y-sm text-slate-500">
+<li class="hover:translate-x-1 transition-transform duration-200 cursor-pointer hover:text-[#5B2C6B]">Terms</li>
+<li class="hover:translate-x-1 transition-transform duration-200 cursor-pointer hover:text-[#5B2C6B]">Cookie Policy</li>
+</ul>
+</div>
+</div>
+</footer>
+
+
+</body></html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PROSONΛ | F&amp;B Brand Systems</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#f0eded",
+                      "primary-fixed": "#fad7ff",
+                      "on-primary-fixed-variant": "#633373",
+                      "on-secondary-fixed": "#141f00",
+                      "tertiary-fixed": "#e5e1e9",
+                      "surface-container-highest": "#e5e2e1",
+                      "inverse-primary": "#ecb2fb",
+                      "tertiary-fixed-dim": "#c9c5cd",
+                      "on-primary": "#ffffff",
+                      "outline": "#7f747f",
+                      "inverse-surface": "#313030",
+                      "on-secondary": "#ffffff",
+                      "surface": "#fcf9f8",
+                      "background": "#fcf9f8",
+                      "inverse-on-surface": "#f3f0ef",
+                      "on-surface-variant": "#4d444e",
+                      "on-secondary-fixed-variant": "#374e00",
+                      "secondary": "#4a6700",
+                      "secondary-container": "#bbf14b",
+                      "surface-container-low": "#f6f3f2",
+                      "on-tertiary-container": "#aeaab2",
+                      "surface-dim": "#dcd9d9",
+                      "secondary-fixed-dim": "#a3d731",
+                      "on-secondary-container": "#4d6c00",
+                      "secondary-fixed": "#bef44d",
+                      "on-error-container": "#93000a",
+                      "primary-fixed-dim": "#ecb2fb",
+                      "on-tertiary-fixed-variant": "#48464c",
+                      "on-surface": "#1c1b1b",
+                      "on-tertiary": "#ffffff",
+                      "primary": "#431453",
+                      "tertiary-container": "#413f45",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed": "#320144",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-bright": "#fcf9f8",
+                      "on-tertiary-fixed": "#1c1b20",
+                      "outline-variant": "#d0c3cf",
+                      "primary-container": "#5b2c6b",
+                      "tertiary": "#2b292f",
+                      "error": "#ba1a1a",
+                      "surface-container-high": "#eae7e7",
+                      "on-background": "#1c1b1b",
+                      "surface-tint": "#7c4b8c",
+                      "surface-variant": "#e5e2e1",
+                      "on-error": "#ffffff",
+                      "on-primary-container": "#d097df"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "md": "24px",
+                      "gutter": "24px",
+                      "unit": "4px",
+                      "sm": "16px",
+                      "xs": "8px",
+                      "lg": "32px",
+                      "xl": "64px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Inter"],
+                      "h2": ["Space Grotesk"],
+                      "body-md": ["Inter"],
+                      "h1": ["Space Grotesk"],
+                      "h3": ["Space Grotesk"],
+                      "label-caps": ["Inter"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "h2": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "label-caps": ["11px", {"lineHeight": "1", "letterSpacing": "2px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-border {
+            border: 1px solid rgba(91, 44, 107, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar Shell -->
+<header class="fixed top-0 w-full h-16 bg-white z-50 border-b border-[rgba(91,44,107,0.08)]">
+<nav class="flex justify-between items-center px-8 w-full max-w-7xl mx-auto h-full">
+<div class="text-xl font-bold tracking-widest text-[#5B2C6B] font-['Space_Grotesk']">PROSONΛ</div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="font-['Space_Grotesk'] font-medium text-sm tracking-tight text-slate-600 hover:text-[#5B2C6B] hover:opacity-80 transition-all" href="#">Home</a>
+<a class="font-['Space_Grotesk'] font-medium text-sm tracking-tight text-[#5B2C6B] border-b-2 border-[#5B2C6B] pb-1" href="#">F&amp;B</a>
+<a class="font-['Space_Grotesk'] font-medium text-sm tracking-tight text-slate-600 hover:text-[#5B2C6B] hover:opacity-80 transition-all" href="#">Automation</a>
+<a class="font-['Space_Grotesk'] font-medium text-sm tracking-tight text-slate-600 hover:text-[#5B2C6B] hover:opacity-80 transition-all" href="#">Brand Systems</a>
+<a class="font-['Space_Grotesk'] font-medium text-sm tracking-tight text-slate-600 hover:text-[#5B2C6B] hover:opacity-80 transition-all" href="#">Blog</a>
+<a class="font-['Space_Grotesk'] font-medium text-sm tracking-tight text-slate-600 hover:text-[#5B2C6B] hover:opacity-80 transition-all" href="#">Contact</a>
+</div>
+<button class="bg-primary px-sm py-xs rounded text-white font-['Space_Grotesk'] font-medium text-sm hover:opacity-80 scale-95 active:scale-90 transition-all">
+                Get Started
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="pt-[120px] pb-xl px-8 bg-[#FAF9F7]">
+<div class="max-w-7xl mx-auto text-center md:text-left">
+<span class="font-label-caps text-label-caps text-primary-container bg-primary-fixed/30 px-sm py-xs rounded-full inline-block mb-md">
+                    F&amp;B BRAND SYSTEMS
+                </span>
+<h1 class="font-h1 text-[60px] leading-[1.05] text-primary mb-lg max-w-3xl">
+                    Your Restaurant, Running on Brand.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-lg">
+                    We build brand systems for restaurants, cafés, and cloud kitchens that drive loyalty and automate growth. From visual identity to search visibility, we ensure your brand works as hard as your kitchen.
+                </p>
+<button class="bg-[#C8FF57] text-on-background px-lg py-sm rounded-lg font-h3 text-body-md font-bold hover:translate-y-[-2px] transition-transform duration-200 shadow-sm">
+                    Build My F&amp;B Brand →
+                </button>
+</div>
+</section>
+<!-- Services Rows -->
+<!-- Row 1 -->
+<section class="py-xl px-8 bg-white">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div class="order-2 md:order-1">
+<img alt="Restaurant identity sheet" class="rounded-xl shadow-lg w-full aspect-[4/3] object-cover tonal-border" data-alt="A professional layout of a restaurant branding identity sheet spread across a minimalist white table. The scene includes high-quality menu samples, logo variations on premium stationery, and a refined color palette of deep purples and earthy tones. Natural, soft window light creates a high-end editorial feel, emphasizing the airy premium aesthetic of a modern hospitality brand system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQE7mDrcG13uJY4FUqJtcZGImLOST2_9-2RzDxZliVfbFkEdm83-iLEoefSJCJOQWw0rHL1E9FgD7A1CXsDsh5i3LLgvLD1KSXnUWhqviuhZre414KBNct1fhTcUT4E30GGFyBZm9VuRfVRiFVr1HIkK0wLcgyOJ8l4outVRoNhCVbCuADaBLwquHJbRHCZlgUMeXhJ16hiGJuhevqjueMPSKyKdB078pLFwv2EZsMEvtGFjsUmpMd_dn5CxujtbkbENmyX6Xk41Q"/>
+</div>
+<div class="order-1 md:order-2">
+<span class="font-label-caps text-label-caps text-secondary font-bold mb-xs block">01 F&amp;B Brand Identity</span>
+<h2 class="font-h2 text-h2 text-primary mb-md">Signature Identity Systems</h2>
+<ul class="space-y-sm mb-lg">
+<li class="flex items-center gap-xs font-body-md text-on-surface">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Custom Logo Design &amp; Variations
+                        </li>
+<li class="flex items-center gap-xs font-body-md text-on-surface">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Digital &amp; Physical Menu Architectures
+                        </li>
+<li class="flex items-center gap-xs font-body-md text-on-surface">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Packaging &amp; Collateral Design
+                        </li>
+</ul>
+<div class="p-md bg-surface-container-low rounded-lg inline-block tonal-border">
+<p class="font-label-caps text-slate-500 mb-unit">INVESTMENT</p>
+<p class="font-h3 text-primary">Starting at ₹15,000</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Row 2 -->
+<section class="py-xl px-8 bg-[#FAF9F7]">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-bold mb-xs block">02 Social Content Autopilot</span>
+<h2 class="font-h2 text-h2 text-primary mb-md">Visual Storytelling on Repeat</h2>
+<p class="font-body-md text-on-surface-variant mb-lg">
+                        Stop worrying about what to post. Our AI-enhanced content systems create a month of aesthetic food photography and engaging reels in a single session.
+                    </p>
+<div class="p-md bg-white rounded-lg inline-block tonal-border">
+<p class="font-label-caps text-slate-500 mb-unit">RECURRING</p>
+<p class="font-h3 text-primary">Starting at ₹12,000/month</p>
+</div>
+</div>
+<div>
+<img alt="Content calendar for restaurant" class="rounded-xl shadow-lg w-full aspect-[4/3] object-cover tonal-border" data-alt="A top-down view of a sleek smartphone displaying a vibrant Instagram grid for a high-end restaurant, placed next to a steaming cup of artisan coffee. The digital interface shows scheduled reels and professional food photography. The background is a clean, white marble texture with soft morning light, evoking an atmosphere of organized, high-end content management and digital sophistication." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeYhItvcJQOjM5BDSTKjl0UNYMk0IX23P0LDMKf1ZPmGs_OGP4M_pb4_bSdDR55L_-kAFAS9WGkZDLX39xrxy1h3KA_c7yTZej1mXdzZ5D9WTZd5olxiC4ZxRuvj9g1pMEkSDG3fYQjbPoIFmttKdCZJcHqHHq9w0A8lha6FYolU35kIbCKNBT0bP8QRgEjHbYjMrEr-S7CwsEFuE7oIkQEAF3ZuLo3WyD1OIPhR8sfY2agb6m2pw-E17JgpKa-mNQgm4_VNAdhs8"/>
+</div>
+</div>
+</section>
+<!-- Row 3 -->
+<section class="py-xl px-8 bg-white">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div class="order-2 md:order-1">
+<img alt="Zomato and Google presence" class="rounded-xl shadow-lg w-full aspect-[4/3] object-cover tonal-border" data-alt="A wide-angle, minimalist interior shot of a contemporary restaurant featuring clean lines and warm wooden accents. Superimposed on the scene are semi-transparent digital bubbles representing Google Maps pins and Zomato ratings. The lighting is soft and golden, suggesting a welcoming yet technologically integrated dining environment that prioritizes digital visibility and modern search trends." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5-uHyKdSpZVM4gnUoONsPpzEcHsxQZUwACjTTv-C6ngYr4_jq3-5ExnZDTlKPLClzNW6tF1qoJ4fG7Ch2l8g8ScPNuVDCTe_O01tQ4bBPBxbF6RKlg_-WxioITBgw8eW76CsdkVd5lpK2QDo_T-xD14E-_RRy384eSvJbHLyOOCztR9dTtbPlmPOViuAEjhdYJ78Qm6Exo5xuuJwy1BJWqOV6FO8Nr5Onsr4FnKRqm1guH8Jq0IeiuHBH9xwyNTZBHD3wkNabfpI"/>
+</div>
+<div class="order-1 md:order-2">
+<span class="font-label-caps text-label-caps text-secondary font-bold mb-xs block">03 Visibility &amp; AI Search</span>
+<h2 class="font-h2 text-h2 text-primary mb-md">Dominate the Local Map</h2>
+<p class="font-body-md text-on-surface-variant mb-lg">
+                        We optimize your profiles for the way people search today. Whether it's Zomato algorithms or AI-driven local search, we make sure you're the first choice.
+                    </p>
+<div class="p-md bg-surface-container-low rounded-lg inline-block tonal-border">
+<p class="font-label-caps text-slate-500 mb-unit">MANAGEMENT</p>
+<p class="font-h3 text-primary">Starting at ₹8,000/month</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl px-8">
+<div class="max-w-5xl mx-auto bg-primary-container rounded-[32px] p-xl text-center relative overflow-hidden">
+<!-- Decorative background elements -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-fixed/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="relative z-10">
+<div class="inline-flex items-center gap-sm bg-white/10 px-md py-xs rounded-full text-on-primary-container font-label-caps mb-lg border border-white/20">
+<span class="material-symbols-outlined text-sm">autorenew</span>
+                        Your brand shouldn't need you to run it.
+                    </div>
+<h2 class="font-h2 text-h1 text-white mb-lg">Ready to automate your F&amp;B brand?</h2>
+<div class="flex flex-col md:flex-row justify-center gap-md">
+<button class="bg-[#C8FF57] text-on-background px-lg py-sm rounded-lg font-h3 text-body-md font-bold hover:scale-105 transition-all">
+                            Talk to Our Studio
+                        </button>
+<button class="border border-white/30 text-white px-lg py-sm rounded-lg font-h3 text-body-md font-medium hover:bg-white/10 transition-all">
+                            View Portfolio
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full py-16 px-8 border-t border-[rgba(91,44,107,0.08)] bg-white">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-lg font-bold tracking-widest text-[#5B2C6B] mb-md font-['Space_Grotesk']">PROSONΛ</div>
+<p class="font-['Space_Grotesk'] text-sm leading-relaxed text-slate-500">© 2024 PROSONΛ. Built by AI. Run by us.</p>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-sm">Services</h4>
+<ul class="space-y-xs">
+<li><a class="text-slate-500 hover:text-[#5B2C6B] transition-all hover:translate-x-1 inline-block" href="#">F&amp;B</a></li>
+<li><a class="text-slate-500 hover:text-[#5B2C6B] transition-all hover:translate-x-1 inline-block" href="#">Automation</a></li>
+<li><a class="text-slate-500 hover:text-[#5B2C6B] transition-all hover:translate-x-1 inline-block" href="#">Brand Systems</a></li>
+<li><a class="text-slate-500 hover:text-[#5B2C6B] transition-all hover:translate-x-1 inline-block" href="#">Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-sm">Studio</h4>
+<ul class="space-y-xs">
+<li><a class="text-slate-500 hover:text-[#5B2C6B] transition-all hover:translate-x-1 inline-block" href="#">Company</a></li>
+<li><a class="text-slate-500 hover:text-[#5B2C6B] transition-all hover:translate-x-1 inline-block" href="#">Careers</a></li>
+<li><a class="text-slate-500 hover:text-[#5B2C6B] transition-all hover:translate-x-1 inline-block" href="#">Legal</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-sm">Support</h4>
+<ul class="space-y-xs">
+<li><a class="text-slate-500 hover:text-[#5B2C6B] transition-all hover:translate-x-1 inline-block" href="#">Privacy</a></li>
+<li><a class="text-slate-500 hover:text-[#5B2C6B] transition-all hover:translate-x-1 inline-block" href="#">Terms</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

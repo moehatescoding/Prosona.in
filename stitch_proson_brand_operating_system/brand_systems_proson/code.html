@@ -1,0 +1,292 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Brand Systems | PROSONΛ</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface-container": "#f0eded",
+                "primary-fixed": "#fad7ff",
+                "on-primary-fixed-variant": "#633373",
+                "on-secondary-fixed": "#141f00",
+                "tertiary-fixed": "#e5e1e9",
+                "surface-container-highest": "#e5e2e1",
+                "inverse-primary": "#ecb2fb",
+                "tertiary-fixed-dim": "#c9c5cd",
+                "on-primary": "#ffffff",
+                "outline": "#7f747f",
+                "inverse-surface": "#313030",
+                "on-secondary": "#ffffff",
+                "surface": "#fcf9f8",
+                "background": "#fcf9f8",
+                "inverse-on-surface": "#f3f0ef",
+                "on-surface-variant": "#4d444e",
+                "on-secondary-fixed-variant": "#374e00",
+                "secondary": "#4a6700",
+                "secondary-container": "#bbf14b",
+                "surface-container-low": "#f6f3f2",
+                "on-tertiary-container": "#aeaab2",
+                "surface-dim": "#dcd9d9",
+                "secondary-fixed-dim": "#a3d731",
+                "on-secondary-container": "#4d6c00",
+                "secondary-fixed": "#bef44d",
+                "on-error-container": "#93000a",
+                "primary-fixed-dim": "#ecb2fb",
+                "on-tertiary-fixed-variant": "#48464c",
+                "on-surface": "#1c1b1b",
+                "on-tertiary": "#ffffff",
+                "primary": "#431453",
+                "tertiary-container": "#413f45",
+                "error-container": "#ffdad6",
+                "on-primary-fixed": "#320144",
+                "surface-container-lowest": "#ffffff",
+                "surface-bright": "#fcf9f8",
+                "on-tertiary-fixed": "#1c1b20",
+                "outline-variant": "#d0c3cf",
+                "primary-container": "#5b2c6b",
+                "tertiary": "#2b292f",
+                "error": "#ba1a1a",
+                "surface-container-high": "#eae7e7",
+                "on-background": "#1c1b1b",
+                "surface-tint": "#7c4b8c",
+                "surface-variant": "#e5e2e1",
+                "on-error": "#ffffff",
+                "on-primary-container": "#d097df"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "md": "24px",
+                "gutter": "24px",
+                "unit": "4px",
+                "sm": "16px",
+                "xs": "8px",
+                "lg": "32px",
+                "xl": "64px",
+                "container-max": "1280px"
+            },
+            "fontFamily": {
+                "body-lg": ["Inter"],
+                "h2": ["Space Grotesk"],
+                "body-md": ["Inter"],
+                "h1": ["Space Grotesk"],
+                "h3": ["Space Grotesk"],
+                "label-caps": ["Inter"]
+            },
+            "fontSize": {
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "h2": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "label-caps": ["11px", {"lineHeight": "1", "letterSpacing": "2px", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .airy-border {
+        border: 1px solid rgba(91, 44, 107, 0.12);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar (Shared Component) -->
+<header class="fixed top-0 w-full h-16 bg-white border-b border-[rgba(91,44,107,0.08)] z-50">
+<nav class="flex justify-between items-center px-8 w-full max-w-7xl mx-auto h-full">
+<div class="text-xl font-bold tracking-widest text-[#5B2C6B] font-h1">PROSONΛ</div>
+<div class="hidden md:flex items-center gap-xl font-['Space_Grotesk'] font-medium text-sm tracking-tight">
+<a class="text-slate-600 hover:text-[#5B2C6B] hover:opacity-80 transition-all duration-200" href="#">Home</a>
+<a class="text-slate-600 hover:text-[#5B2C6B] hover:opacity-80 transition-all duration-200" href="#">F&amp;B</a>
+<a class="text-slate-600 hover:text-[#5B2C6B] hover:opacity-80 transition-all duration-200" href="#">Automation</a>
+<a class="text-[#5B2C6B] border-b-2 border-[#5B2C6B] pb-1" href="#">Brand Systems</a>
+<a class="text-slate-600 hover:text-[#5B2C6B] hover:opacity-80 transition-all duration-200" href="#">Blog</a>
+<a class="text-slate-600 hover:text-[#5B2C6B] hover:opacity-80 transition-all duration-200" href="#">Contact</a>
+</div>
+<button class="bg-[#5B2C6B] text-white px-6 py-2 rounded-lg font-medium text-sm hover:opacity-90 scale-95 active:scale-90 transition-transform">Get Started</button>
+</nav>
+</header>
+<main class="pt-16">
+<!-- HERO SECTION -->
+<section class="min-h-[819px] flex flex-col items-center justify-center text-center px-gutter py-xl bg-[#FAF9F7]">
+<div class="max-w-4xl mx-auto">
+<span class="font-label-caps text-label-caps text-primary uppercase mb-lg inline-block">BRAND SYSTEMS</span>
+<h1 class="font-h1 text-[60px] leading-[1.1] text-primary mb-lg max-w-3xl mx-auto">
+                    Identity That Scales Without You.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-xl">
+                    Not just a logo. A complete brand system designed for the AI era. We build autonomous visual languages that evolve with your product and maintain perfect consistency across every digital touchpoint.
+                </p>
+<div class="flex gap-md justify-center">
+<button class="bg-secondary-container text-on-secondary-container px-lg py-sm rounded-lg font-h3 text-body-md hover:opacity-90 transition-all">Start Your System</button>
+<button class="border border-primary text-primary px-lg py-sm rounded-lg font-h3 text-body-md hover:bg-primary/5 transition-all">View Process</button>
+</div>
+</div>
+</section>
+<!-- SERVICES SECTION: Alternating Rows -->
+<section class="py-xl px-gutter max-w-7xl mx-auto space-y-xl">
+<!-- Row 1: Brand Kit -->
+<div class="grid md:grid-cols-2 gap-xl items-center">
+<div class="order-2 md:order-1">
+<div class="bg-white p-lg rounded-xl airy-border shadow-sm">
+<span class="inline-block px-sm py-1 bg-surface-container-low text-primary text-[10px] tracking-widest uppercase font-bold rounded-full mb-md">Phase 01</span>
+<h2 class="font-h2 text-h2 text-primary mb-md">Brand Kit</h2>
+<p class="font-body-md text-on-surface-variant mb-lg">
+                            The essential foundation for high-growth startups. We deliver a comprehensive asset library including dynamic logos, typography systems, and color hierarchies optimized for both OLED screens and traditional media.
+                        </p>
+<div class="flex items-baseline gap-xs mb-lg">
+<span class="text-h3 font-bold text-primary">₹19,999</span>
+<span class="text-label-caps text-on-surface-variant">one-time investment</span>
+</div>
+<ul class="space-y-sm mb-lg">
+<li class="flex items-center gap-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-body-md">check_circle</span>
+<span class="">Dynamic Identity Guidelines</span>
+</li>
+<li class="flex items-center gap-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-body-md">check_circle</span>
+<span class="">Multi-Platform Asset Export</span>
+</li>
+</ul>
+<button class="w-full py-sm rounded-lg bg-primary text-white font-medium hover:opacity-95 transition-all">Reserve Your Kit</button>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<div class="relative aspect-video rounded-xl overflow-hidden shadow-xl airy-border">
+<img class="w-full h-full object-cover" data-alt="A sophisticated flat-lay of brand guidelines displayed on multiple digital devices including a sleek tablet, a high-end smartphone, and a minimalist laptop. The UI on the screens features elegant serif typography and a purple-toned color palette. The setting is a bright, airy design studio with soft sunlight casting gentle shadows on a textured white desk. The overall mood is professional, precise, and luxurious." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjJKBH0q8EBkh-5ML3CFQ1A8Labg1CW-yfHXeVd3uIhGNswHhPL_by4A2pcasXnvg0k789ka0B2eFjoq7dvagJn5oG00bgpJY_nkZMNWZ3W0HqQv-4rvpgE31tChSSGhv9PitGRRSIGPtlv_FWL1NrWZogE94nUPWbIDxthQIEYX8tfdC36vY-X02ah_JbnfmBP5OPXZ5FM9Rc86t8awbuqTbvCtMCE0xgkirCtHeKtBrTLX3hBznkvbzZuPbxQ1VGXvSiy3jJ9YI">
+</div>
+</div>
+</div>
+<!-- Row 2: AI Search Presence -->
+<div class="grid md:grid-cols-2 gap-xl items-center">
+<div class="order-1">
+<div class="relative aspect-video rounded-xl overflow-hidden shadow-xl airy-border">
+<img class="w-full h-full object-cover" data-alt="A futuristic visualization of an AI search engine interface processing brand information with a glowing, ethereal purple aura. Sleek data nodes and abstract geometric patterns float in a clean, white digital space, representing optimized search visibility. The aesthetic is high-tech yet minimalist, utilizing high-key lighting to maintain a premium light-mode feel. The visual style is crisp, using thin lines and soft purple accents to indicate intelligence and connectivity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC8Y6OGChhaw9tVhqjEmX8GWJJ3SmvBPBywLa5DCPEp23OFSE6wOrhRUJTMscaTrVUmqmJXRCqhk3BcWwC0V1cXM5PP-moIOWT1okYGooy34jDu6uiBZhKrdViHeTkXrsW1AoGjP2FgOs3XPSSfLo6e1f7Xf8CkXxxCd1dK6Ea_7VUOnXPeUY9gIycehbDjr3v5mm0mxs9iXtgLhnJoBYLEkXfDSmgcymKituU48k_HwFu7C519vMo31gqme-tSOrBeFqSpDK4_nI">
+</div>
+</div>
+<div class="order-2">
+<div class="bg-white p-lg rounded-xl airy-border shadow-sm">
+<span class="inline-block px-sm py-1 bg-surface-container-low text-primary text-[10px] tracking-widest uppercase font-bold rounded-full mb-md">Phase 02</span>
+<h2 class="font-h2 text-h2 text-primary mb-md">AI Search Presence</h2>
+<p class="font-body-md text-on-surface-variant mb-lg">
+                            In an era of Perplexity and ChatGPT, your brand must be readable by machines. We optimize your visual and semantic data to ensure AI models represent your brand with 100% fidelity.
+                        </p>
+<div class="flex items-baseline gap-xs mb-lg">
+<span class="text-h3 font-bold text-primary">₹9,999</span>
+<span class="text-label-caps text-on-surface-variant">/ month</span>
+</div>
+<ul class="space-y-sm mb-lg">
+<li class="flex items-center gap-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-body-md">check_circle</span>
+<span class="">LLM Optimization for Visuals</span>
+</li>
+<li class="flex items-center gap-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-body-md">check_circle</span>
+<span class="">Semantic Brand Indexing</span>
+</li>
+</ul>
+<button class="w-full py-sm rounded-lg border border-primary text-primary font-medium hover:bg-primary/5 transition-all">Audit My Presence</button>
+</div>
+</div>
+</div>
+<!-- Row 3: Full Brand System -->
+<div class="grid md:grid-cols-2 gap-xl items-center">
+<div class="order-2 md:order-1">
+<div class="bg-white p-lg rounded-xl airy-border shadow-sm">
+<span class="inline-block px-sm py-1 bg-surface-container-low text-primary text-[10px] tracking-widest uppercase font-bold rounded-full mb-md">Phase 03</span>
+<h2 class="font-h2 text-h2 text-primary mb-md">Full Brand System</h2>
+<p class="font-body-md text-on-surface-variant mb-lg">
+                            The ultimate design partnership. A living, breathing brand ecosystem that acts as your internal design team. We manage every touchpoint, from social templates to enterprise UI kits.
+                        </p>
+<div class="flex items-baseline gap-xs mb-lg">
+<span class="text-h3 font-bold text-primary">₹25,000</span>
+<span class="text-label-caps text-on-surface-variant">/ month</span>
+</div>
+<ul class="space-y-sm mb-lg">
+<li class="flex items-center gap-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-body-md">check_circle</span>
+<span class="">Unlimited Asset Iteration</span>
+</li>
+<li class="flex items-center gap-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-body-md">check_circle</span>
+<span class="">Direct Design-Ops Integration</span>
+</li>
+</ul>
+<button class="w-full py-sm rounded-lg bg-[#C8FF57] text-[#1C1B1B] font-bold hover:opacity-95 transition-all">Apply for Retainer</button>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<div class="relative aspect-video rounded-xl overflow-hidden shadow-xl airy-border">
+<img class="w-full h-full object-cover" data-alt="An expansive bento-style grid displaying various brand elements: a sleek logo animation, a typography scale, UI components, and abstract brand photography. Each cell of the grid is meticulously organized with plenty of white space, reflecting an 'Airy Premium' design philosophy. The color palette is dominated by pure whites and deep purples, with bright lime green accents for call-to-actions. The lighting is crisp and uniform, creating a sense of total brand harmony." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM6M4bq2zCYn-IXcsLAo4KDtItpze6iuNclUoCoRO4FcANyKcycVFQ_yGnqDtocVJg3w1CtlrEJ3PMK1_Obl1vqLG903Vm0iAw3kGyLmTF6StQttr0Y-KrZhGyrW46PVETaUrvlUpsLAZ67fY8HaidK62I1E_kFvlOg5N73L8bHPPqnAUindeD6tYbKkd5VBioWYriL-KBny5m8aeOafKM7FYeJmHupBOYpLYMDJtpY10ma_RBZ2UK55RLec3yWKp43BEiDfbtrsE">
+</div>
+</div>
+</div>
+</section>
+<!-- CTA SECTION -->
+<section class="py-xl bg-primary text-white">
+<div class="max-w-4xl mx-auto px-gutter text-center">
+<h2 class="font-h1 text-h1 mb-lg">Ready to Scale Your Visual Authority?</h2>
+<p class="font-body-lg text-primary-fixed mb-xl opacity-80">
+                    Join the next generation of founders building brands that are as intelligent as their products.
+                </p>
+<button class="bg-[#C8FF57] text-[#1C1B1B] px-xl py-md rounded-lg font-h3 text-h3 hover:scale-105 active:scale-95 transition-transform duration-200">
+                    Book a Brand Strategy Call
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-16 px-8 border-t border-[rgba(91,44,107,0.08)] bg-white">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="space-y-md">
+<div class="text-lg font-bold tracking-widest text-[#5B2C6B] font-h1">PROSONΛ</div>
+<p class="text-slate-500 font-body-md">Architecting digital identities for the AI era.</p>
+</div>
+<div>
+<h4 class="font-bold text-[#5B2C6B] mb-md font-h3">Offerings</h4>
+<ul class="space-y-sm">
+<li class=""><a class="text-slate-500 hover:text-[#5B2C6B] hover:translate-x-1 transition-transform duration-200 block cursor-pointer" href="#">F&amp;B</a></li>
+<li class=""><a class="text-slate-500 hover:text-[#5B2C6B] hover:translate-x-1 transition-transform duration-200 block cursor-pointer" href="#">Automation</a></li>
+<li class=""><a class="text-[#5B2C6B] font-bold block cursor-pointer" href="#">Brand Systems</a></li>
+<li class=""><a class="text-slate-500 hover:text-[#5B2C6B] hover:translate-x-1 transition-transform duration-200 block cursor-pointer" href="#">Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-[#5B2C6B] mb-md font-h3">Company</h4>
+<ul class="space-y-sm">
+<li class=""><a class="text-slate-500 hover:text-[#5B2C6B] hover:translate-x-1 transition-transform duration-200 block cursor-pointer" href="#">Company</a></li>
+<li class=""><a class="text-slate-500 hover:text-[#5B2C6B] hover:translate-x-1 transition-transform duration-200 block cursor-pointer" href="#">Legal</a></li>
+<li class=""><a class="text-slate-500 hover:text-[#5B2C6B] hover:translate-x-1 transition-transform duration-200 block cursor-pointer" href="#">Privacy</a></li>
+<li class=""><a class="text-slate-500 hover:text-[#5B2C6B] hover:translate-x-1 transition-transform duration-200 block cursor-pointer" href="#">Terms</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-[#5B2C6B] mb-md font-h3">Stay Updated</h4>
+<div class="flex gap-xs">
+<input class="bg-surface-container-low border-none rounded-lg px-sm py-xs w-full focus:ring-1 focus:ring-primary" placeholder="Email address" type="email">
+<button class="bg-primary text-white p-xs rounded-lg material-symbols-outlined">arrow_forward</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-xl pt-lg border-t border-slate-100 text-center md:text-left">
+<p class="text-slate-400 text-sm font-['Space_Grotesk']">© 2024 PROSONΛ. Built by AI. Run by us.</p>
+</div>
+</footer>
+
+
+</body></html>
