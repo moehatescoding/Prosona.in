@@ -68,7 +68,7 @@ export default function Hero() {
               AI-POWERED BRAND SYSTEMS
             </span>
           </div>
-          <h1 className="font-h1 text-[68px] leading-[1.05] text-primary tracking-tight">
+          <h1 className="font-h1 text-[42px] md:text-[56px] lg:text-[68px] leading-[1.05] text-primary tracking-tight">
             <div>Build a Brand</div>
             <div>Worth Remembering.</div>
           </h1>

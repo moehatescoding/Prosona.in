@@ -28,7 +28,7 @@ export default function Home() {
       <section className="py-xl bg-white/60 backdrop-blur-xl px-8 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16">
-            <h2 className="font-h2 text-[44px] text-primary tracking-tight">Three systems. One outcome.</h2>
+            <h2 className="font-h2 text-[32px] md:text-[44px] text-primary tracking-tight">Three systems. One outcome.</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Tilt className="h-full">
@@ -171,7 +171,7 @@ export default function Home() {
             <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
             AI-FIRST BRAND STUDIO
           </div>
-          <h2 className="font-h2 text-[48px] text-primary mb-8 leading-tight tracking-tight">Your brand shouldn't need you to run it.</h2>
+          <h2 className="font-h2 text-[32px] md:text-[48px] text-primary mb-8 leading-tight tracking-tight">Your brand shouldn't need you to run it.</h2>
           <Link 
             href="/contact"
             className="inline-block bg-purple text-white px-10 py-5 rounded-lg font-bold text-lg shadow-[0_4px_14px_0_rgba(91,44,107,0.39)] hover:shadow-[0_6px_20px_rgba(91,44,107,0.23)] hover:-translate-y-0.5 active:shadow-[0_2px_4px_rgba(91,44,107,0.4)] active:translate-y-[1px] transition-all duration-200 font-body-md"

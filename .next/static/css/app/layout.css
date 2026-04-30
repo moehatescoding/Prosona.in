@@ -1602,6 +1602,16 @@ video {
 .text-\[36px\] {
   font-size: 36px;
 }
+.text-\[32px\] {
+  font-size: 32px;
+}
+.text-\[42px\] {
+  font-size: 42px;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -2119,8 +2129,16 @@ video {
     margin-top: 0px;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-16 {
@@ -2180,6 +2198,18 @@ video {
   .md\:text-\[50px\] {
     font-size: 50px;
   }
+
+  .md\:text-\[48px\] {
+    font-size: 48px;
+  }
+
+  .md\:text-\[56px\] {
+    font-size: 56px;
+  }
+
+  .md\:text-\[44px\] {
+    font-size: 44px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2225,6 +2255,10 @@ video {
 
   .lg\:text-\[56px\] {
     font-size: 56px;
+  }
+
+  .lg\:text-\[68px\] {
+    font-size: 68px;
   }
 }
 
