@@ -3,6 +3,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Link from "next/link";
+import ElectricBadge from "@/components/ui/ElectricBadge";
 
 export default function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -64,9 +65,9 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center z-10">
         <div className="space-y-8">
           <div className="inline-block">
-            <span className="font-label-caps text-label-caps text-purple bg-[rgba(91,44,107,0.05)] px-3 py-1 rounded-full uppercase tracking-widest">
+            <ElectricBadge>
               AI-POWERED BRAND SYSTEMS
-            </span>
+            </ElectricBadge>
           </div>
           <h1 className="font-h1 text-[42px] md:text-[56px] lg:text-[68px] leading-[1.05] text-primary tracking-tight">
             <div>Build a Brand</div>
