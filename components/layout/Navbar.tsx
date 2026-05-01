@@ -195,9 +195,9 @@ const Navbar = () => {
           <div className="flex items-center gap-4">
             <Link 
               href="/contact"
-              className="hidden md:block bg-purple text-white px-6 py-2.5 rounded-lg text-sm font-medium shadow-[0_4px_14px_0_rgba(91,44,107,0.39)] hover:shadow-[0_6px_20px_rgba(91,44,107,0.23)] hover:-translate-y-0.5 active:shadow-[0_2px_4px_rgba(91,44,107,0.4)] active:translate-y-[1px] transition-all duration-200"
+              className="hidden md:block gradient-button"
             >
-              Get Started
+              <span className="gradient-text">Get Started</span>
             </Link>
             <button 
               className="md:hidden text-primary focus:outline-none flex items-center justify-center p-2"
