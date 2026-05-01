@@ -6,6 +6,7 @@ import Footer from '@/components/layout/Footer';
 import Loader from '@/components/layout/Loader';
 import GlobalBackground from '@/components/layout/GlobalBackground';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -14,9 +15,32 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'PROSONΛ | Brand Systems & Automation',
+  metadataBase: new URL('https://prosona.in'),
+  title: {
+    default: 'PROSONΛ | Brand Systems & Automation',
+    template: '%s | PROSONΛ'
+  },
   description: 'Developing the next generation of brand ecosystems using surgical precision and automated intelligence.',
+  icons: {
+    icon: '/favicon.svg',
+  },
   openGraph: {
+    title: 'PROSONΛ | Brand Systems & Automation',
+    description: 'Developing the next generation of brand ecosystems using surgical precision and automated intelligence.',
+    url: 'https://prosona.in',
+    siteName: 'PROSONΛ',
+    images: [
+      {
+        url: '/logo.svg',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
     title: 'PROSONΛ | Brand Systems & Automation',
     description: 'Developing the next generation of brand ecosystems using surgical precision and automated intelligence.',
     images: ['/logo.svg'],
@@ -30,7 +54,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
       </head>
       <body className={`${spaceGrotesk.variable} font-sans antialiased text-dark bg-transparent relative`}>
@@ -42,6 +65,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
