@@ -168,7 +168,7 @@ const Navbar = () => {
                     <div className="text-xs text-slate-500 mt-0.5">What's new at Prosona</div>
                   </div>
                 </Link>
-                <Link href="/latest-features" className="flex items-start gap-3 p-3 rounded-[10px] hover:bg-purple/5 group/item transition-colors">
+                <Link href="/product-updates" className="flex items-start gap-3 p-3 rounded-[10px] hover:bg-purple/5 group/item transition-colors">
                   <span className="text-xl leading-none mt-0.5">✨</span>
                   <div>
                     <div className="text-sm font-semibold text-[#1a1630] group-hover/item:text-purple transition-colors">Latest Features</div>
