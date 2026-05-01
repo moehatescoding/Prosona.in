@@ -36,7 +36,7 @@ const auditAreas = [
   {
     icon: 'shopping_cart',
     title: 'Platform Presence',
-    desc: 'How you show up on quick commerce, Amazon, and search — and whether it\'s working.',
+    desc: 'How you show up on quick commerce, Amazon, and search — and whether it&apos;s working.',
   },
   {
     icon: 'trending_up',

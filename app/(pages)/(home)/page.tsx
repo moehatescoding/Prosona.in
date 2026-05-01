@@ -15,12 +15,9 @@ export const metadata: Metadata = {
   },
 };
 
-import BackgroundBoxes from './components/BackgroundBoxes';
-
 export default function Home() {
   return (
     <div className="relative w-full overflow-hidden">
-      <BackgroundBoxes />
       {/* Hero Section */}
       <Hero />
 
@@ -28,17 +25,18 @@ export default function Home() {
       <section className="py-xl bg-white/60 backdrop-blur-xl px-8 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16">
-            <h2 className="font-h2 text-[32px] md:text-[44px] text-primary tracking-tight">Three systems. One outcome.</h2>
+            <h2 className="font-h2 text-[32px] md:text-[44px] text-primary tracking-tight">Every system your brand needs.</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Card 1 - F&B */}
             <Tilt className="h-full">
               <div className="uiverse-card group h-full">
                 <div className="uiverse-card-inner p-lg flex flex-col justify-end">
                   <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
                     <span className="material-symbols-outlined">restaurant</span>
                   </div>
-                  <h3 className="font-h3 text-h3 mb-4 text-primary">F&B</h3>
-                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Specialized systems for Restaurants & Café Brands. From menu engineering to digital presence.</p>
+                  <h3 className="font-h3 text-h3 mb-4 text-primary">F&amp;B</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Specialized brand systems for restaurants and café brands. From menu engineering to full digital presence.</p>
                   <ul className="space-y-3 font-body-md mt-auto">
                     <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Digital Menus</li>
                     <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Visual Identity</li>
@@ -47,6 +45,44 @@ export default function Home() {
                 </div>
               </div>
             </Tilt>
+
+            {/* Card 2 - FMCG */}
+            <Tilt className="h-full">
+              <div className="uiverse-card group h-full">
+                <div className="uiverse-card-inner p-lg flex flex-col justify-end">
+                  <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
+                    <span className="material-symbols-outlined">shopping_basket</span>
+                  </div>
+                  <h3 className="font-h3 text-h3 mb-4 text-primary">FMCG</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Built for fast-moving consumer goods brands entering retail shelves and quick commerce platforms.</p>
+                  <ul className="space-y-3 font-body-md mt-auto">
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Platform Listing</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Packaging Design</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Compliance Ready</li>
+                  </ul>
+                </div>
+              </div>
+            </Tilt>
+
+            {/* Card 3 - Brand Systems */}
+            <Tilt className="h-full">
+              <div className="uiverse-card group h-full">
+                <div className="uiverse-card-inner p-lg flex flex-col justify-end">
+                  <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
+                    <span className="material-symbols-outlined">layers</span>
+                  </div>
+                  <h3 className="font-h3 text-h3 mb-4 text-primary uppercase tracking-tight">Brand Systems</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Full brand kits designed for scale. Every asset your business needs, documented and ready to use.</p>
+                  <ul className="space-y-3 font-body-md mt-auto">
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Scalable Logos</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Design Guidelines</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Asset Libraries</li>
+                  </ul>
+                </div>
+              </div>
+            </Tilt>
+
+            {/* Card 4 - Automation */}
             <Tilt className="h-full">
               <div className="uiverse-card group h-full">
                 <div className="uiverse-card-inner p-lg flex flex-col justify-end">
@@ -54,7 +90,7 @@ export default function Home() {
                     <span className="material-symbols-outlined">smart_toy</span>
                   </div>
                   <h3 className="font-h3 text-h3 mb-4 text-primary uppercase tracking-tight">Automation</h3>
-                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Content Autopilot for modern brands. Automated scheduling, creation, and posting.</p>
+                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Content autopilot for modern brands. Automated scheduling, creation, and multi-channel posting.</p>
                   <ul className="space-y-3 font-body-md mt-auto">
                     <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> AI Content Creation</li>
                     <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Multi-channel Sync</li>
@@ -63,18 +99,38 @@ export default function Home() {
                 </div>
               </div>
             </Tilt>
+
+            {/* Card 5 - Building Brands */}
             <Tilt className="h-full">
               <div className="uiverse-card group h-full">
                 <div className="uiverse-card-inner p-lg flex flex-col justify-end">
                   <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
-                    <span className="material-symbols-outlined">architecture</span>
+                    <span className="material-symbols-outlined">business</span>
                   </div>
-                  <h3 className="font-h3 text-h3 mb-4 text-primary uppercase tracking-tight">Brand</h3>
-                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Full Brand Kits designed for scale. Every asset your business needs, documented and ready.</p>
+                  <h3 className="font-h3 text-h3 mb-4 text-primary uppercase tracking-tight">Building Brands</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">End-to-end brand building from scratch. Strategy, identity, website, listings — everything in one place.</p>
                   <ul className="space-y-3 font-body-md mt-auto">
-                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Scalable Logos</li>
-                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Design Guidelines</li>
-                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Asset Libraries</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Brand Strategy</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Website &amp; App</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Market Launch</li>
+                  </ul>
+                </div>
+              </div>
+            </Tilt>
+
+            {/* Card 6 - Brand Audit */}
+            <Tilt className="h-full">
+              <div className="uiverse-card group h-full">
+                <div className="uiverse-card-inner p-lg flex flex-col justify-end">
+                  <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
+                    <span className="material-symbols-outlined">fact_check</span>
+                  </div>
+                  <h3 className="font-h3 text-h3 mb-4 text-primary uppercase tracking-tight">Brand Audit</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">A sharp, structured audit of your brand by practitioners with 20+ years of industry experience.</p>
+                  <ul className="space-y-3 font-body-md mt-auto">
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Identity Review</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Platform Presence</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Growth Gaps</li>
                   </ul>
                 </div>
               </div>
@@ -177,7 +233,7 @@ export default function Home() {
             <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
             AI-FIRST BRAND STUDIO
           </div>
-          <h2 className="font-h2 text-[32px] md:text-[48px] text-primary mb-8 leading-tight tracking-tight">Your brand shouldn't need you to run it.</h2>
+          <h2 className="font-h2 text-[32px] md:text-[48px] text-primary mb-8 leading-tight tracking-tight">Your brand shouldn&apos;t need you to run it.</h2>
           <Link 
             href="/contact"
             className="inline-block bg-purple text-white px-10 py-5 rounded-lg font-bold text-lg shadow-[0_4px_14px_0_rgba(91,44,107,0.39)] hover:shadow-[0_6px_20px_rgba(91,44,107,0.23)] hover:-translate-y-0.5 active:shadow-[0_2px_4px_rgba(91,44,107,0.4)] active:translate-y-[1px] transition-all duration-200 font-body-md"

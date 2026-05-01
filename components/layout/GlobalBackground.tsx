@@ -1,6 +1,13 @@
+"use client";
 import React from "react";
 
 export default function GlobalBackground() {
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <>
       {/* Base Background Color Layer */}
@@ -18,23 +25,24 @@ export default function GlobalBackground() {
         <div className="absolute -bottom-[20%] -left-[5%] w-[60%] h-[50%] rounded-full opacity-[0.07] blur-[140px] bg-purple" />
       </div>
 
-      {/* Very Subtle Noise/Grain Texture */}
-      {/* Using an SVG noise filter generator inline for zero external dependencies */}
-      <svg
-        className="fixed inset-0 w-full h-full pointer-events-none z-[9999] opacity-[0.25] mix-blend-overlay"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <filter id="noiseFilter">
-          <feTurbulence
-            type="fractalNoise"
-            baseFrequency="0.8"
-            numOctaves="3"
-            stitchTiles="stitch"
-          />
-          <feColorMatrix type="matrix" values="1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0" />
-        </filter>
-        <rect width="100%" height="100%" filter="url(#noiseFilter)" />
-      </svg>
+      {/* Very Subtle Noise/Grain Texture - Client Only */}
+      {mounted && (
+        <svg
+          className="fixed inset-0 w-full h-full pointer-events-none z-[9999] opacity-[0.2] mix-blend-overlay"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <filter id="noiseFilter">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0.8"
+              numOctaves="3"
+              stitchTiles="stitch"
+            />
+            <feColorMatrix type="matrix" values="1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0" />
+          </filter>
+          <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+        </svg>
+      )}
     </>
   );
 }

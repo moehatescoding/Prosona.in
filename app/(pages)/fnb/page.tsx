@@ -18,7 +18,7 @@ export default function FnB() {
       <section className="pt-[120px] pb-xl px-8 fnb-pattern">
         <div className="max-w-7xl mx-auto text-center md:text-left">
           <span className="font-label-caps text-label-caps text-primary-container bg-primary-fixed/30 px-sm py-xs rounded-full inline-block mb-md tracking-widest">
-            F&B BRAND SYSTEMS
+            F&amp;B BRAND SYSTEMS
           </span>
           <h1 className="font-h1 text-[60px] leading-[1.05] text-primary mb-lg max-w-3xl tracking-tight">
             Your Restaurant, Running on Brand.
@@ -94,7 +94,7 @@ export default function FnB() {
             <span className="font-label-caps text-label-caps text-secondary font-bold mb-xs block tracking-widest">03 Visibility & AI Search</span>
             <h2 className="font-h2 text-h2 text-primary mb-md tracking-tight">Dominate the Local Map</h2>
             <p className="font-body-md text-on-surface-variant mb-lg">
-              We optimize your profiles for the way people search today. Whether it's Zomato algorithms or AI-driven local search, we make sure you're the first choice.
+              We optimize your profiles for the way people search today. Whether it&apos;s Zomato algorithms or AI-driven local search, we make sure you&apos;re the first choice.
             </p>
             <div className="p-md bg-surface-container-low rounded-lg inline-block tinted-border">
               <p className="font-label-caps text-slate-500 mb-unit tracking-widest">MANAGEMENT</p>
@@ -112,7 +112,7 @@ export default function FnB() {
           <div className="relative z-10">
             <div className="inline-flex items-center gap-sm bg-white/10 px-md py-xs rounded-full text-on-primary-container font-label-caps mb-lg border border-white/20 tracking-widest">
               <span className="material-symbols-outlined text-sm">autorenew</span>
-              Your brand shouldn't need you to run it.
+              Your brand shouldn&apos;t need you to run it.
             </div>
             <h2 className="font-h2 text-h1 text-white mb-lg tracking-tight">Ready to automate your F&B brand?</h2>
             <div className="flex flex-col md:flex-row justify-center gap-md">

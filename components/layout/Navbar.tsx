@@ -65,8 +65,8 @@ const Navbar = () => {
                   <Link href="/fnb" className="flex items-start gap-3 p-3 rounded-[10px] hover:bg-purple/5 group/item transition-colors">
                     <span className="text-xl leading-none mt-0.5">🍽</span>
                     <div>
-                      <div className="text-sm font-semibold text-[#1a1630] group-hover/item:text-purple transition-colors">F&B</div>
-                      <div className="text-xs text-slate-500 mt-0.5">Food & Beverage brand identity</div>
+                      <div className="text-sm font-semibold text-[#1a1630] group-hover/item:text-purple transition-colors">F&amp;B</div>
+                      <div className="text-xs text-slate-500 mt-0.5">Food &amp; Beverage brand identity</div>
                     </div>
                   </Link>
                   <Link href="/fmcg" className="flex items-start gap-3 p-3 rounded-[10px] hover:bg-purple/5 group/item transition-colors">
@@ -216,7 +216,7 @@ const Navbar = () => {
             <Link href="/" className={`${isActive('/') ? 'text-purple font-semibold' : 'text-slate-600'}`}>Home</Link>
             <div className="flex flex-col gap-2 border-l-2 border-slate-100 pl-4 py-2">
               <span className="text-xs text-slate-400 font-semibold tracking-wider uppercase">Services</span>
-              <Link href="/fnb" className="text-slate-600 hover:text-purple transition-colors">F&B</Link>
+              <Link href="/fnb" className="text-slate-600 hover:text-purple transition-colors">F&amp;B</Link>
               <Link href="/fmcg" className="text-slate-600 hover:text-purple transition-colors">FMCG</Link>
               <Link href="/brand-systems" className="text-slate-600 hover:text-purple transition-colors">Brand Systems</Link>
             </div>

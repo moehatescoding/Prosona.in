@@ -35,7 +35,7 @@ export default function RootLayout({
         <GlobalBackground />
         <Loader />
         <Navbar />
-        <main className="pt-16 min-h-screen relative z-10">
+        <main className="min-h-screen relative z-10">
           {children}
         </main>
         <Footer />

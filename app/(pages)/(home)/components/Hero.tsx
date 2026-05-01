@@ -4,6 +4,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Link from "next/link";
 import ElectricBadge from "@/components/ui/ElectricBadge";
+import BackgroundBeams from "./BackgroundBeams";
 
 export default function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -60,8 +61,9 @@ export default function Hero() {
       ref={ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="min-h-screen bg-bg hero-grid flex flex-col justify-center px-8 py-20 relative overflow-hidden"
+      className="min-h-screen bg-bg hero-grid flex flex-col justify-center px-8 pt-32 pb-20 relative overflow-hidden"
     >
+      <BackgroundBeams />
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center z-10">
         <div className="space-y-8">
           <div className="inline-block">

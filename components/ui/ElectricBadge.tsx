@@ -28,8 +28,8 @@ export default function ElectricBadge({ children, className = "" }: ElectricBadg
     const H = canvas.height;
     const cx = W / 2;
     const cy = H / 2;
-    const rx = (W - 24) / 2;
-    const ry = (H - 24) / 2;
+    const rx = Math.max(0.1, (W - 24) / 2);
+    const ry = Math.max(0.1, (H - 24) / 2);
 
     interface Spark {
       life: number;
