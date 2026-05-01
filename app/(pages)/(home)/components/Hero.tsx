@@ -97,7 +97,14 @@ export default function Hero() {
               style={{ x: isMobile ? 0 : transformBgX, y: isMobile ? 0 : transformBgY }}
               className="col-span-1 row-span-2 rounded-2xl overflow-hidden bg-white p-2 border border-border shadow-sm transform -rotate-2 hover:rotate-0 transition-transform duration-500"
             >
-              <img className="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-700" alt="Brand Identity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZMOsmZM3il2kWaxXlw2Ffpghmm39fkM-W8ijgsABwK23TJN_v4YfHd-uytqyXxq71cPxpW4reegm6nodrcB-X_lPSLGBd2yP5wwdatLwCgYOUrzHBPPTjCvmJv3OFvgJ8b5S0B3URQLyPNCKdC-kRuckUupnTTgwN7tbDiuLmZvvUlRevx9BNp7_uZHLby2NaQcjkvNo0vUMYrI5JF7wqtzXPe9pLucOt5RhR36oYyNght2_OkYhvr1E-LJe5MzkszVx4h6RhCPs" />
+              <Image 
+                className="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-700" 
+                alt="Brand Identity" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZMOsmZM3il2kWaxXlw2Ffpghmm39fkM-W8ijgsABwK23TJN_v4YfHd-uytqyXxq71cPxpW4reegm6nodrcB-X_lPSLGBd2yP5wwdatLwCgYOUrzHBPPTjCvmJv3OFvgJ8b5S0B3URQLyPNCKdC-kRuckUupnTTgwN7tbDiuLmZvvUlRevx9BNp7_uZHLby2NaQcjkvNo0vUMYrI5JF7wqtzXPe9pLucOt5RhR36oYyNght2_OkYhvr1E-LJe5MzkszVx4h6RhCPs" 
+                width={400}
+                height={600}
+                priority
+              />
               <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-3 py-1.5 rounded-lg border border-border text-[10px] font-bold tracking-widest uppercase">Brand Identity</div>
             </motion.div>
             
@@ -105,7 +112,13 @@ export default function Hero() {
               style={{ x: isMobile ? 0 : transformMidX, y: isMobile ? 0 : transformMidY }}
               className="col-span-1 rounded-2xl overflow-hidden bg-white p-2 border border-border shadow-sm translate-y-8 transform rotate-3 hover:rotate-0 transition-transform duration-500 z-10"
             >
-              <img className="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-700" alt="Analytics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6JFVLIbEVEg8u9WMlMORrRT5JZ994HlNrIsE0_gGMXIoezhpZvPWGl5JZiyVZH962AJd0xZRghqzre9eMUtR4ZGh6OtE_4JMLhY4Kpdak7kwZw_rN_b96PHWrmDkexwcFnLJQfn7ho0T_j0ydKEi8Gz0W02EOQHclYDmhIJGOBR-M0dD-BzW7I--D5udkUGQ5AVXU1SYQayuP7cPMoZivYyNT7I3b0laRYnILeimpTB17odlPkqmdws9TdQpNaWfDQm6d5BKc-XU" />
+              <Image 
+                className="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-700" 
+                alt="Analytics" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6JFVLIbEVEg8u9WMlMORrRT5JZ994HlNrIsE0_gGMXIoezhpZvPWGl5JZiyVZH962AJd0xZRghqzre9eMUtR4ZGh6OtE_4JMLhY4Kpdak7kwZw_rN_b96PHWrmDkexwcFnLJQfn7ho0T_j0ydKEi8Gz0W02EOQHclYDmhIJGOBR-M0dD-BzW7I--D5udkUGQ5AVXU1SYQayuP7cPMoZivYyNT7I3b0laRYnILeimpTB17odlPkqmdws9TdQpNaWfDQm6d5BKc-XU" 
+                width={400}
+                height={300}
+              />
               <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-3 py-1.5 rounded-lg border border-border text-[10px] font-bold tracking-widest uppercase">Analytics</div>
             </motion.div>
             
@@ -113,7 +126,13 @@ export default function Hero() {
               style={{ x: isMobile ? 0 : transformFgX, y: isMobile ? 0 : transformFgY }}
               className="col-span-1 rounded-2xl overflow-hidden bg-white p-2 border border-border shadow-sm -translate-y-4 transform -rotate-1 hover:rotate-0 transition-transform duration-500 z-20 relative"
             >
-              <img className="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-700" alt="Restaurant Menu" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAio1yTRfo4rvaUlxu049Wdvz9fp7UMbyUSFiWZGCHZdrYuXagcyhb-JeYYXVlp5oQ_K8ZZzmnfEucc-B3y2KdA3JHHyB9aWNEag1qUaFup5uGxM4E7uGuR0YDFU6HSZvetRUVxTm6QBwLTSBzGNtGm6xVaMhCc8Ycy3lePCPSTBBAf8zHZnIEfrMVkxFlQhusDTRU4SbcoOOO80uXRn7xZn_XPpVkRKApxsj2Om9PEghGh-QE4uQS96yKOQd23Y9p7B7-zlyQgcDU" />
+              <Image 
+                className="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-700" 
+                alt="Restaurant Menu" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAio1yTRfo4rvaUlxu049Wdvz9fp7UMbyUSFiWZGCHZdrYuXagcyhb-JeYYXVlp5oQ_K8ZZzmnfEucc-B3y2KdA3JHHyB9aWNEag1qUaFup5uGxM4E7uGuR0YDFU6HSZvetRUVxTm6QBwLTSBzGNtGm6xVaMhCc8Ycy3lePCPSTBBAf8zHZnIEfrMVkxFlQhusDTRU4SbcoOOO80uXRn7xZn_XPpVkRKApxsj2Om9PEghGh-QE4uQS96yKOQd23Y9p7B7-zlyQgcDU" 
+                width={400}
+                height={300}
+              />
               <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-3 py-1.5 rounded-lg border border-border text-[10px] font-bold tracking-widest uppercase">Restaurant Menu</div>
             </motion.div>
           </div>

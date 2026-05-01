@@ -20,7 +20,7 @@ export default function BackgroundBeams() {
   const opacityScale = isMobile ? 0.5 : 1.0;
   
   // Beams data: [startX, startY, endX, endY, duration, delay]
-  const beams = [
+  const allBeams = [
     { x1: "20%", y1: "100%", x2: "80%", y2: "-10%", d: 25, delay: 0 },
     { x1: "40%", y1: "110%", x2: "110%", y2: "10%", d: 30, delay: 2 },
     { x1: "0%", y1: "90%", x2: "60%", y2: "-20%", d: 28, delay: 5 },
@@ -28,6 +28,9 @@ export default function BackgroundBeams() {
     { x1: "10%", y1: "105%", x2: "90%", y2: "0%", d: 22, delay: 8 },
     { x1: "30%", y1: "100%", x2: "100%", y2: "-30%", d: 40, delay: 3 },
   ];
+
+  // Reduce beams on mobile for performance
+  const beams = isMobile ? allBeams.slice(0, 3) : allBeams;
 
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">

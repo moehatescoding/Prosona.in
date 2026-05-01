@@ -192,7 +192,13 @@ export default function Home() {
             <Tilt className="h-full">
               <div className="bg-white/80 rounded-2xl overflow-hidden border border-border group cursor-pointer blog-card-hover h-full shadow-sm hover:shadow-md">
                 <div className="h-48 overflow-hidden">
-                  <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Blog 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdQm_U2ktoez25vf2lQuShNUE5w_ZfIrldg8jOF2yjZd933cFWpy7tgWUDsP3PoplcLHSwf1LFL6K6qDYeKeOW7SSEqOQYJkAtsQpuALkiCdcjOQHZ2dxWq7pUd-sqyCKSnOvVqV9TkELj58eA6KZBAXj5K8Q2bxG6x-zdKefkdvjUxCkd-55S1o0wCmstWrX4OTxOd2MwNiQ6IPJdLSmiTp40g855hxuPNfUw9yS8l-UX4WMQ3Ns77-dZAeqCsN8k90Y-Oq-egOM" />
+                  <Image 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                    alt="Blog 1" 
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdQm_U2ktoez25vf2lQuShNUE5w_ZfIrldg8jOF2yjZd933cFWpy7tgWUDsP3PoplcLHSwf1LFL6K6qDYeKeOW7SSEqOQYJkAtsQpuALkiCdcjOQHZ2dxWq7pUd-sqyCKSnOvVqV9TkELj58eA6KZBAXj5K8Q2bxG6x-zdKefkdvjUxCkd-55S1o0wCmstWrX4OTxOd2MwNiQ6IPJdLSmiTp40g855hxuPNfUw9yS8l-UX4WMQ3Ns77-dZAeqCsN8k90Y-Oq-egOM" 
+                    width={400}
+                    height={250}
+                  />
                 </div>
                 <div className="p-sm">
                   <span className="font-label-caps text-[10px] text-purple bg-purple/5 px-2 py-0.5 rounded tracking-widest">STRATEGY</span>
@@ -203,7 +209,13 @@ export default function Home() {
             <Tilt className="h-full">
               <div className="bg-white/80 rounded-2xl overflow-hidden border border-border group cursor-pointer blog-card-hover h-full shadow-sm hover:shadow-md">
                 <div className="h-48 overflow-hidden">
-                  <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Blog 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3bCau-AQ9ZayQ2EPszjNPQOybGm2iJCmNBmrtizpzPU12vBDgKtH9sSReknDGjCX8pi-2jtQH3ETUiDT5c0IccRZCLGSaMqgKYtXM9sriVhVN5t1k5n9B--EYZ2XP4JO2fbU4mopnu1QwDmyOyOCdZTEFm1X02yXWYlmyzPmEBCahkfglhIkyYxtebkcJdi7MJo8Cj9390ScVK2Hh0lqI34ekta825t5KRIoFQylGDsoiyo7OGne4a-qHlaFwRyUCvR9caaHiU0o" />
+                  <Image 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                    alt="Blog 2" 
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3bCau-AQ9ZayQ2EPszjNPQOybGm2iJCmNBmrtizpzPU12vBDgKtH9sSReknDGjCX8pi-2jtQH3ETUiDT5c0IccRZCLGSaMqgKYtXM9sriVhVN5t1k5n9B--EYZ2XP4JO2fbU4mopnu1QwDmyOyOCdZTEFm1X02yXWYlmyzPmEBCahkfglhIkyYxtebkcJdi7MJo8Cj9390ScVK2Hh0lqI34ekta825t5KRIoFQylGDsoiyo7OGne4a-qHlaFwRyUCvR9caaHiU0o" 
+                    width={400}
+                    height={250}
+                  />
                 </div>
                 <div className="p-sm">
                   <span className="font-label-caps text-[10px] text-purple bg-purple/5 px-2 py-0.5 rounded tracking-widest">AI TRENDS</span>
@@ -214,7 +226,13 @@ export default function Home() {
             <Tilt className="h-full">
               <div className="bg-white/80 rounded-2xl overflow-hidden border border-border group cursor-pointer blog-card-hover h-full shadow-sm hover:shadow-md">
                 <div className="h-48 overflow-hidden">
-                  <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Blog 3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs_-RVT_cFdqS4XUIjUGyHFKHuoi-x6yAu5wwh1IyjvXYMSVey_kOiKroF-xANOP4YmE32275uJTi1LSyHJA8-LGZj4wMBDZhRunFgo8-vXNYvv1plKTR0-D9PO3qtI7LRDdXre4foR9I2qPJst1K5vbZcXveSV6DCo0q7UCzzO2DBjV_6WuS3nmQvw6VzgbsIhaduzY6jOz6rm5sCO0QXMk0avy0xfkm-3RvlOEAPlmQYf5cSqk_gPDx_79NgC0hnbdY90CD8_zA" />
+                  <Image 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                    alt="Blog 3" 
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs_-RVT_cFdqS4XUIjUGyHFKHuoi-x6yAu5wwh1IyjvXYMSVey_kOiKroF-xANOP4YmE32275uJTi1LSyHJA8-LGZj4wMBDZhRunFgo8-vXNYvv1plKTR0-D9PO3qtI7LRDdXre4foR9I2qPJst1K5vbZcXveSV6DCo0q7UCzzO2DBjV_6WuS3nmQvw6VzgbsIhaduzY6jOz6rm5sCO0QXMk0avy0xfkm-3RvlOEAPlmQYf5cSqk_gPDx_79NgC0hnbdY90CD8_zA" 
+                    width={400}
+                    height={250}
+                  />
                 </div>
                 <div className="p-sm">
                   <span className="font-label-caps text-[10px] text-purple bg-purple/5 px-2 py-0.5 rounded tracking-widest">AUTOMATION</span>
