@@ -60,7 +60,7 @@ export default function Hero() {
       ref={ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="min-h-screen bg-bg flex flex-col justify-center px-8 py-20 relative overflow-hidden"
+      className="min-h-screen bg-bg hero-grid flex flex-col justify-center px-8 py-20 relative overflow-hidden"
     >
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center z-10">
         <div className="space-y-8">
