@@ -15,7 +15,7 @@ export default function FnB() {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-[120px] pb-xl px-8 bg-bg">
+      <section className="pt-[120px] pb-xl px-8 fnb-pattern">
         <div className="max-w-7xl mx-auto text-center md:text-left">
           <span className="font-label-caps text-label-caps text-primary-container bg-primary-fixed/30 px-sm py-xs rounded-full inline-block mb-md tracking-widest">
             F&B BRAND SYSTEMS
