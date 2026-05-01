@@ -27,6 +27,12 @@ export default function Tilt({ children, className = "" }: TiltProps) {
   // Transform smoothed values into a slight shadow shift
   const shadowX = useTransform(smoothX, [-1, 1], [10, -10]);
   const shadowY = useTransform(smoothY, [-1, 1], [10, -10]);
+
+  // Transform smoothed values into a dynamic box shadow
+  const shadowValue = useTransform(
+    [shadowX, shadowY],
+    ([sX, sY]) => `rgba(91, 44, 107, 0.08) ${sX}px ${sY}px 24px`
+  );
   
   const [isMobile, setIsMobile] = useState(false);
 
@@ -77,12 +83,7 @@ export default function Tilt({ children, className = "" }: TiltProps) {
         style={{
           rotateX: isMobile ? 0 : rotateX,
           rotateY: isMobile ? 0 : rotateY,
-          boxShadow: isMobile
-            ? "none"
-            : useTransform(
-                [shadowX, shadowY],
-                ([sX, sY]) => `rgba(91, 44, 107, 0.08) ${sX}px ${sY}px 24px`
-              ),
+          boxShadow: isMobile ? "none" : shadowValue,
         }}
         whileHover={{ scale: isMobile ? 1 : 1.03 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
