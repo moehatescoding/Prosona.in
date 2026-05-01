@@ -79,11 +79,20 @@ export default function Contact() {
                 </div>
                 <div className="space-y-2">
                   <label className="font-label-caps text-[10px] text-slate-400 tracking-widest">SERVICE INTEREST</label>
-                  <select className="w-full border-b border-slate-200 border-t-0 border-x-0 bg-transparent py-3 px-0 focus:ring-0 focus:border-purple outline-none transition-colors font-body-md appearance-none">
-                    <option>Automation Systems</option>
+                  <select className="w-full border-b border-slate-200 border-t-0 border-x-0 bg-transparent py-3 px-0 focus:ring-0 focus:border-purple outline-none transition-colors font-body-md appearance-none cursor-pointer">
+                    <option value="" disabled selected>Select a service</option>
                     <option>F&B Branding</option>
+                    <option>FMCG Branding</option>
+                    <option>Brand Systems</option>
+                    <option>Building Brands</option>
+                    <option>Personal Branding</option>
+                    <option>Automation Systems</option>
+                    <option>Brand Audits</option>
                     <option>Digital Strategy</option>
                     <option>Full AI Transformation</option>
+                    <option>AI Brand Kit</option>
+                    <option>Brand Templates</option>
+                    <option>Integrations</option>
                   </select>
                 </div>
               </div>
