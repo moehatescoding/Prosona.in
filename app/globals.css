@@ -46,13 +46,12 @@
   height: 200%;
   background: conic-gradient(
     from 0deg,
-    #4B2DA8,
     #7C3AED,
-    #8B5CF6,
     #A78BFA,
+    #F5F3FF,
     #C4B5FD,
-    #6D28D9,
-    #4B2DA8
+    #A78BFA,
+    #7C3AED
   );
   z-index: -2;
   filter: blur(8px);
@@ -71,18 +70,20 @@
   background: #4B2DA8;
   border-radius: 48px;
   z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.gradient-button:hover::after {
+  opacity: 0.9;
 }
 
 .gradient-text {
   color: white;
-  background: none;
-  -webkit-background-clip: unset;
-  background-clip: unset;
-  filter: none;
+  transition: opacity 0.3s ease;
 }
 
 .gradient-button:hover .gradient-text {
-  color: #C4B5FD;
+  opacity: 0.9;
 }
 
 .gradient-button:active {
