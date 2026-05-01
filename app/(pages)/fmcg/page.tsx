@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'FMCG Brand Growth | PROSONΛ',
-  description: 'We build, list, and scale FMCG brands across India's fastest-growing quick commerce platforms with precision and velocity.',
+  description: "We build, list, and scale FMCG brands across India's fastest-growing quick commerce platforms with precision and velocity.",
   openGraph: {
     title: 'FMCG Brand Growth | PROSONΛ',
-    description: 'We build, list, and scale FMCG brands across India's fastest-growing quick commerce platforms with precision and velocity.',
+    description: "We build, list, and scale FMCG brands across India's fastest-growing quick commerce platforms with precision and velocity.",
     images: ['/logo.svg'],
   },
 };
