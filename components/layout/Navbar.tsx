@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className={`fixed top-4 left-4 right-4 md:left-0 md:right-0 md:mx-auto max-w-[1024px] z-50 bg-white/70 backdrop-blur-md backdrop-saturate-150 border border-border flex items-center transition-all duration-300 rounded-full px-8 py-1.5 ${scrolled ? 'shadow-md bg-white/80' : 'shadow-sm'}`}>
+      <header className={`fixed top-4 left-4 right-4 md:left-0 md:right-0 md:mx-auto max-w-[1024px] z-50 bg-purple-light/40 backdrop-blur-xl border border-purple/10 flex items-center transition-all duration-300 rounded-full px-8 py-1.5 ${scrolled ? 'shadow-lg bg-purple-light/70 border-purple/20' : 'shadow-sm'}`}>
         <div className="flex justify-between items-center w-full">
           {/* LEFT: LOGO */}
           <Link href="/" className="flex items-center">
@@ -212,24 +212,24 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="absolute top-[110%] left-0 w-full bg-white border border-border shadow-lg py-4 px-8 flex flex-col gap-4 font-h3 text-lg md:hidden rounded-2xl">
+          <div className="absolute top-[110%] left-0 w-full bg-purple-light/90 backdrop-blur-xl border border-purple/10 shadow-lg py-4 px-8 flex flex-col gap-4 font-h3 text-lg md:hidden rounded-2xl overflow-hidden">
             <Link href="/" className={`${isActive('/') ? 'text-purple font-semibold' : 'text-slate-600'}`}>Home</Link>
-            <div className="flex flex-col gap-2 border-l-2 border-slate-100 pl-4 py-2">
+            <div className="flex flex-col gap-2 border-l-2 border-purple/10 pl-4 py-2">
               <span className="text-xs text-slate-400 font-semibold tracking-wider uppercase">Services</span>
               <Link href="/fnb" className="text-slate-600 hover:text-purple transition-colors">F&amp;B</Link>
               <Link href="/fmcg" className="text-slate-600 hover:text-purple transition-colors">FMCG</Link>
               <Link href="/brand-systems" className="text-slate-600 hover:text-purple transition-colors">Brand Systems</Link>
             </div>
-            <div className="flex flex-col gap-2 border-l-2 border-slate-100 pl-4 py-2">
+            <div className="flex flex-col gap-2 border-l-2 border-purple/10 pl-4 py-2">
               <span className="text-xs text-slate-400 font-semibold tracking-wider uppercase">Explore</span>
               <Link href="/blog" className="text-slate-600 hover:text-purple transition-colors">Blog</Link>
             </div>
             <Link href="/contact" className={`${isActive('/contact') ? 'text-purple font-semibold' : 'text-slate-600'}`}>Contact</Link>
             <Link 
               href="/contact"
-              className="mt-4 bg-purple text-white px-6 py-3 rounded-lg text-center font-medium shadow-sm active:scale-95 transition-all"
+              className="mt-4 gradient-button text-center w-full"
             >
-              Get Started
+              <span className="gradient-text">Get Started</span>
             </Link>
           </div>
         )}
