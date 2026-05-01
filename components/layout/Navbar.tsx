@@ -29,14 +29,14 @@ const Navbar = () => {
 
   return (
     <>
-      <header className={`fixed top-4 left-4 right-4 md:left-0 md:right-0 md:mx-auto max-w-[1024px] z-50 bg-white border border-border flex items-center transition-all duration-300 rounded-full px-8 py-2 ${scrolled ? 'shadow-md' : 'shadow-sm'}`}>
+      <header className={`fixed top-4 left-4 right-4 md:left-0 md:right-0 md:mx-auto max-w-[1024px] z-50 bg-white/70 backdrop-blur-md backdrop-saturate-150 border border-border flex items-center transition-all duration-300 rounded-full px-8 py-1.5 ${scrolled ? 'shadow-md bg-white/80' : 'shadow-sm'}`}>
         <div className="flex justify-between items-center w-full">
           {/* LEFT: LOGO */}
           <Link href="/" className="flex items-center">
             <Image 
               src="/logo.svg" 
               alt="Prosona Logo" 
-              className="h-14 md:h-16 w-auto" 
+              className="h-10 md:h-12 w-auto" 
               width={195} 
               height={80} 
               priority 
