@@ -32,45 +32,51 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Tilt className="h-full">
-              <div className="p-lg rounded-2xl border border-border bg-white/80 hover:bg-white transition-all duration-300 group h-full shadow-sm hover:shadow-md hover:border-purple/30">
-                <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
-                  <span className="material-symbols-outlined">restaurant</span>
+              <div className="uiverse-card group h-full">
+                <div className="uiverse-card-inner p-lg flex flex-col justify-end">
+                  <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
+                    <span className="material-symbols-outlined">restaurant</span>
+                  </div>
+                  <h3 className="font-h3 text-h3 mb-4 text-primary">F&B</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Specialized systems for Restaurants & Café Brands. From menu engineering to digital presence.</p>
+                  <ul className="space-y-3 font-body-md mt-auto">
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Digital Menus</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Visual Identity</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Ordering Flow</li>
+                  </ul>
                 </div>
-                <h3 className="font-h3 text-h3 mb-4 text-primary">F&B</h3>
-                <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Specialized systems for Restaurants & Café Brands. From menu engineering to digital presence.</p>
-                <ul className="space-y-3 font-body-md">
-                  <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Digital Menus</li>
-                  <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Visual Identity</li>
-                  <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Ordering Flow</li>
-                </ul>
               </div>
             </Tilt>
             <Tilt className="h-full">
-              <div className="p-lg rounded-2xl border border-border bg-white/80 hover:bg-white transition-all duration-300 group h-full shadow-sm hover:shadow-md hover:border-purple/30">
-                <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
-                  <span className="material-symbols-outlined">smart_toy</span>
+              <div className="uiverse-card group h-full">
+                <div className="uiverse-card-inner p-lg flex flex-col justify-end">
+                  <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
+                    <span className="material-symbols-outlined">smart_toy</span>
+                  </div>
+                  <h3 className="font-h3 text-h3 mb-4 text-primary uppercase tracking-tight">Automation</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Content Autopilot for modern brands. Automated scheduling, creation, and posting.</p>
+                  <ul className="space-y-3 font-body-md mt-auto">
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> AI Content Creation</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Multi-channel Sync</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Dynamic Analytics</li>
+                  </ul>
                 </div>
-                <h3 className="font-h3 text-h3 mb-4 text-primary uppercase tracking-tight">Automation</h3>
-                <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Content Autopilot for modern brands. Automated scheduling, creation, and posting.</p>
-                <ul className="space-y-3 font-body-md">
-                  <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> AI Content Creation</li>
-                  <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Multi-channel Sync</li>
-                  <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Dynamic Analytics</li>
-                </ul>
               </div>
             </Tilt>
             <Tilt className="h-full">
-              <div className="p-lg rounded-2xl border border-border bg-white/80 hover:bg-white transition-all duration-300 group h-full shadow-sm hover:shadow-md hover:border-purple/30">
-                <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
-                  <span className="material-symbols-outlined">architecture</span>
+              <div className="uiverse-card group h-full">
+                <div className="uiverse-card-inner p-lg flex flex-col justify-end">
+                  <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
+                    <span className="material-symbols-outlined">architecture</span>
+                  </div>
+                  <h3 className="font-h3 text-h3 mb-4 text-primary uppercase tracking-tight">Brand</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Full Brand Kits designed for scale. Every asset your business needs, documented and ready.</p>
+                  <ul className="space-y-3 font-body-md mt-auto">
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Scalable Logos</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Design Guidelines</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Asset Libraries</li>
+                  </ul>
                 </div>
-                <h3 className="font-h3 text-h3 mb-4 text-primary uppercase tracking-tight">Brand</h3>
-                <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Full Brand Kits designed for scale. Every asset your business needs, documented and ready.</p>
-                <ul className="space-y-3 font-body-md">
-                  <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Scalable Logos</li>
-                  <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Design Guidelines</li>
-                  <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Asset Libraries</li>
-                </ul>
               </div>
             </Tilt>
           </div>
