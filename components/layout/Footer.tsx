@@ -1,23 +1,30 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const footerLinks = {
-  work: [
-    { label: 'Our Work', href: '/work' },
-    { label: 'F&B Projects', href: '/work' },
-    { label: 'FMCG Projects', href: '/work' },
+  branding: [
+    { label: 'F&B', href: '/fnb' },
+    { label: 'FMCG', href: '/fmcg' },
+    { label: 'Brand Systems', href: '/brand-systems' },
+    { label: 'Building Brands', href: '/building-brands' },
   ],
-  services: [
-    { label: 'Brand Systems', href: '/services' },
-    { label: 'Growth Systems', href: '/services' },
-    { label: 'AI Infrastructure', href: '/services' },
+  grow: [
+    { label: 'Personal Branding', href: '/personal-branding' },
+    { label: 'Automation', href: '/automation' },
+    { label: 'Brand Audits', href: '/brand-audits' },
+  ],
+  tools: [
+    { label: 'AI Brand Kit', href: '/ai-brand-kit' },
+    { label: 'Brand Templates', href: '/brand-templates' },
+    { label: 'Integrations', href: '/integrations' },
   ],
   company: [
-    { label: 'Our Story', href: '/our-story' },
     { label: 'Blog', href: '/blog' },
+    { label: 'Product Updates', href: '/product-updates' },
+    { label: 'Our Story', href: '/our-story' },
     { label: 'Contact', href: '/contact' },
   ],
 };
@@ -43,12 +50,19 @@ const LinkColumn = ({ title, links }: { title: string; links: { label: string; h
 );
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    setEmail('');
+    // Handle subscription logic here if needed
+  };
 
   return (
     <footer className="w-full bg-white border-t border-border font-body-md overflow-hidden">
       
-      {/* ── Top Section: 4 Columns ── */}
-      <div className="max-w-7xl mx-auto px-8 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16">
+      {/* ── Top Section: 5 Columns ── */}
+      <div className="max-w-7xl mx-auto px-8 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 md:gap-16">
         
         {/* Column 1 — Brand */}
         <div className="lg:col-span-1 flex flex-col gap-6">
@@ -111,33 +125,48 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Column 2 — Work */}
-        <LinkColumn title="Work" links={footerLinks.work} />
+        {/* Column 2 — Branding */}
+        <LinkColumn title="Branding" links={footerLinks.branding} />
 
-        {/* Column 3 — Services */}
-        <LinkColumn title="Services" links={footerLinks.services} />
+        {/* Column 3 — Grow */}
+        <LinkColumn title="Grow" links={footerLinks.grow} />
 
-        {/* Column 4 — Company */}
+        {/* Column 4 — Tools */}
+        <LinkColumn title="Tools" links={footerLinks.tools} />
+
+        {/* Column 5 — Company */}
         <LinkColumn title="Company" links={footerLinks.company} />
       </div>
 
-      {/* ── Middle Section: CTA Strip ── */}
+      {/* ── Middle Section: Newsletter Strip ── */}
       <div className="w-full border-t border-b border-border">
-        <div className="max-w-7xl mx-auto px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div>
-            <p className="text-primary text-[18px] font-semibold mb-1">
-              Ready to stop rebuilding your brand every time?
-            </p>
-            <p className="text-slate-400 text-[14px]">
-              Let&apos;s create a system that runs without you.
-            </p>
-          </div>
-          <Link
-            href="/contact"
-            className="shrink-0 bg-purple text-white px-8 py-3.5 rounded-lg font-semibold text-sm hover:bg-purple/90 active:scale-95 transition-all shadow-sm whitespace-nowrap"
+        <div className="max-w-7xl mx-auto px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="text-primary text-[15px] font-medium">
+            Stay ahead with AI brand insights.
+          </p>
+          <form 
+            onSubmit={handleSubscribe}
+            className="flex items-center w-full md:w-auto max-w-md gap-2"
           >
-            Start the conversation →
-          </Link>
+            <input 
+              type="email" 
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Email address"
+              required
+              className="flex-1 md:w-72 bg-[#fcfcfc] border border-border rounded-lg px-4 py-2.5 text-sm outline-none focus:border-purple focus:ring-1 focus:ring-purple/10 transition-all"
+            />
+            <button 
+              type="submit"
+              className="bg-purple text-white p-2.5 rounded-lg hover:bg-purple/90 active:scale-95 transition-all shadow-sm"
+              aria-label="Subscribe"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
 

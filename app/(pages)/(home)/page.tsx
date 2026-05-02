@@ -3,276 +3,265 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Hero from './components/Hero';
+import Tilt from '@/components/ui/Tilt';
 
 export const metadata: Metadata = {
-  title: 'Prosona | AI-Powered Brand Systems for F&B and FMCG',
-  description: 'Prosona builds AI-powered brand systems for food and consumer brands — so their brand runs without them.',
+  title: 'PROSONΛ | Build a Brand Worth Remembering',
+  description: 'AI-powered brand systems for modern businesses. Build, scale, and automate your brand ecosystem.',
   openGraph: {
-    title: 'Prosona | AI-Powered Brand Systems for F&B and FMCG',
-    description: 'Prosona builds AI-powered brand systems for food and consumer brands — so their brand runs without them.',
+    title: 'PROSONΛ | Build a Brand Worth Remembering',
+    description: 'AI-powered brand systems for modern businesses. Build, scale, and automate your brand ecosystem.',
     images: ['/logo.svg'],
   },
 };
 
-// ─── Services data ─────────────────────────────────────────────────────────────
-const services = [
-  {
-    number: '01',
-    name: 'Brand Systems',
-    tagline: 'Identity that scales without you.',
-    description:
-      'A complete visual and verbal identity system — logo, typography, tone of voice, colour, usage guidelines — built for product brands that need to stay consistent across every touchpoint.',
-    whoFor: 'F&B and FMCG brands launching or rebranding.',
-    outcome: 'Your team can execute brand assets independently. No brief needed every time.',
-  },
-  {
-    number: '02',
-    name: 'Growth Systems',
-    tagline: 'Content and visibility on autopilot.',
-    description:
-      'Structured content workflows, social playbooks, and automation layers that produce consistent brand presence — without the founder writing every caption.',
-    whoFor: 'Brands with traction but inconsistent output.',
-    outcome: 'Three months of content direction built and deployed. You review, not produce.',
-  },
-  {
-    number: '03',
-    name: 'AI Brand Infrastructure',
-    tagline: 'Operational systems that run your brand.',
-    description:
-      'Brand prompt libraries, AI-assisted asset generation workflows, templated campaigns, and SOPs — so your brand operates like a team, even if you\'re a team of one.',
-    whoFor: 'Scaling brands that can\'t hire a full creative team yet.',
-    outcome: 'A brand that produces on-demand without constant agency dependency.',
-  },
-];
-
-// ─── Process steps ─────────────────────────────────────────────────────────────
-const process = [
-  {
-    step: '01',
-    name: 'Audit',
-    description: 'We map your brand gaps — identity, messaging, presence, and consistency. Honest, structured, no fluff.',
-  },
-  {
-    step: '02',
-    name: 'Strategy',
-    description: 'We define your positioning, audience, and the system architecture that will run your brand.',
-  },
-  {
-    step: '03',
-    name: 'Build',
-    description: 'We create your identity, assets, content workflows, and automation layers from the ground up.',
-  },
-  {
-    step: '04',
-    name: 'Deploy',
-    description: 'We hand over a brand system your team can run — with SOPs, templates, and AI tools built in.',
-  },
-];
-
 export default function Home() {
   return (
     <div className="relative w-full overflow-hidden">
-
-      {/* ── Hero ── */}
+      {/* Hero Section */}
       <Hero />
 
-      {/* ── Services ── */}
-      <section id="services" className="py-32 px-6 md:px-8 bg-white/70 backdrop-blur-xl relative z-10">
-        <div className="max-w-6xl mx-auto">
-
-          <div className="mb-20">
-            <p className="font-label-caps text-[11px] tracking-[0.2em] text-purple uppercase mb-4">What We Build</p>
-            <h2 className="font-h2 text-[32px] md:text-[44px] text-primary tracking-tight max-w-xl leading-tight">
-              Three systems. One goal:<br />a brand that runs without you.
-            </h2>
+      {/* Services Section */}
+      <section className="py-xl bg-white/60 backdrop-blur-xl px-8 relative z-10">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16">
+            <h2 className="font-h2 text-[32px] md:text-[44px] text-primary tracking-tight">Every system your brand needs.</h2>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border">
-            {services.map((service) => (
-              <div key={service.number} className="bg-[#faf9f7] p-8 md:p-10 flex flex-col gap-6">
-                <div className="flex items-start justify-between">
-                  <span className="font-label-caps text-[11px] tracking-[0.2em] text-purple/50">{service.number}</span>
-                </div>
-                <div>
-                  <h3 className="font-h3 text-[22px] text-primary mb-2">{service.name}</h3>
-                  <p className="text-purple text-[13px] font-medium tracking-tight italic">{service.tagline}</p>
-                </div>
-                <p className="text-slate-500 text-[14px] leading-[1.75]">{service.description}</p>
-                <div className="mt-auto pt-6 border-t border-border space-y-3">
-                  <div>
-                    <span className="text-[11px] font-semibold tracking-widest text-slate-400 uppercase">For</span>
-                    <p className="text-[13px] text-slate-600 mt-1">{service.whoFor}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Card 1 - F&B */}
+            <Tilt className="h-full">
+              <div className="uiverse-card group h-full">
+                <div className="uiverse-card-inner p-lg flex flex-col justify-end">
+                  <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
+                    <span className="material-symbols-outlined">restaurant</span>
                   </div>
-                  <div>
-                    <span className="text-[11px] font-semibold tracking-widest text-slate-400 uppercase">Outcome</span>
-                    <p className="text-[13px] text-slate-700 font-medium mt-1">{service.outcome}</p>
-                  </div>
+                  <h3 className="font-h3 text-h3 mb-4 text-primary">F&amp;B</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Specialized brand systems for restaurants and café brands. From menu engineering to full digital presence.</p>
+                  <ul className="space-y-3 font-body-md mt-auto">
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Digital Menus</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Visual Identity</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Ordering Flow</li>
+                  </ul>
                 </div>
               </div>
-            ))}
-          </div>
+            </Tilt>
 
-          <div className="mt-10 flex justify-center">
-            <Link
-              href="/contact"
-              className="bg-purple text-white px-10 py-4 rounded-lg font-semibold shadow-[0_4px_24px_0_rgba(91,44,107,0.3)] hover:shadow-[0_6px_30px_rgba(91,44,107,0.25)] hover:-translate-y-0.5 transition-all duration-200"
-            >
-              Build My Brand System →
-            </Link>
+            {/* Card 2 - FMCG */}
+            <Tilt className="h-full">
+              <div className="uiverse-card group h-full">
+                <div className="uiverse-card-inner p-lg flex flex-col justify-end">
+                  <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
+                    <span className="material-symbols-outlined">shopping_basket</span>
+                  </div>
+                  <h3 className="font-h3 text-h3 mb-4 text-primary">FMCG</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Built for fast-moving consumer goods brands entering retail shelves and quick commerce platforms.</p>
+                  <ul className="space-y-3 font-body-md mt-auto">
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Platform Listing</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Packaging Design</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Compliance Ready</li>
+                  </ul>
+                </div>
+              </div>
+            </Tilt>
+
+            {/* Card 3 - Brand Systems */}
+            <Tilt className="h-full">
+              <div className="uiverse-card group h-full">
+                <div className="uiverse-card-inner p-lg flex flex-col justify-end">
+                  <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
+                    <span className="material-symbols-outlined">layers</span>
+                  </div>
+                  <h3 className="font-h3 text-h3 mb-4 text-primary uppercase tracking-tight">Brand Systems</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Full brand kits designed for scale. Every asset your business needs, documented and ready to use.</p>
+                  <ul className="space-y-3 font-body-md mt-auto">
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Scalable Logos</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Design Guidelines</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Asset Libraries</li>
+                  </ul>
+                </div>
+              </div>
+            </Tilt>
+
+            {/* Card 4 - Automation */}
+            <Tilt className="h-full">
+              <div className="uiverse-card group h-full">
+                <div className="uiverse-card-inner p-lg flex flex-col justify-end">
+                  <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
+                    <span className="material-symbols-outlined">smart_toy</span>
+                  </div>
+                  <h3 className="font-h3 text-h3 mb-4 text-primary uppercase tracking-tight">Automation</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">Content autopilot for modern brands. Automated scheduling, creation, and multi-channel posting.</p>
+                  <ul className="space-y-3 font-body-md mt-auto">
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> AI Content Creation</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Multi-channel Sync</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Dynamic Analytics</li>
+                  </ul>
+                </div>
+              </div>
+            </Tilt>
+
+            {/* Card 5 - Building Brands */}
+            <Tilt className="h-full">
+              <div className="uiverse-card group h-full">
+                <div className="uiverse-card-inner p-lg flex flex-col justify-end">
+                  <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
+                    <span className="material-symbols-outlined">business</span>
+                  </div>
+                  <h3 className="font-h3 text-h3 mb-4 text-primary uppercase tracking-tight">Building Brands</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">End-to-end brand building from scratch. Strategy, identity, website, listings — everything in one place.</p>
+                  <ul className="space-y-3 font-body-md mt-auto">
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Brand Strategy</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Website &amp; App</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Market Launch</li>
+                  </ul>
+                </div>
+              </div>
+            </Tilt>
+
+            {/* Card 6 - Brand Audit */}
+            <Tilt className="h-full">
+              <div className="uiverse-card group h-full">
+                <div className="uiverse-card-inner p-lg flex flex-col justify-end">
+                  <div className="w-12 h-12 rounded-xl bg-purple/5 flex items-center justify-center mb-6 text-purple group-hover:bg-purple group-hover:text-white transition-colors">
+                    <span className="material-symbols-outlined">fact_check</span>
+                  </div>
+                  <h3 className="font-h3 text-h3 mb-4 text-primary uppercase tracking-tight">Brand Audit</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed font-body-md">A sharp, structured audit of your brand by practitioners with 20+ years of industry experience.</p>
+                  <ul className="space-y-3 font-body-md mt-auto">
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Identity Review</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Platform Presence</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-600"><span className="material-symbols-outlined text-xs">check</span> Growth Gaps</li>
+                  </ul>
+                </div>
+              </div>
+            </Tilt>
           </div>
         </div>
       </section>
 
-      {/* ── Process ── */}
-      <section className="py-32 px-6 md:px-8 bg-purple-light/40 backdrop-blur-xl relative z-10">
-        <div className="max-w-6xl mx-auto">
-
-          <div className="mb-20">
-            <p className="font-label-caps text-[11px] tracking-[0.2em] text-purple uppercase mb-4">How We Work</p>
-            <h2 className="font-h2 text-[32px] md:text-[44px] text-primary tracking-tight">
-              How We Build Your Brand System
-            </h2>
+      {/* Results Section */}
+      <section className="py-xl bg-purple-light/60 backdrop-blur-xl px-8 relative z-10">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+          <div className="space-y-2">
+            <div className="font-h1 text-[64px] text-purple leading-none tracking-tighter">3×</div>
+            <div className="font-label-caps text-label-caps text-purple/60 uppercase tracking-widest">Content output</div>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-0 md:gap-px bg-transparent md:bg-border">
-            {process.map((item, i) => (
-              <div key={item.step} className={`bg-[#faf9f7] md:bg-transparent p-8 relative ${i < process.length - 1 ? 'border-b border-border md:border-b-0' : ''}`}>
-                <div className="mb-6">
-                  <span className="font-label-caps text-[40px] font-bold text-purple/10 leading-none">{item.step}</span>
-                </div>
-                <h3 className="font-h3 text-[18px] text-primary mb-3">{item.name}</h3>
-                <p className="text-slate-500 text-[14px] leading-[1.7]">{item.description}</p>
-              </div>
-            ))}
+          <div className="space-y-2">
+            <div className="font-h1 text-[64px] text-purple leading-none tracking-tighter">Top 3</div>
+            <div className="font-label-caps text-label-caps text-purple/60 uppercase tracking-widest">AI search ranking</div>
+          </div>
+          <div className="space-y-2">
+            <div className="font-h1 text-[64px] text-purple leading-none tracking-tighter">100%</div>
+            <div className="font-label-caps text-label-caps text-purple/60 uppercase tracking-widest">Brand consistency</div>
           </div>
         </div>
       </section>
 
-      {/* ── Featured Work ── */}
-      <section className="py-32 px-6 md:px-8 bg-white/70 backdrop-blur-xl relative z-10">
-        <div className="max-w-6xl mx-auto">
-
-          <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div>
-              <p className="font-label-caps text-[11px] tracking-[0.2em] text-purple uppercase mb-4">Our Work</p>
-              <h2 className="font-h2 text-[32px] md:text-[44px] text-primary tracking-tight">
-                Results, not aesthetics.
-              </h2>
-            </div>
-            <Link href="/work" className="text-purple font-medium flex items-center gap-1.5 group shrink-0">
-              See all work
-              <span className="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
-            </Link>
+      {/* Client Marquee */}
+      <section className="py-sm border-y border-border bg-white/60 backdrop-blur-xl overflow-hidden relative z-10">
+        <div className="marquee-container">
+          <div className="marquee-content animate-scroll">
+            <span className="text-2xl font-bold tracking-widest text-[#C4BAC8] font-h1">KOVA</span>
+            <span className="text-2xl font-bold tracking-widest text-[#C4BAC8] font-h1">NORDE</span>
+            <span className="text-2xl font-bold tracking-widest text-[#C4BAC8] font-h1">AXIOM</span>
+            <span className="text-2xl font-bold tracking-widest text-[#C4BAC8] font-h1">VEER</span>
+            <span className="text-2xl font-bold tracking-widest text-[#C4BAC8] font-h1">MODERN</span>
+            <span className="text-2xl font-bold tracking-widest text-[#C4BAC8] font-h1">ELARA</span>
           </div>
-
-          {/* Featured case study */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-border rounded-2xl overflow-hidden shadow-sm">
-            <div className="bg-[#faf9f7] overflow-hidden">
-              <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdQm_U2ktoez25vf2lQuShNUE5w_ZfIrldg8jOF2yjZd933cFWpy7tgWUDsP3PoplcLHSwf1LFL6K6qDYeKeOW7SSEqOQYJkAtsQpuALkiCdcjOQHZ2dxWq7pUd-sqyCKSnOvVqV9TkELj58eA6KZBAXj5K8Q2bxG6x-zdKefkdvjUxCkd-55S1o0wCmstWrX4OTxOd2MwNiQ6IPJdLSmiTp40g855hxuPNfUw9yS8l-UX4WMQ3Ns77-dZAeqCsN8k90Y-Oq-egOM"
-                alt="Kova — Brand System"
-                width={700}
-                height={480}
-                className="w-full h-72 lg:h-full object-cover"
-              />
-            </div>
-            <div className="bg-[#faf9f7] p-10 flex flex-col justify-between gap-8">
-              <div>
-                <div className="flex items-center gap-3 mb-6">
-                  <span className="text-[11px] font-semibold tracking-widest text-purple bg-purple/8 px-3 py-1 rounded-full uppercase">F&amp;B</span>
-                  <span className="text-[11px] text-slate-400">Featured Project</span>
-                </div>
-                <h3 className="font-h2 text-[28px] text-primary mb-3">Kova</h3>
-                <p className="text-slate-400 text-sm font-medium mb-6">Modern café chain · Delhi NCR</p>
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-[11px] font-semibold tracking-widest text-slate-400 uppercase mb-1">The Problem</p>
-                    <p className="text-slate-600 text-[14px] leading-[1.7]">Three locations, three different brand experiences. No system, no guidelines — every menu reprint was a new design from scratch.</p>
-                  </div>
-                  <div>
-                    <p className="text-[11px] font-semibold tracking-widest text-slate-400 uppercase mb-1">What We Did</p>
-                    <p className="text-slate-600 text-[14px] leading-[1.7]">Built a complete brand system — identity, menu templates, social playbook, and an AI content workflow for weekly posts.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="border-t border-border pt-6">
-                <p className="text-[11px] font-semibold tracking-widest text-slate-400 uppercase mb-3">Outcome</p>
-                <p className="text-primary font-semibold text-[16px] leading-snug">Brand running consistently across all 3 locations. Zero agency dependency. Content produced in-house using the system.</p>
-              </div>
-            </div>
+          <div aria-hidden="true" className="marquee-content animate-scroll">
+            <span className="text-2xl font-bold tracking-widest text-[#C4BAC8] font-h1">KOVA</span>
+            <span className="text-2xl font-bold tracking-widest text-[#C4BAC8] font-h1">NORDE</span>
+            <span className="text-2xl font-bold tracking-widest text-[#C4BAC8] font-h1">AXIOM</span>
+            <span className="text-2xl font-bold tracking-widest text-[#C4BAC8] font-h1">VEER</span>
+            <span className="text-2xl font-bold tracking-widest text-[#C4BAC8] font-h1">MODERN</span>
+            <span className="text-2xl font-bold tracking-widest text-[#C4BAC8] font-h1">ELARA</span>
           </div>
         </div>
       </section>
 
-      {/* ── Trust / Founder ── */}
-      <section className="py-32 px-6 md:px-8 bg-purple-light/40 backdrop-blur-xl relative z-10">
-        <div className="max-w-6xl mx-auto">
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-
-            {/* Founder */}
-            <div>
-              <p className="font-label-caps text-[11px] tracking-[0.2em] text-purple uppercase mb-6">Who We Are</p>
-              <h2 className="font-h2 text-[28px] md:text-[36px] text-primary tracking-tight mb-6 leading-tight">
-                We&apos;re a brand studio obsessed with one thing: systems that don&apos;t break.
-              </h2>
-              <p className="text-slate-500 text-[15px] leading-[1.75] mb-8">
-                Prosona was built because we kept seeing the same problem — brilliant product founders spending more time on brand firefighting than building. We exist to end that.
-              </p>
-              <p className="text-slate-500 text-[15px] leading-[1.75] mb-10">
-                We work with a small number of F&amp;B and FMCG brands at a time, so the work is deep, not templated.
-              </p>
-              <Link href="/our-story" className="text-purple font-medium flex items-center gap-1.5 group w-fit">
-                Our story
-                <span className="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
-              </Link>
-            </div>
-
-            {/* Testimonials */}
-            <div className="flex flex-col gap-6">
-              <blockquote className="bg-white border border-border rounded-2xl p-8 shadow-sm">
-                <p className="text-slate-600 text-[15px] leading-[1.75] mb-6 italic">
-                  &ldquo;Before Prosona, every time we opened a new outlet it was a brand reset. Now we just follow the playbook. It&apos;s the best investment we&apos;ve made in the last two years.&rdquo;
-                </p>
-                <div>
-                  <p className="font-semibold text-primary text-[14px]">Rohan Mehta</p>
-                  <p className="text-slate-400 text-[12px]">Founder, Kova Café · Delhi</p>
+      {/* Blog Preview */}
+      <section className="py-xl bg-bg/40 backdrop-blur-sm px-8 relative z-10">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between items-end mb-12">
+            <h2 className="font-h2 text-h2 text-primary tracking-tight">Latest Perspectives</h2>
+            <a className="text-purple font-medium flex items-center gap-1 group font-body-md" href="#">
+              Explore Blog <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Tilt className="h-full">
+              <div className="bg-white/80 rounded-2xl overflow-hidden border border-border group cursor-pointer blog-card-hover h-full shadow-sm hover:shadow-md">
+                <div className="h-48 overflow-hidden">
+                  <Image 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                    alt="Blog 1" 
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdQm_U2ktoez25vf2lQuShNUE5w_ZfIrldg8jOF2yjZd933cFWpy7tgWUDsP3PoplcLHSwf1LFL6K6qDYeKeOW7SSEqOQYJkAtsQpuALkiCdcjOQHZ2dxWq7pUd-sqyCKSnOvVqV9TkELj58eA6KZBAXj5K8Q2bxG6x-zdKefkdvjUxCkd-55S1o0wCmstWrX4OTxOd2MwNiQ6IPJdLSmiTp40g855hxuPNfUw9yS8l-UX4WMQ3Ns77-dZAeqCsN8k90Y-Oq-egOM" 
+                    width={400}
+                    height={250}
+                  />
                 </div>
-              </blockquote>
-              <blockquote className="bg-white border border-border rounded-2xl p-8 shadow-sm">
-                <p className="text-slate-600 text-[15px] leading-[1.75] mb-6 italic">
-                  &ldquo;We launched on Blinkit and Amazon without a brand. Prosona built everything in 6 weeks — and we looked like we&apos;d been around for five years.&rdquo;
-                </p>
-                <div>
-                  <p className="font-semibold text-primary text-[14px]">Priya Anand</p>
-                  <p className="text-slate-400 text-[12px]">Co-founder, Veer Naturals · FMCG</p>
+                <div className="p-sm">
+                  <span className="font-label-caps text-[10px] text-purple bg-purple/5 px-2 py-0.5 rounded tracking-widest">STRATEGY</span>
+                  <h3 className="font-h3 text-xl mt-3 text-primary leading-tight">Why Every Restaurant Needs a Brand System</h3>
                 </div>
-              </blockquote>
-            </div>
+              </div>
+            </Tilt>
+            <Tilt className="h-full">
+              <div className="bg-white/80 rounded-2xl overflow-hidden border border-border group cursor-pointer blog-card-hover h-full shadow-sm hover:shadow-md">
+                <div className="h-48 overflow-hidden">
+                  <Image 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                    alt="Blog 2" 
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3bCau-AQ9ZayQ2EPszjNPQOybGm2iJCmNBmrtizpzPU12vBDgKtH9sSReknDGjCX8pi-2jtQH3ETUiDT5c0IccRZCLGSaMqgKYtXM9sriVhVN5t1k5n9B--EYZ2XP4JO2fbU4mopnu1QwDmyOyOCdZTEFm1X02yXWYlmyzPmEBCahkfglhIkyYxtebkcJdi7MJo8Cj9390ScVK2Hh0lqI34ekta825t5KRIoFQylGDsoiyo7OGne4a-qHlaFwRyUCvR9caaHiU0o" 
+                    width={400}
+                    height={250}
+                  />
+                </div>
+                <div className="p-sm">
+                  <span className="font-label-caps text-[10px] text-purple bg-purple/5 px-2 py-0.5 rounded tracking-widest">AI TRENDS</span>
+                  <h3 className="font-h3 text-xl mt-3 text-primary leading-tight">How AI Search Is Changing Brand Visibility</h3>
+                </div>
+              </div>
+            </Tilt>
+            <Tilt className="h-full">
+              <div className="bg-white/80 rounded-2xl overflow-hidden border border-border group cursor-pointer blog-card-hover h-full shadow-sm hover:shadow-md">
+                <div className="h-48 overflow-hidden">
+                  <Image 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                    alt="Blog 3" 
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs_-RVT_cFdqS4XUIjUGyHFKHuoi-x6yAu5wwh1IyjvXYMSVey_kOiKroF-xANOP4YmE32275uJTi1LSyHJA8-LGZj4wMBDZhRunFgo8-vXNYvv1plKTR0-D9PO3qtI7LRDdXre4foR9I2qPJst1K5vbZcXveSV6DCo0q7UCzzO2DBjV_6WuS3nmQvw6VzgbsIhaduzY6jOz6rm5sCO0QXMk0avy0xfkm-3RvlOEAPlmQYf5cSqk_gPDx_79NgC0hnbdY90CD8_zA" 
+                    width={400}
+                    height={250}
+                  />
+                </div>
+                <div className="p-sm">
+                  <span className="font-label-caps text-[10px] text-purple bg-purple/5 px-2 py-0.5 rounded tracking-widest">AUTOMATION</span>
+                  <h3 className="font-h3 text-xl mt-3 text-primary leading-tight">Content Autopilot: The New Marketing Standard</h3>
+                </div>
+              </div>
+            </Tilt>
           </div>
         </div>
       </section>
 
-      {/* ── CTA Section ── */}
-      <section className="py-32 px-6 md:px-8 bg-white/70 backdrop-blur-xl relative z-10">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="font-label-caps text-[11px] tracking-[0.2em] text-purple uppercase mb-6">Ready When You Are</p>
-          <h2 className="font-h2 text-[32px] md:text-[48px] text-primary tracking-tight mb-6 leading-tight">
-            Ready to stop rebuilding your brand every time?
-          </h2>
-          <p className="text-slate-500 text-[16px] leading-[1.75] mb-10 max-w-xl mx-auto">
-            Let&apos;s create a system that runs without you.
-          </p>
-          <Link
+      {/* CTA Section */}
+      <section className="py-xl bg-purple-light/60 backdrop-blur-xl px-8 text-center relative overflow-hidden z-10">
+        <div className="max-w-3xl mx-auto relative z-10">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-purple/20 bg-white/80 text-purple mb-8 font-label-caps text-[10px] tracking-[2px] shadow-sm">
+            <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            AI-FIRST BRAND STUDIO
+          </div>
+          <h2 className="font-h2 text-[32px] md:text-[48px] text-primary mb-8 leading-tight tracking-tight">Your brand shouldn&apos;t need you to run it.</h2>
+          <Link 
             href="/contact"
-            className="inline-block bg-purple text-white px-12 py-5 rounded-lg font-bold text-[16px] shadow-[0_4px_24px_0_rgba(91,44,107,0.35)] hover:shadow-[0_6px_30px_rgba(91,44,107,0.28)] hover:-translate-y-0.5 active:translate-y-[1px] transition-all duration-200"
+            className="inline-block bg-purple text-white px-10 py-5 rounded-lg font-bold text-lg shadow-[0_4px_14px_0_rgba(91,44,107,0.39)] hover:shadow-[0_6px_20px_rgba(91,44,107,0.23)] hover:-translate-y-0.5 active:shadow-[0_2px_4px_rgba(91,44,107,0.4)] active:translate-y-[1px] transition-all duration-200 font-body-md"
           >
-            Start the conversation →
+            Build My Brand System →
           </Link>
-          <p className="text-slate-400 text-[12px] mt-6">Engagements typically start from ₹1.5L</p>
         </div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-purple/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 z-[-1]"></div>
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3 z-[-1]"></div>
       </section>
-
     </div>
   );
 }
