@@ -7,20 +7,16 @@ export default function BackgroundBeams() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
     checkMobile();
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  // Opacity settings as per user request: 0.04 to 0.08
-  // On mobile: reduce beam intensity by half.
-  const opacityScale = isMobile ? 0.5 : 1.0;
-  
-  // Beams data: [startX, startY, endX, endY, duration, delay]
-  const allBeams = [
+  // Skip entirely on mobile — saves all SVG + framer-motion rendering cost
+  if (isMobile) return null;
+
+  const beams = [
     { x1: "20%", y1: "100%", x2: "80%", y2: "-10%", d: 25, delay: 0 },
     { x1: "40%", y1: "110%", x2: "110%", y2: "10%", d: 30, delay: 2 },
     { x1: "0%", y1: "90%", x2: "60%", y2: "-20%", d: 28, delay: 5 },
@@ -28,9 +24,6 @@ export default function BackgroundBeams() {
     { x1: "10%", y1: "105%", x2: "90%", y2: "0%", d: 22, delay: 8 },
     { x1: "30%", y1: "100%", x2: "100%", y2: "-30%", d: 40, delay: 3 },
   ];
-
-  // Reduce beams on mobile for performance
-  const beams = isMobile ? allBeams.slice(0, 3) : allBeams;
 
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
@@ -57,12 +50,12 @@ export default function BackgroundBeams() {
             x2={b.x2}
             y2={b.y2}
             stroke="url(#beamGradient)"
-            strokeWidth={isMobile ? "120" : "240"}
+            strokeWidth="240"
             strokeLinecap="round"
             filter="url(#beamBlur)"
             initial={{ opacity: 0 }}
             animate={{
-              opacity: [0.04 * opacityScale, 0.08 * opacityScale, 0.04 * opacityScale],
+              opacity: [0.04, 0.08, 0.04],
               x1: [b.x1, (parseFloat(b.x1) + 8) + "%", b.x1],
               y2: [b.y2, (parseFloat(b.y2) + 8) + "%", b.y2],
             }}

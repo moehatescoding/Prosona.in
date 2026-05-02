@@ -9,56 +9,48 @@ interface TiltProps {
 }
 
 export default function Tilt({ children, className = "" }: TiltProps) {
-  const ref = useRef<HTMLDivElement>(null);
-
-  // Values range from -1 to 1 depending on mouse position relative to center
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-
-  // Smooth the raw mouse values with spring physics
-  const springConfig = { damping: 25, stiffness: 300, mass: 0.5 };
-  const smoothX = useSpring(x, springConfig);
-  const smoothY = useSpring(y, springConfig);
-
-  // Transform smoothed values into rotation degrees (Max 8 deg)
-  const rotateX = useTransform(smoothY, [-1, 1], [-8, 8]);
-  const rotateY = useTransform(smoothX, [-1, 1], [8, -8]);
-
-  // Transform smoothed values into a slight shadow shift
-  const shadowX = useTransform(smoothX, [-1, 1], [10, -10]);
-  const shadowY = useTransform(smoothY, [-1, 1], [10, -10]);
-
-  // Transform smoothed values into a dynamic box shadow
-  const shadowValue = useTransform(
-    [shadowX, shadowY],
-    ([sX, sY]) => `rgba(91, 44, 107, 0.08) ${sX}px ${sY}px 24px`
-  );
-  
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
     checkMobile();
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
+  // On mobile: render a plain div — no hooks active in render, no framer overhead
+  if (isMobile) {
+    return <div className={className}>{children}</div>;
+  }
+
+  return <TiltDesktop className={className}>{children}</TiltDesktop>;
+}
+
+function TiltDesktop({ children, className = "" }: TiltProps) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const springConfig = { damping: 25, stiffness: 300, mass: 0.5 };
+  const smoothX = useSpring(x, springConfig);
+  const smoothY = useSpring(y, springConfig);
+
+  const rotateX = useTransform(smoothY, [-1, 1], [-8, 8]);
+  const rotateY = useTransform(smoothX, [-1, 1], [8, -8]);
+
+  const shadowX = useTransform(smoothX, [-1, 1], [10, -10]);
+  const shadowY = useTransform(smoothY, [-1, 1], [10, -10]);
+  const shadowValue = useTransform(
+    [shadowX, shadowY],
+    ([sX, sY]) => `rgba(91, 44, 107, 0.08) ${sX}px ${sY}px 24px`
+  );
+
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (isMobile || !ref.current) return;
-    
+    if (!ref.current) return;
     const rect = ref.current.getBoundingClientRect();
-    const width = rect.width;
-    const height = rect.height;
-    
-    const mouseX = e.clientX - rect.left;
-    const mouseY = e.clientY - rect.top;
-    
-    // Calculate values from -1 to 1 based on center of the element
-    const xPct = (mouseX / width) * 2 - 1;
-    const yPct = (mouseY / height) * 2 - 1;
-    
+    const xPct = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+    const yPct = ((e.clientY - rect.top) / rect.height) * 2 - 1;
     x.set(xPct);
     y.set(yPct);
   };
@@ -74,18 +66,15 @@ export default function Tilt({ children, className = "" }: TiltProps) {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className={className}
-      style={{
-        perspective: 1000,
-        transformStyle: "preserve-3d",
-      }}
+      style={{ perspective: 1000, transformStyle: "preserve-3d" }}
     >
       <motion.div
         style={{
-          rotateX: isMobile ? 0 : rotateX,
-          rotateY: isMobile ? 0 : rotateY,
-          boxShadow: isMobile ? "none" : shadowValue,
+          rotateX,
+          rotateY,
+          boxShadow: shadowValue,
         }}
-        whileHover={{ scale: isMobile ? 1 : 1.03 }}
+        whileHover={{ scale: 1.03 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
         className="w-full h-full rounded-[inherit]"
       >

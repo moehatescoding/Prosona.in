@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const footerLinks = {
   branding: [
-    { label: 'F&amp;B', href: '/fnb' },
+    { label: 'F&B', href: '/fnb' },
     { label: 'FMCG', href: '/fmcg' },
     { label: 'Brand Systems', href: '/brand-systems' },
     { label: 'Building Brands', href: '/building-brands' },

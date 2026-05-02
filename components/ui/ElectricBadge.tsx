@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 interface ElectricBadgeProps {
   children: React.ReactNode;
@@ -10,13 +10,23 @@ interface ElectricBadgeProps {
 export default function ElectricBadge({ children, className = "" }: ElectricBadgeProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  useEffect(() => {
+    // Skip canvas animation on mobile entirely
+    if (isMobile) return;
+
     const canvas = canvasRef.current;
     const container = containerRef.current;
     if (!canvas || !container) return;
 
-    // Use non-null assertion after the guard check above so TS is happy inside closures
     const ctx = canvas.getContext("2d")!;
     if (!ctx) return;
 
@@ -156,18 +166,18 @@ export default function ElectricBadge({ children, className = "" }: ElectricBadg
     loop();
 
     return () => cancelAnimationFrame(animId);
-  }, []);
+  }, [isMobile]);
 
   return (
-    <div
-      ref={containerRef}
-      className={`relative inline-flex items-center ${className}`}
-    >
-      <canvas
-        ref={canvasRef}
-        className="absolute pointer-events-none"
-        style={{ top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 0 }}
-      />
+    <div ref={containerRef} className={`relative inline-flex items-center ${className}`}>
+      {/* Canvas only rendered on desktop */}
+      {!isMobile && (
+        <canvas
+          ref={canvasRef}
+          className="absolute pointer-events-none"
+          style={{ top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 0 }}
+        />
+      )}
       <span
         className="relative z-10 font-label-caps text-label-caps text-purple bg-[rgba(91,44,107,0.06)] px-3 py-1 rounded-full uppercase tracking-widest"
         style={{ boxShadow: "0 0 0 1px rgba(139,92,246,0.28), 0 0 10px rgba(139,92,246,0.12)" }}
