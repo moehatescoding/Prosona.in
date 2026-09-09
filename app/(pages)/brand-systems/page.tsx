@@ -43,8 +43,7 @@ export default function BrandSystems() {
                 The essential foundation for high-growth startups. We deliver a comprehensive asset library including dynamic logos, typography systems, and color hierarchies optimized for both OLED screens and traditional media.
               </p>
               <div className="flex items-baseline gap-xs mb-lg">
-                <span className="text-h3 font-bold text-primary">₹19,999</span>
-                <span className="text-label-caps tracking-widest text-on-surface-variant">one-time investment</span>
+                <span className="text-h3 font-bold text-primary">Enquire for Phase Details</span>
               </div>
               <ul className="space-y-sm mb-lg">
                 <li className="flex items-center gap-xs text-on-surface font-body-md">
@@ -56,7 +55,7 @@ export default function BrandSystems() {
                   <span>Multi-Platform Asset Export</span>
                 </li>
               </ul>
-              <button className="w-full py-sm rounded-lg bg-primary text-white font-medium hover:opacity-95 transition-all">Reserve Your Kit</button>
+              <button className="w-full py-sm rounded-lg bg-primary text-white font-medium hover:opacity-95 transition-all">Enquire Now</button>
             </div>
           </div>
           <div className="order-1 md:order-2">
@@ -81,8 +80,7 @@ export default function BrandSystems() {
                 In an era of Perplexity and ChatGPT, your brand must be readable by machines. We optimize your visual and semantic data to ensure AI models represent your brand with 100% fidelity.
               </p>
               <div className="flex items-baseline gap-xs mb-lg">
-                <span className="text-h3 font-bold text-primary">₹9,999</span>
-                <span className="text-label-caps tracking-widest text-on-surface-variant">/ month</span>
+                <span className="text-h3 font-bold text-primary">Enquire for Strategy</span>
               </div>
               <ul className="space-y-sm mb-lg">
                 <li className="flex items-center gap-xs text-on-surface font-body-md">
@@ -94,7 +92,7 @@ export default function BrandSystems() {
                   <span>Semantic Brand Indexing</span>
                 </li>
               </ul>
-              <button className="w-full py-sm rounded-lg border border-primary text-primary font-medium hover:bg-primary/5 transition-all">Audit My Presence</button>
+              <button className="w-full py-sm rounded-lg border border-primary text-primary font-medium hover:bg-primary/5 transition-all">Enquire Now</button>
             </div>
           </div>
         </div>
@@ -109,8 +107,7 @@ export default function BrandSystems() {
                 The ultimate design partnership. A living, breathing brand ecosystem that acts as your internal design team. We manage every touchpoint, from social templates to enterprise UI kits.
               </p>
               <div className="flex items-baseline gap-xs mb-lg">
-                <span className="text-h3 font-bold text-primary">₹25,000</span>
-                <span className="text-label-caps tracking-widest text-on-surface-variant">/ month</span>
+                <span className="text-h3 font-bold text-primary">Enquire for Retainer Details</span>
               </div>
               <ul className="space-y-sm mb-lg">
                 <li className="flex items-center gap-xs text-on-surface font-body-md">
@@ -122,7 +119,7 @@ export default function BrandSystems() {
                   <span>Direct Design-Ops Integration</span>
                 </li>
               </ul>
-              <button className="w-full py-sm rounded-lg bg-lime text-[#1C1B1B] font-bold hover:opacity-95 transition-all">Apply for Retainer</button>
+              <button className="w-full py-sm rounded-lg bg-lime text-[#1C1B1B] font-bold hover:opacity-95 transition-all">Enquire Now</button>
             </div>
           </div>
           <div className="order-1 md:order-2">

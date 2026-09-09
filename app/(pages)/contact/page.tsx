@@ -81,15 +81,16 @@ export default function Contact() {
                   <label className="font-label-caps text-[10px] text-slate-400 tracking-widest">SERVICE INTEREST</label>
                   <select className="w-full border-b border-slate-200 border-t-0 border-x-0 bg-transparent py-3 px-0 focus:ring-0 focus:border-purple outline-none transition-colors font-body-md appearance-none cursor-pointer">
                     <option value="" disabled selected>Select a service</option>
-                    <option>F&amp;B Branding</option>
-                    <option>FMCG Branding</option>
+                    <option>Demand Systems</option>
+                    <option>Visibility Systems</option>
+                    <option>Autopilot Growth Engine</option>
+                    <option>F&amp;B Revenue &amp; Brand Systems</option>
+                    <option>FMCG Quick Commerce Engine</option>
                     <option>Brand Systems</option>
                     <option>Building Brands</option>
-                    <option>Personal Branding</option>
-                    <option>Automation Systems</option>
+                    <option>Personal Branding &amp; Executive Authority</option>
                     <option>Brand Audits</option>
-                    <option>Digital Strategy</option>
-                    <option>Full AI Transformation</option>
+                    <option>Full AI Growth Transformation</option>
                     <option>AI Brand Kit</option>
                     <option>Brand Templates</option>
                     <option>Integrations</option>

@@ -26,8 +26,8 @@ const services = [
   },
   {
     icon: 'trending_up',
-    title: 'Quick Commerce Growth',
-    desc: 'Ranking, visibility, and ad strategy built specifically for q-commerce algorithms. Optimised for high-intent shoppers and instant discovery on Blinkit, Zepto & more.',
+    title: 'Quick Commerce Demand & Conversion',
+    desc: 'Ranking, visibility, and cart conversion strategy built specifically for q-commerce algorithms. Optimised for high-intent shoppers and instant discovery on Blinkit, Zepto & more.',
   },
   {
     icon: 'verified',

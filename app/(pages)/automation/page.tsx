@@ -2,11 +2,11 @@ import React from 'react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Content Automation | PROSONΛ',
-  description: 'AI-powered content systems that learn your brand voice and generate high-performing posts.',
+  title: 'Autopilot: Always-On Growth Engine | PROSONΛ',
+  description: 'Your always-on growth engine — content, distribution, and performance, running itself.',
   openGraph: {
-    title: 'Content Automation | PROSONΛ',
-    description: 'AI-powered content systems that learn your brand voice and generate high-performing posts.',
+    title: 'Autopilot: Always-On Growth Engine | PROSONΛ',
+    description: 'Your always-on growth engine — content, distribution, and performance, running itself.',
     images: ['/logo.svg'],
   },
 };
@@ -17,16 +17,16 @@ export default function Automation() {
       {/* HERO SECTION */}
       <section className="bg-bg py-xl lg:py-48 px-gutter">
         <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
-          <span className="inline-block bg-purple-light px-4 py-1.5 rounded-full text-label-caps font-label-caps text-primary uppercase mb-lg tracking-widest">CONTENT AUTOMATION</span>
-          <h1 className="font-h1 text-[36px] sm:text-[44px] md:text-[50px] lg:text-[56px] xl:text-[60px] leading-[1.1] text-primary mb-lg max-w-none tracking-tight lg:whitespace-nowrap">Post Consistently. Without the Effort.</h1>
-          <p className="font-body-lg text-on-surface-variant max-w-2xl mb-xl">We build AI-powered content systems that learn your brand voice and generate high-performing posts, so you can focus on building your business while we handle the distribution.</p>
+          <span className="inline-block bg-purple-light px-4 py-1.5 rounded-full text-label-caps font-label-caps text-primary uppercase mb-lg tracking-widest">ALWAYS-ON GROWTH ENGINE</span>
+          <h1 className="font-h1 text-[36px] sm:text-[44px] md:text-[50px] lg:text-[56px] xl:text-[60px] leading-[1.1] text-primary mb-lg max-w-none tracking-tight lg:whitespace-nowrap">Post Consistently. Drive Demand on Autopilot.</h1>
+          <p className="font-body-lg text-on-surface-variant max-w-2xl mb-xl">Your always-on growth engine — content, distribution, and performance running itself so you build market momentum without operational friction.</p>
           <div className="flex gap-md">
             <button className="bg-lime text-on-surface font-semibold px-8 py-4 rounded-lg shadow-sm hover:opacity-90 transition-all flex items-center gap-2">
-              See How It Works <span className="material-symbols-outlined">arrow_forward</span>
+              See How Autopilot Works <span className="material-symbols-outlined">arrow_forward</span>
             </button>
           </div>
           <div className="mt-xl w-full max-w-5xl rounded-xl overflow-hidden tinted-border shadow-sm">
-            <img className="w-full h-auto grayscale-[20%]" alt="Content automation workflow dashboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCtsrGrxwS_oXGiMrDeQXWI2VS-63Q1Z_Za5mZbECo-y6S8H9ZIta5gzcGByrMTNklF1oCNGhu9EKTqwuu9rtcAAYGYfXFmdK6HXUv5CZiAQDwOMLgi9gDr-pS8Lid87_VLN1KbtS-KBLxriDwqiXuvPdL249xF8jH5jJj4H93tgk7xl6occZ_jaz6yS6zVjgxrPz35Ia3j_FqH5bILs7bbfcEWQGhiDF69ffLUz0eDUWesOInpTc4Qif01As_Jko6HeArftfUBqw" />
+            <img className="w-full h-auto grayscale-[20%]" alt="Autopilot growth workflow dashboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCtsrGrxwS_oXGiMrDeQXWI2VS-63Q1Z_Za5mZbECo-y6S8H9ZIta5gzcGByrMTNklF1oCNGhu9EKTqwuu9rtcAAYGYfXFmdK6HXUv5CZiAQDwOMLgi9gDr-pS8Lid87_VLN1KbtS-KBLxriDwqiXuvPdL249xF8jH5jJj4H93tgk7xl6occZ_jaz6yS6zVjgxrPz35Ia3j_FqH5bILs7bbfcEWQGhiDF69ffLUz0eDUWesOInpTc4Qif01As_Jko6HeArftfUBqw" />
           </div>
         </div>
       </section>
@@ -36,26 +36,26 @@ export default function Automation() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-xl">
             <span className="font-label-caps text-label-caps text-primary tracking-[3px] mb-sm block">THE PROCESS</span>
-            <h2 className="font-h2 text-[40px] text-primary tracking-tight">Simple. Consistent. On brand.</h2>
+            <h2 className="font-h2 text-[40px] text-primary tracking-tight">Autonomous. Consistent. On brand.</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-lg">
             {/* Step 01 */}
             <div className="bg-white p-lg rounded-xl tinted-border hover:bg-purple-light transition-colors duration-300">
               <span className="text-primary font-h1 opacity-20 block mb-sm">01</span>
-              <h3 className="font-h3 text-primary mb-sm">We learn.</h3>
-              <p className="font-body-md text-on-surface-variant">Our system ingests your previous successful posts, brand guidelines, and tone of voice to create a unique AI model just for you.</p>
+              <h3 className="font-h3 text-primary mb-sm">We ingest signals.</h3>
+              <p className="font-body-md text-on-surface-variant">Our system ingests your high-performing assets, category data, and brand identity to train a custom AI growth model.</p>
             </div>
             {/* Step 02 */}
             <div className="bg-white p-lg rounded-xl tinted-border hover:bg-purple-light transition-colors duration-300">
               <span className="text-primary font-h1 opacity-20 block mb-sm">02</span>
-              <h3 className="font-h3 text-primary mb-sm">AI generates.</h3>
-              <p className="font-body-md text-on-surface-variant">Using your custom model, we produce a full month of captions, graphics, and video scripts in a single batch processing cycle.</p>
+              <h3 className="font-h3 text-primary mb-sm">Autopilot generates.</h3>
+              <p className="font-body-md text-on-surface-variant">Using your custom model, we batch-create a month of high-converting captions, visual posts, and video scripts.</p>
             </div>
             {/* Step 03 */}
             <div className="bg-white p-lg rounded-xl tinted-border hover:bg-purple-light transition-colors duration-300">
               <span className="text-primary font-h1 opacity-20 block mb-sm">03</span>
-              <h3 className="font-h3 text-primary mb-sm">You approve.</h3>
-              <p className="font-body-md text-on-surface-variant">Review the entire calendar through our sleek approval portal. One click to schedule, and the system handles the rest.</p>
+              <h3 className="font-h3 text-primary mb-sm">You approve &amp; scale.</h3>
+              <p className="font-body-md text-on-surface-variant">Review the entire content calendar in one click. Autopilot handles multi-channel distribution and performance reporting.</p>
             </div>
           </div>
         </div>
@@ -66,35 +66,35 @@ export default function Automation() {
         <div className="max-w-5xl mx-auto bg-white p-xl rounded-xl tinted-border grid grid-cols-1 md:grid-cols-2 gap-xl">
           <div>
             <span className="font-label-caps text-label-caps text-primary mb-sm block tracking-widest">CAPABILITIES</span>
-            <h2 className="font-h2 text-primary mb-md tracking-tight">Everything you need to scale.</h2>
-            <p className="font-body-md text-on-surface-variant mb-lg">A full-service automation suite designed for founders and creators who want to stay relevant without spending hours on social media.</p>
-            <img className="rounded-lg w-full aspect-video object-cover tinted-border" alt="Automation technology" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaE3BQJxhcQd8voIH6vhvYqrO9ukd-0uIINMNIXSAf_dQcUrdt7Aj3thPOCA8KRzn7jg7m3b7eTBY1VtRiFvcoix6kl0cEiP4tNcnfC1bCg_21favpHehRXVeSC7iYhj-K89KDbmbky5RAtJ60FbkQbi_3PBvLczbM8FoI7MletdCSC3lbNaGqXXXYGH1ftcj-cElzMdnaA4LdBc76bKXDT5klXMZH9OzLkhhgBK0CCb8gpI9S_5FiIzjjjNtDiR4OWxJr956FT_A" />
+            <h2 className="font-h2 text-primary mb-md tracking-tight">Everything you need to scale reach.</h2>
+            <p className="font-body-md text-on-surface-variant mb-lg">A full-service growth engine designed for founders and teams who want to maintain category dominance without operational bottleneck.</p>
+            <img className="rounded-lg w-full aspect-video object-cover tinted-border" alt="Autopilot technology" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaE3BQJxhcQd8voIH6vhvYqrO9ukd-0uIINMNIXSAf_dQcUrdt7Aj3thPOCA8KRzn7jg7m3b7eTBY1VtRiFvcoix6kl0cEiP4tNcnfC1bCg_21favpHehRXVeSC7iYhj-K89KDbmbky5RAtJ60FbkQbi_3PBvLczbM8FoI7MletdCSC3lbNaGqXXXYGH1ftcj-cElzMdnaA4LdBc76bKXDT5klXMZH9OzLkhhgBK0CCb8gpI9S_5FiIzjjjNtDiR4OWxJr956FT_A" />
           </div>
           <div className="flex flex-col justify-center">
             <ul className="space-y-md">
               <li className="flex items-center gap-md border-b border-border pb-md">
                 <span className="material-symbols-outlined text-primary">check_circle</span>
-                <span className="font-body-lg text-primary">Monthly content calendar</span>
+                <span className="font-body-lg text-primary">Monthly growth content calendar</span>
               </li>
               <li className="flex items-center gap-md border-b border-border pb-md">
                 <span className="material-symbols-outlined text-primary">check_circle</span>
-                <span className="font-body-lg text-primary">AI-curated captions & hashtags</span>
+                <span className="font-body-lg text-primary">AI-curated captions &amp; conversion tags</span>
               </li>
               <li className="flex items-center gap-md border-b border-border pb-md">
                 <span className="material-symbols-outlined text-primary">check_circle</span>
-                <span className="font-body-lg text-primary">Video scripts & storyboards</span>
+                <span className="font-body-lg text-primary">Video scripts &amp; storyboards</span>
               </li>
               <li className="flex items-center gap-md border-b border-border pb-md">
                 <span className="material-symbols-outlined text-primary">check_circle</span>
-                <span className="font-body-lg text-primary">Custom visual templates</span>
+                <span className="font-body-lg text-primary">Custom visual assets</span>
               </li>
               <li className="flex items-center gap-md border-b border-border pb-md">
                 <span className="material-symbols-outlined text-primary">check_circle</span>
-                <span className="font-body-lg text-primary">Cross-platform scheduling</span>
+                <span className="font-body-lg text-primary">Cross-platform scheduling &amp; sync</span>
               </li>
               <li className="flex items-center gap-md">
                 <span className="material-symbols-outlined text-primary">check_circle</span>
-                <span className="font-body-lg text-primary">Weekly performance audits</span>
+                <span className="font-body-lg text-primary">Weekly performance &amp; telemetry audits</span>
               </li>
             </ul>
           </div>
@@ -106,26 +106,25 @@ export default function Automation() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-xl">
             <span className="font-label-caps text-label-caps text-primary tracking-[3px] mb-sm block">PLANS</span>
-            <h2 className="font-h2 text-[40px] text-primary tracking-tight">Simple pricing for serious scale.</h2>
+            <h2 className="font-h2 text-[40px] text-primary tracking-tight">Transparent tiers for serious momentum.</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-lg max-w-4xl mx-auto">
             {/* Starter Plan */}
             <div className="bg-white p-xl rounded-xl tinted-border flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-300">
               <div className="mb-lg">
-                <h3 className="font-h3 text-primary mb-xs">Starter</h3>
-                <p className="font-body-md text-on-surface-variant">Perfect for solo founders.</p>
+                <h3 className="font-h3 text-primary mb-xs">Starter Autopilot</h3>
+                <p className="font-body-md text-on-surface-variant">Perfect for solo founders &amp; early brands.</p>
               </div>
               <div className="mb-xl">
-                <span className="text-[48px] font-h1 text-primary">₹9,999</span>
-                <span className="text-on-surface-variant">/month</span>
+                <span className="text-[32px] font-h1 text-primary">Price on Enquiry</span>
               </div>
               <ul className="space-y-sm mb-xl flex-grow text-on-surface-variant">
-                <li className="flex items-center gap-sm"><span className="material-symbols-outlined text-[18px]">done</span> 12 Posts per month</li>
-                <li className="flex items-center gap-sm"><span className="material-symbols-outlined text-[18px]">done</span> Caption generation</li>
-                <li className="flex items-center gap-sm"><span className="material-symbols-outlined text-[18px]">done</span> Basic visual assets</li>
+                <li className="flex items-center gap-sm"><span className="material-symbols-outlined text-[18px]">done</span> 12 High-impact posts per month</li>
+                <li className="flex items-center gap-sm"><span className="material-symbols-outlined text-[18px]">done</span> Automated caption generation</li>
+                <li className="flex items-center gap-sm"><span className="material-symbols-outlined text-[18px]">done</span> Essential visual assets</li>
                 <li className="flex items-center gap-sm"><span className="material-symbols-outlined text-[18px]">done</span> Email support</li>
               </ul>
-              <button className="w-full border-2 border-primary text-primary font-semibold py-3 rounded-lg hover:bg-primary hover:text-white transition-colors">Choose Starter</button>
+              <button className="w-full border-2 border-primary text-primary font-semibold py-3 rounded-lg hover:bg-primary hover:text-white transition-colors">Enquire About Starter</button>
             </div>
             {/* Growth Plan */}
             <div className="relative bg-white p-xl rounded-xl border-2 border-primary flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-300">
@@ -133,21 +132,20 @@ export default function Automation() {
                 <span className="bg-lime text-on-surface px-4 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">MOST POPULAR</span>
               </div>
               <div className="mb-lg">
-                <h3 className="font-h3 text-primary mb-xs">Growth</h3>
-                <p className="font-body-md text-on-surface-variant">For growing teams & studios.</p>
+                <h3 className="font-h3 text-primary mb-xs">Growth Autopilot</h3>
+                <p className="font-body-md text-on-surface-variant">For high-growth teams &amp; category leaders.</p>
               </div>
               <div className="mb-xl">
-                <span className="text-[48px] font-h1 text-primary">₹14,999</span>
-                <span className="text-on-surface-variant">/month</span>
+                <span className="text-[32px] font-h1 text-primary">Price on Enquiry</span>
               </div>
               <ul className="space-y-sm mb-xl flex-grow text-on-surface-variant">
-                <li className="flex items-center gap-sm font-medium text-primary"><span className="material-symbols-outlined text-[18px]">done</span> Daily content posting</li>
-                <li className="flex items-center gap-sm"><span className="material-symbols-outlined text-[18px]">done</span> Video script writing</li>
-                <li className="flex items-center gap-sm"><span className="material-symbols-outlined text-[18px]">done</span> Advanced analytics</li>
-                <li className="flex items-center gap-sm"><span className="material-symbols-outlined text-[18px]">done</span> Priority Slack support</li>
-                <li className="flex items-center gap-sm"><span className="material-symbols-outlined text-[18px]">done</span> Brand voice refinement</li>
+                <li className="flex items-center gap-sm font-medium text-primary"><span className="material-symbols-outlined text-[18px]">done</span> Daily automated posting &amp; sync</li>
+                <li className="flex items-center gap-sm"><span className="material-symbols-outlined text-[18px]">done</span> Short-form video scripts &amp; storyboards</li>
+                <li className="flex items-center gap-sm"><span className="material-symbols-outlined text-[18px]">done</span> Growth analytics &amp; attribution</li>
+                <li className="flex items-center gap-sm"><span className="material-symbols-outlined text-[18px]">done</span> Priority Slack channel support</li>
+                <li className="flex items-center gap-sm"><span className="material-symbols-outlined text-[18px]">done</span> Continuous brand voice model refinement</li>
               </ul>
-              <button className="w-full bg-primary text-white font-semibold py-3 rounded-lg hover:opacity-90 transition-opacity">Choose Growth</button>
+              <button className="w-full bg-primary text-white font-semibold py-3 rounded-lg hover:opacity-90 transition-opacity">Enquire About Growth</button>
             </div>
           </div>
         </div>
@@ -157,8 +155,8 @@ export default function Automation() {
       <section className="bg-primary text-white py-xl px-gutter overflow-hidden relative">
         <div className="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between gap-xl">
           <div className="max-w-2xl">
-            <h2 className="font-h2 text-white mb-md tracking-tight">Ready to put your content on autopilot?</h2>
-            <p className="font-body-lg text-primary-fixed opacity-90">Join 50+ businesses scaling their presence without the overhead of a full creative agency.</p>
+            <h2 className="font-h2 text-white mb-md tracking-tight">Ready to put your growth on autopilot?</h2>
+            <p className="font-body-lg text-primary-fixed opacity-90">Join 50+ businesses scaling their presence and reach without operational bottleneck.</p>
           </div>
           <button className="bg-lime text-on-surface font-semibold px-12 py-5 rounded-lg whitespace-nowrap active:scale-95 transition-transform">Get Started Today</button>
         </div>

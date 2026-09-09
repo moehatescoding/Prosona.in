@@ -15,33 +15,33 @@ export const metadata: Metadata = {
 const auditAreas = [
   {
     icon: 'brush',
-    title: 'Brand Identity',
-    desc: 'Visual consistency, logo system, color and type — does it hold together across every touchpoint?',
+    title: 'Brand & Visual Identity',
+    desc: 'Visual consistency, asset architecture, and whether your identity reinforces market credibility.',
   },
   {
     icon: 'forum',
     title: 'Messaging & Positioning',
-    desc: 'Are you saying the right thing to the right people in the right tone?',
+    desc: 'Are your value propositions clearly communicating differentiation to high-intent buyers?',
   },
   {
     icon: 'language',
-    title: 'Digital Presence',
-    desc: 'Website, social, SEO — what does your brand look like to a stranger finding you for the first time?',
+    title: 'Digital & Search Visibility',
+    desc: 'Search placement, AI search readiness, and discoverability when buyers search your space.',
   },
   {
     icon: 'inventory_2',
-    title: 'Packaging & Labels',
-    desc: 'Does your physical product communicate quality and trust the moment someone picks it up?',
+    title: 'Packaging & Product Touchpoints',
+    desc: 'Does your physical or digital product turn initial trial into instant trust and repeat retention?',
   },
   {
     icon: 'shopping_cart',
-    title: 'Platform Presence',
-    desc: 'How you show up on quick commerce, Amazon, and search — and whether it&apos;s working.',
+    title: 'Conversion & Platform Presence',
+    desc: 'How you show up on quick commerce, marketplaces, and direct channels — and where conversion friction occurs.',
   },
   {
     icon: 'trending_up',
-    title: 'Growth Gaps',
-    desc: 'Where you are leaking brand value today and what to address first.',
+    title: 'Growth & Revenue Gaps',
+    desc: 'Diagnose conversion bottlenecks, brand value leakage, and prioritized growth levers.',
   },
 ];
 
@@ -49,26 +49,26 @@ const steps = [
   {
     num: '01',
     title: 'Apply',
-    desc: 'Fill out a short form. Tell us about your brand, your category, and your biggest challenge right now.',
+    desc: 'Fill out a short form. Tell us about your brand, your category, and your biggest revenue challenge right now.',
   },
   {
     num: '02',
     title: 'We prepare',
-    desc: 'Our team audits your brand across every major touchpoint before the call. No generic checklists.',
+    desc: 'Our team audits your brand across every growth touchpoint before the call. No generic checklists.',
   },
   {
     num: '03',
     title: 'You get clarity',
-    desc: 'A focused 30-minute session with senior practitioners. Findings, priorities, and honest direction.',
+    desc: 'A focused 30-minute session with senior practitioners. Findings, priorities, and honest direction for scale.',
   },
 ];
 
 const deliverables = [
   'A one-page audit summary delivered within 24 hours',
-  'Your top brand gaps ranked by business impact',
-  'Quick wins you can act on this week',
+  'Your top revenue and growth gaps ranked by business impact',
+  'Quick conversion wins you can act on this week',
   'A prioritized roadmap for what to fix and in what order',
-  "An honest outside perspective from people who've built brands at scale",
+  "An honest outside perspective from people who've built and scaled brands",
 ];
 
 export default function BrandAudits() {
@@ -91,11 +91,11 @@ export default function BrandAudits() {
           </div>
 
           <h1 className="font-h1 text-[48px] md:text-[68px] leading-[1.05] text-primary max-w-[900px] mx-auto mb-8 tracking-tight">
-            A Second Opinion From People Who&apos;ve Seen It All.
+            A Growth &amp; Brand Audit From Practitioners.
           </h1>
 
           <p className="font-h3 text-h3 text-slate-500 max-w-[720px] mx-auto mb-12 font-normal leading-relaxed">
-            A sharp, structured audit of your brand conducted by practitioners with 20+ years of real industry experience. Not a report. A conversation that changes how you see your brand.
+            A sharp, structured audit of your brand conducted by practitioners with 20+ years of real industry experience. We diagnose growth gaps, messaging friction, and platform leakage.
           </p>
 
           <Link
@@ -111,10 +111,10 @@ export default function BrandAudits() {
       <section className="bg-white py-24 px-8 border-y border-border">
         <div className="max-w-[800px] mx-auto text-center">
           <h2 className="font-h2 text-[36px] md:text-[44px] text-primary mb-6 tracking-tight">
-            This isn&apos;t a free consultation.
+            This isn&apos;t a surface consultation.
           </h2>
           <p className="font-h3 text-h3 text-slate-500 leading-[1.8] font-normal">
-            Most audits are thinly veiled sales pitches. Ours isn&apos;t. We spend real time with your brand before we ever get on a call — reviewing your presence, your packaging, your positioning, and your platforms. When we sit down with you, we already know what&apos;s broken and what&apos;s worth keeping.
+            Most audits are thinly veiled sales pitches. Ours isn&apos;t. We spend real time with your brand before we ever get on a call — reviewing your conversion touchpoints, positioning, search visibility, and platform presence. When we sit down with you, we already know where growth is leaking.
           </p>
         </div>
       </section>

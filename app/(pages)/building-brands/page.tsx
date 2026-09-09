@@ -16,11 +16,11 @@ const fullStack = [
   { label: 'STRATEGY', title: 'Brand Strategy', desc: 'Before anything is designed, we define who you are, who you\'re for, and what makes you different. Positioning, voice, and competitive space.' },
   { label: 'IDENTITY', title: 'Name & Identity', desc: 'Naming, logo design, color system, typography — the visual and verbal foundation everything else is built on.' },
   { label: 'PRODUCT', title: 'Packaging & Labels', desc: 'Shelf-ready, platform-compliant, FSSAI-aware packaging design that makes your product impossible to ignore.' },
-  { label: 'WEB', title: 'Website & Presence', desc: 'A brand website built to convert — not just look good. Clean, fast, and aligned with your brand system from day one.' },
+  { label: 'WEB', title: 'Website & Revenue Engine', desc: 'A brand website built to convert — not just look good. Clean, fast, and aligned with your growth strategy from day one.' },
   { label: 'DIGITAL', title: 'App & Digital Product', desc: 'If your brand needs an app or ordering flow — we scope, design, and build it as part of the brand, not bolted on after.' },
-  { label: 'COMMERCE', title: 'Marketplace Listing', desc: 'Amazon, Flipkart, Zepto — your brand listed, catalogued, and optimized across every platform that matters.' },
-  { label: 'SOCIAL', title: 'Content System', desc: 'Profile setup, templates, and a content calendar to hit the ground running from launch day.' },
-  { label: 'SYSTEM', title: 'Brand Guidelines', desc: 'A complete brand bible — every rule and asset — so your brand stays consistent as you grow and hire.' },
+  { label: 'COMMERCE', title: 'Marketplace & Platform Presence', desc: 'Amazon, Flipkart, Zepto — your brand listed, catalogued, and optimized for high-intent conversion across every key channel.' },
+  { label: 'SOCIAL', title: 'Autopilot Content Engine', desc: 'Profile setup, visual assets, and an automated publishing schedule to hit the ground running from launch day.' },
+  { label: 'SYSTEM', title: 'Brand Guidelines', desc: 'A complete brand bible — every rule and asset — so your brand stays consistent as you grow and scale.' },
 ];
 
 const phases = [

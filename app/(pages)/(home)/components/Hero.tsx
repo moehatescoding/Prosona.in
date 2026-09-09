@@ -34,19 +34,21 @@ function HeroCopy() {
   return (
     <div className="space-y-8">
       <div className="inline-block">
-        <ElectricBadge>AI-POWERED BRAND SYSTEMS</ElectricBadge>
+        <ElectricBadge>AI-POWERED GROWTH &amp; BRAND SYSTEMS</ElectricBadge>
       </div>
       <h1 className="font-h1 text-[42px] md:text-[56px] lg:text-[68px] leading-[1.05] text-primary tracking-tight">
-        <div>Build a Brand</div>
-        <div>Worth Remembering.</div>
+        <div>Systems That Turn</div>
+        <div>Attention Into Revenue.</div>
       </h1>
-      <p className="font-h3 text-h3 text-slate-600 max-w-lg"><br /></p>
+      <p className="font-h3 text-h3 text-slate-600 max-w-lg">
+        AI-powered systems that build your brand and drive your growth with surgical precision.
+      </p>
       <div className="flex flex-wrap gap-4 pt-4">
         <Link
           href="/contact"
           className="bg-purple text-white px-8 py-4 rounded-lg font-medium shadow-[0_4px_14px_0_rgba(91,44,107,0.39)] hover:shadow-[0_6px_20px_rgba(91,44,107,0.23)] hover:-translate-y-0.5 active:shadow-[0_2px_4px_rgba(91,44,107,0.4)] active:translate-y-[1px] transition-all duration-200"
         >
-          Start Your System →
+          Start Your Growth Engine →
         </Link>
         <Link
           href="/contact"

@@ -19,7 +19,7 @@ const Navbar = () => {
   }, []);
 
   const isActive = (path: string) => pathname === path;
-  const isServicesActive = ['/fnb', '/fmcg', '/brand-systems', '/building-brands', '/personal-branding', '/automation', '/brand-audits', '/ai-brand-kit', '/brand-templates', '/integrations'].includes(pathname);
+  const isServicesActive = ['/fnb', '/fmcg', '/brand-systems', '/building-brands', '/personal-branding', '/automation', '/brand-audits', '/ai-brand-kit', '/brand-templates', '/integrations', '/demand-systems', '/visibility-systems'].includes(pathname);
   const isExploreActive = ['/blog', '/product-updates', '/latest-features', '/our-story'].includes(pathname);
 
   // Close mobile menu when route changes
@@ -58,7 +58,7 @@ const Navbar = () => {
               </button>
               
               {/* Services Mega Menu */}
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-[680px] bg-white border border-border rounded-2xl shadow-lg p-6 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 z-50 flex gap-6">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-[740px] bg-white border border-border rounded-2xl shadow-lg p-6 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 z-50 flex gap-6">
                 {/* Column 1 */}
                 <div className="flex-1 flex flex-col gap-1">
                   <h4 className="text-[10px] tracking-[0.15em] text-slate-400 uppercase font-bold mb-2 px-3">BRANDING (CORE SERVICES)</h4>
@@ -80,7 +80,7 @@ const Navbar = () => {
                     <span className="text-xl leading-none mt-0.5">🎨</span>
                     <div>
                       <div className="text-sm font-semibold text-[#1a1630] group-hover/item:text-purple transition-colors">Brand Systems</div>
-                      <div className="text-xs text-slate-500 mt-0.5">Design systems & guidelines</div>
+                      <div className="text-xs text-slate-500 mt-0.5">Design systems &amp; guidelines</div>
                     </div>
                   </Link>
                   <Link href="/building-brands" className="flex items-start gap-3 p-3 rounded-[10px] hover:bg-purple/5 group/item transition-colors">
@@ -94,26 +94,40 @@ const Navbar = () => {
 
                 {/* Column 2 */}
                 <div className="flex-1 flex flex-col gap-1">
-                  <h4 className="text-[10px] tracking-[0.15em] text-slate-400 uppercase font-bold mb-2 px-3">GROW (VALUE EXPANSION)</h4>
+                  <h4 className="text-[10px] tracking-[0.15em] text-slate-400 uppercase font-bold mb-2 px-3">DEMAND (GROWTH &amp; REACH)</h4>
+                  <Link href="/demand-systems" className="flex items-start gap-3 p-3 rounded-[10px] hover:bg-purple/5 group/item transition-colors">
+                    <span className="text-xl leading-none mt-0.5">📈</span>
+                    <div>
+                      <div className="text-sm font-semibold text-[#1a1630] group-hover/item:text-purple transition-colors">Demand Systems</div>
+                      <div className="text-xs text-slate-500 mt-0.5">High-intent acquisition &amp; revenue</div>
+                    </div>
+                  </Link>
+                  <Link href="/visibility-systems" className="flex items-start gap-3 p-3 rounded-[10px] hover:bg-purple/5 group/item transition-colors">
+                    <span className="text-xl leading-none mt-0.5">👁</span>
+                    <div>
+                      <div className="text-sm font-semibold text-[#1a1630] group-hover/item:text-purple transition-colors">Visibility Systems</div>
+                      <div className="text-xs text-slate-500 mt-0.5">AI search placement &amp; dominance</div>
+                    </div>
+                  </Link>
+                  <Link href="/automation" className="flex items-start gap-3 p-3 rounded-[10px] hover:bg-purple/5 group/item transition-colors">
+                    <span className="text-xl leading-none mt-0.5">⚡</span>
+                    <div>
+                      <div className="text-sm font-semibold text-[#1a1630] group-hover/item:text-purple transition-colors">Autopilot</div>
+                      <div className="text-xs text-slate-500 mt-0.5">Always-on growth engine</div>
+                    </div>
+                  </Link>
                   <Link href="/personal-branding" className="flex items-start gap-3 p-3 rounded-[10px] hover:bg-purple/5 group/item transition-colors">
                     <span className="text-xl leading-none mt-0.5">👤</span>
                     <div>
                       <div className="text-sm font-semibold text-[#1a1630] group-hover/item:text-purple transition-colors">Personal Branding</div>
-                      <div className="text-xs text-slate-500 mt-0.5">Build your professional persona</div>
-                    </div>
-                  </Link>
-                  <Link href="/automation" className="flex items-start gap-3 p-3 rounded-[10px] hover:bg-purple/5 group/item transition-colors">
-                    <span className="text-xl leading-none mt-0.5">⚙️</span>
-                    <div>
-                      <div className="text-sm font-semibold text-[#1a1630] group-hover/item:text-purple transition-colors">Automation</div>
-                      <div className="text-xs text-slate-500 mt-0.5">Brand workflows at scale</div>
+                      <div className="text-xs text-slate-500 mt-0.5">Build authority &amp; inbound pipeline</div>
                     </div>
                   </Link>
                   <Link href="/brand-audits" className="flex items-start gap-3 p-3 rounded-[10px] hover:bg-purple/5 group/item transition-colors">
                     <span className="text-xl leading-none mt-0.5">📊</span>
                     <div>
                       <div className="text-sm font-semibold text-[#1a1630] group-hover/item:text-purple transition-colors">Brand Audits</div>
-                      <div className="text-xs text-slate-500 mt-0.5">Diagnose & sharpen your brand</div>
+                      <div className="text-xs text-slate-500 mt-0.5">Diagnose growth &amp; revenue gaps</div>
                     </div>
                   </Link>
                 </div>
@@ -158,7 +172,7 @@ const Navbar = () => {
                   <span className="text-xl leading-none mt-0.5">📝</span>
                   <div>
                     <div className="text-sm font-semibold text-[#1a1630] group-hover/item:text-purple transition-colors">Blog</div>
-                    <div className="text-xs text-slate-500 mt-0.5">Insights & articles</div>
+                    <div className="text-xs text-slate-500 mt-0.5">Insights &amp; perspectives</div>
                   </div>
                 </Link>
                 <Link href="/product-updates" className="flex items-start gap-3 p-3 rounded-[10px] hover:bg-purple/5 group/item transition-colors">
@@ -179,7 +193,7 @@ const Navbar = () => {
                   <span className="text-xl leading-none mt-0.5">🏛</span>
                   <div>
                     <div className="text-sm font-semibold text-[#1a1630] group-hover/item:text-purple transition-colors">Our Story</div>
-                    <div className="text-xs text-slate-500 mt-0.5">Who we are & why we built this</div>
+                    <div className="text-xs text-slate-500 mt-0.5">Who we are &amp; why we built this</div>
                   </div>
                 </Link>
               </div>
@@ -215,10 +229,19 @@ const Navbar = () => {
           <div className="absolute top-[110%] left-0 w-full bg-purple-light/90 backdrop-blur-xl border border-purple/10 shadow-lg py-4 px-8 flex flex-col gap-4 font-h3 text-lg md:hidden rounded-2xl overflow-hidden">
             <Link href="/" className={`${isActive('/') ? 'text-purple font-semibold' : 'text-slate-600'}`}>Home</Link>
             <div className="flex flex-col gap-2 border-l-2 border-purple/10 pl-4 py-2">
-              <span className="text-xs text-slate-400 font-semibold tracking-wider uppercase">Services</span>
+              <span className="text-xs text-slate-400 font-semibold tracking-wider uppercase">Branding</span>
               <Link href="/fnb" className="text-slate-600 hover:text-purple transition-colors">F&amp;B</Link>
               <Link href="/fmcg" className="text-slate-600 hover:text-purple transition-colors">FMCG</Link>
               <Link href="/brand-systems" className="text-slate-600 hover:text-purple transition-colors">Brand Systems</Link>
+              <Link href="/building-brands" className="text-slate-600 hover:text-purple transition-colors">Building Brands</Link>
+            </div>
+            <div className="flex flex-col gap-2 border-l-2 border-purple/10 pl-4 py-2">
+              <span className="text-xs text-slate-400 font-semibold tracking-wider uppercase">Demand &amp; Reach</span>
+              <Link href="/demand-systems" className="text-slate-600 hover:text-purple transition-colors">Demand Systems</Link>
+              <Link href="/visibility-systems" className="text-slate-600 hover:text-purple transition-colors">Visibility Systems</Link>
+              <Link href="/automation" className="text-slate-600 hover:text-purple transition-colors">Autopilot</Link>
+              <Link href="/personal-branding" className="text-slate-600 hover:text-purple transition-colors">Personal Branding</Link>
+              <Link href="/brand-audits" className="text-slate-600 hover:text-purple transition-colors">Brand Audits</Link>
             </div>
             <div className="flex flex-col gap-2 border-l-2 border-purple/10 pl-4 py-2">
               <span className="text-xs text-slate-400 font-semibold tracking-wider uppercase">Explore</span>

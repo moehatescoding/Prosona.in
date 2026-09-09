@@ -11,9 +11,11 @@ const footerLinks = {
     { label: 'Brand Systems', href: '/brand-systems' },
     { label: 'Building Brands', href: '/building-brands' },
   ],
-  grow: [
+  demand: [
+    { label: 'Demand Systems', href: '/demand-systems' },
+    { label: 'Visibility Systems', href: '/visibility-systems' },
+    { label: 'Autopilot', href: '/automation' },
     { label: 'Personal Branding', href: '/personal-branding' },
-    { label: 'Automation', href: '/automation' },
     { label: 'Brand Audits', href: '/brand-audits' },
   ],
   tools: [
@@ -78,7 +80,7 @@ const Footer = () => {
           </Link>
           
           <p className="text-slate-500 text-sm leading-[1.6] max-w-[240px]">
-            Developing the next generation of brand ecosystems using surgical precision and automated intelligence.
+            Developing the next generation of brand ecosystems and growth engines using surgical precision and automated intelligence.
           </p>
           
           <a 
@@ -128,8 +130,8 @@ const Footer = () => {
         {/* Column 2 — Branding */}
         <LinkColumn title="Branding" links={footerLinks.branding} />
 
-        {/* Column 3 — Grow */}
-        <LinkColumn title="Grow" links={footerLinks.grow} />
+        {/* Column 3 — Demand */}
+        <LinkColumn title="Demand" links={footerLinks.demand} />
 
         {/* Column 4 — Tools */}
         <LinkColumn title="Tools" links={footerLinks.tools} />

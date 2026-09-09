@@ -29,11 +29,12 @@ export default function Blog() {
       <section className="bg-white py-md border-b border-border sticky top-16 z-40">
         <div className="max-w-7xl mx-auto px-8 flex items-center justify-center space-x-md overflow-x-auto whitespace-nowrap">
           <button className="px-lg py-xs rounded-full bg-purple text-white font-h3 text-sm font-medium transition-colors">All</button>
-          <button className="px-lg py-xs rounded-full bg-white border border-border text-slate-600 font-h3 text-sm font-medium hover:border-purple hover:text-purple transition-colors">F&B</button>
-          <button className="px-lg py-xs rounded-full bg-white border border-border text-slate-600 font-h3 text-sm font-medium hover:border-purple hover:text-purple transition-colors">Automation</button>
+          <button className="px-lg py-xs rounded-full bg-white border border-border text-slate-600 font-h3 text-sm font-medium hover:border-purple hover:text-purple transition-colors">Demand</button>
+          <button className="px-lg py-xs rounded-full bg-white border border-border text-slate-600 font-h3 text-sm font-medium hover:border-purple hover:text-purple transition-colors">Visibility</button>
+          <button className="px-lg py-xs rounded-full bg-white border border-border text-slate-600 font-h3 text-sm font-medium hover:border-purple hover:text-purple transition-colors">Autopilot</button>
+          <button className="px-lg py-xs rounded-full bg-white border border-border text-slate-600 font-h3 text-sm font-medium hover:border-purple hover:text-purple transition-colors">F&amp;B</button>
           <button className="px-lg py-xs rounded-full bg-white border border-border text-slate-600 font-h3 text-sm font-medium hover:border-purple hover:text-purple transition-colors">Brand</button>
           <button className="px-lg py-xs rounded-full bg-white border border-border text-slate-600 font-h3 text-sm font-medium hover:border-purple hover:text-purple transition-colors">AI</button>
-          <button className="px-lg py-xs rounded-full bg-white border border-border text-slate-600 font-h3 text-sm font-medium hover:border-purple hover:text-purple transition-colors">Growth</button>
         </div>
       </section>
 
@@ -47,10 +48,10 @@ export default function Blog() {
             </div>
             <div className="p-lg flex flex-col flex-grow">
               <div className="flex items-center space-x-xs mb-sm">
-                <span className="px-xs py-unit rounded-full bg-purple-light text-purple font-label-caps text-[10px] uppercase tracking-widest">F&B</span>
+                <span className="px-xs py-unit rounded-full bg-purple-light text-purple font-label-caps text-[10px] uppercase tracking-widest">DEMAND</span>
               </div>
-              <h3 className="font-h3 text-h3 text-on-surface mb-sm leading-tight">Why Every Restaurant Needs a Brand System</h3>
-              <p className="font-body-md text-slate-600 mb-lg line-clamp-3">In an era of hyper-personalization, transactional design is no longer enough. Restaurants must evolve into living brand ecosystems.</p>
+              <h3 className="font-h3 text-h3 text-on-surface mb-sm leading-tight">The System Behind Consistent Demand</h3>
+              <p className="font-body-md text-slate-600 mb-lg line-clamp-3">Why relying on manual efforts fails to build predictable customer volume, and how autonomous demand engines solve it.</p>
               <div className="mt-auto flex items-center justify-between text-slate-400 font-label-caps text-[10px] tracking-wider">
                 <span>OCT 12, 2024</span>
                 <span className="flex items-center"><span className="material-symbols-outlined text-[14px] mr-1">schedule</span> 6 MIN READ</span>
@@ -81,10 +82,10 @@ export default function Blog() {
             </div>
             <div className="p-lg flex flex-col flex-grow">
               <div className="flex items-center space-x-xs mb-sm">
-                <span className="px-xs py-unit rounded-full bg-purple-light text-purple font-label-caps text-[10px] uppercase tracking-widest">Automation</span>
+                <span className="px-xs py-unit rounded-full bg-purple-light text-purple font-label-caps text-[10px] uppercase tracking-widest">AUTOPILOT</span>
               </div>
-              <h3 className="font-h3 text-h3 text-on-surface mb-sm leading-tight">Automating the Ordinary to Focus on the Extraordinary</h3>
-              <p className="font-body-md text-slate-600 mb-lg line-clamp-3">A deep dive into the studio's internal automation stack that saves us 30 hours of administrative work every single week.</p>
+              <h3 className="font-h3 text-h3 text-on-surface mb-sm leading-tight">Content Autopilot: The New Growth Standard</h3>
+              <p className="font-body-md text-slate-600 mb-lg line-clamp-3">A deep dive into automated content execution systems that scale reach while saving 30+ hours of team effort each week.</p>
               <div className="mt-auto flex items-center justify-between text-slate-400 font-label-caps text-[10px] tracking-wider">
                 <span>SEP 28, 2024</span>
                 <span className="flex items-center"><span className="material-symbols-outlined text-[14px] mr-1">schedule</span> 5 MIN READ</span>
@@ -98,10 +99,10 @@ export default function Blog() {
             </div>
             <div className="p-lg flex flex-col flex-grow">
               <div className="flex items-center space-x-xs mb-sm">
-                <span className="px-xs py-unit rounded-full bg-purple-light text-purple font-label-caps text-[10px] uppercase tracking-widest">Growth</span>
+                <span className="px-xs py-unit rounded-full bg-purple-light text-purple font-label-caps text-[10px] uppercase tracking-widest">VISIBILITY</span>
               </div>
-              <h3 className="font-h3 text-h3 text-on-surface mb-sm leading-tight">Scale Without Friction: The Platform Model</h3>
-              <p className="font-body-md text-slate-600 mb-lg line-clamp-3">Why the next generation of successful brands will be built as modular platforms rather than static entities.</p>
+              <h3 className="font-h3 text-h3 text-on-surface mb-sm leading-tight">How AI Search Is Changing Brand Visibility</h3>
+              <p className="font-body-md text-slate-600 mb-lg line-clamp-3">Why generative engine optimization (GEO) is replacing traditional search tactics in AI search recommendation engines.</p>
               <div className="mt-auto flex items-center justify-between text-slate-400 font-label-caps text-[10px] tracking-wider">
                 <span>SEP 15, 2024</span>
                 <span className="flex items-center"><span className="material-symbols-outlined text-[14px] mr-1">schedule</span> 10 MIN READ</span>
